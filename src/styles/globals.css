@@ -27,7 +27,6 @@
 
 .gold-text {
   color: gold;
-  /* Add any other styles you want for elements with the gold-text class */
 }
 
 @media screen and (max-width: 992px) {
