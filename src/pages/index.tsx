@@ -83,8 +83,76 @@ export default function Home() {
           </div>
           <button className='px-5 py-3 mt-3'>Get Started</button>
         </div>
-        <div className="col-8">
+        <div className="col-8 ">
+          <div className='row  '>
+            <div className='col d-flex' >
+              <div className='shadow-lg p-3 mb-5 bg-body rounded' >
+                <svg width="59" height="52" viewBox="0 0 59 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M42.2705 21.5328V32.959M17.0246 21.5328L17.0246 32.959M3 27.5H55M8 50H51C54.3137 50 57 47.3137 57 44V15C57 11.6863 54.3137 9 51 9H8C4.68629 9 2 11.6863 2 15V44C2 47.3137 4.68629 50 8 50ZM40 9V5C40 3.34315 38.6569 2 37 2H21C19.3431 2 18 3.34315 18 5V9H40Z" stroke="#F5A414" stroke-width="4"/>
+                </svg>
+                <h5>Instant Service</h5>
+                <p>There are many variations of passages <br/> of Lorem Ipsum available, but majority <br/> going to use a passage.</p>
+                <a href='#' className='gold-text text-decoration-none fw-bold'>Learn More</a>
+              </div>
+            </div>
+            <div className='col d-flex'>
+              <div className='shadow-lg p-3 mb-5 bg-body rounded'>
+              <svg width="53" height="56" viewBox="0 0 53 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="11.7778" cy="43.5778" r="10.2778" stroke="#F5A414" stroke-width="3"/>
+                <circle cx="41.2221" cy="20.0222" r="10.2778" stroke="#F5A414" stroke-width="3"/>
+                <rect x="8.48076" y="11.5687" width="11.1643" height="6.22766" rx="3.11383" transform="rotate(-44.3122 8.48076 11.5687)" stroke="#F5A414" stroke-width="2"/>
+                <rect x="22.9346" y="1.09712" width="11.1643" height="6.22766" rx="3.11383" transform="rotate(5.87562 22.9346 1.09712)" stroke="#F5A414" stroke-width="2"/>
+                <rect x="3.55053" y="28.5761" width="11.1643" height="6.22766" rx="3.11383" transform="rotate(-77.3245 3.55053 28.5761)" stroke="#F5A414" stroke-width="2"/>
+                <line x1="12.3031" y1="13.0909" x2="9.55756" y2="19.4971" stroke="#F5A414" stroke-width="2" stroke-linecap="round"/>
+                <line x1="8.21744" y1="27.9109" x2="9.06642" y2="33.0047" stroke="#F5A414" stroke-width="2" stroke-linecap="round"/>
+                <line x1="24.0466" y1="4.76957" x2="17.7252" y2="6.57568" stroke="#F5A414" stroke-width="2" stroke-linecap="round"/>
+                <line x1="35.1057" y1="10.4438" x2="31.6439" y2="6.11665" stroke="#F5A414" stroke-width="2" stroke-linecap="round"/>
+              </svg>
 
+              <h5>Trust Service</h5>
+              
+                <p>There are many variations of passages <br/> of Lorem Ipsum available, but majority <br/> going to use a passage.</p>
+                <a href='#' className='gold-text text-decoration-none fw-bold'>Learn More</a>
+              </div>
+            </div>
+          </div>
+          <div className='row '>
+            <div className='col d-flex'>
+              <div className='shadow-lg p-3 mb-5 bg-body rounded'>
+              <svg width="56" height="48" viewBox="0 0 56 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2 5C2 3.34315 3.34315 2 5 2H23.6567C25.3136 2 26.6567 3.34314 26.6567 5V46H4.99999C3.34314 46 2 44.6569 2 43V5Z" stroke="#F5A414" stroke-width="4"/>
+                <path d="M28.5073 25.0598C28.5073 23.4029 29.8505 22.0598 31.5073 22.0598H50.164C51.8209 22.0598 53.164 23.4029 53.164 25.0598V43.0001C53.164 44.6569 51.8209 46.0001 50.164 46.0001H28.5073V25.0598Z" stroke="#F5A414" stroke-width="4"/>
+                <path d="M5.73071 9.46971C5.73071 8.98772 6.12145 8.59698 6.60344 8.59698H11.3057C11.7877 8.59698 12.1785 8.98772 12.1785 9.46971V11.3063C12.1785 11.7883 11.7877 12.1791 11.3057 12.1791H6.60344C6.12145 12.1791 5.73071 11.7883 5.73071 11.3063V9.46971Z" fill="#F5A414"/>
+                <path d="M32.2382 28.0966C32.2382 27.6146 32.6289 27.2239 33.1109 27.2239H37.8132C38.2952 27.2239 38.6859 27.6146 38.6859 28.0966V29.9332C38.6859 30.4152 38.2952 30.8059 37.8132 30.8059H33.1109C32.6289 30.8059 32.2382 30.4152 32.2382 29.9332V28.0966Z" fill="#F5A414"/>
+                <path d="M5.73071 18.7831C5.73071 18.3012 6.12145 17.9104 6.60344 17.9104H11.3057C11.7877 17.9104 12.1785 18.3012 12.1785 18.7831V20.6198C12.1785 21.1018 11.7877 21.4925 11.3057 21.4925H6.60344C6.12145 21.4925 5.73071 21.1018 5.73071 20.6198V18.7831Z" fill="#F5A414"/>
+                <path d="M32.2382 36.6936C32.2382 36.2116 32.6289 35.8209 33.1109 35.8209H37.8132C38.2952 35.8209 38.6859 36.2116 38.6859 36.6936V38.5302C38.6859 39.0122 38.2952 39.403 37.8132 39.403H33.1109C32.6289 39.403 32.2382 39.0122 32.2382 38.5302V36.6936Z" fill="#F5A414"/>
+                <path d="M5.73071 28.0966C5.73071 27.6146 6.12145 27.2239 6.60344 27.2239H11.3057C11.7877 27.2239 12.1785 27.6146 12.1785 28.0966V29.9332C12.1785 30.4152 11.7877 30.8059 11.3057 30.8059H6.60344C6.12145 30.8059 5.73071 30.4152 5.73071 29.9332V28.0966Z" fill="#F5A414"/>
+                <path d="M5.73071 37.41C5.73071 36.928 6.12145 36.5373 6.60344 36.5373H11.3057C11.7877 36.5373 12.1785 36.928 12.1785 37.41V39.2466C12.1785 39.7286 11.7877 40.1194 11.3057 40.1194H6.60344C6.12145 40.1194 5.73071 39.7286 5.73071 39.2466V37.41Z" fill="#F5A414"/>
+                <path d="M16.477 9.46971C16.477 8.98772 16.8677 8.59698 17.3497 8.59698H22.052C22.534 8.59698 22.9247 8.98772 22.9247 9.46971V11.3063C22.9247 11.7883 22.534 12.1791 22.052 12.1791H17.3497C16.8677 12.1791 16.477 11.7883 16.477 11.3063V9.46971Z" fill="#F5A414"/>
+                <path d="M42.9844 28.0966C42.9844 27.6146 43.3752 27.2239 43.8572 27.2239H48.5595C49.0415 27.2239 49.4322 27.6146 49.4322 28.0966V29.9332C49.4322 30.4152 49.0415 30.8059 48.5595 30.8059H43.8572C43.3752 30.8059 42.9844 30.4152 42.9844 29.9332V28.0966Z" fill="#F5A414"/>
+                <path d="M16.477 18.7831C16.477 18.3012 16.8677 17.9104 17.3497 17.9104H22.052C22.534 17.9104 22.9247 18.3012 22.9247 18.7831V20.6198C22.9247 21.1018 22.534 21.4925 22.052 21.4925H17.3497C16.8677 21.4925 16.477 21.1018 16.477 20.6198V18.7831Z" fill="#F5A414"/>
+                <path d="M42.9844 36.6936C42.9844 36.2116 43.3752 35.8209 43.8572 35.8209H48.5595C49.0415 35.8209 49.4322 36.2116 49.4322 36.6936V38.5302C49.4322 39.0122 49.0415 39.403 48.5595 39.403H43.8572C43.3752 39.403 42.9844 39.0122 42.9844 38.5302V36.6936Z" fill="#F5A414"/>
+                <path d="M16.477 28.0966C16.477 27.6146 16.8677 27.2239 17.3497 27.2239H22.052C22.534 27.2239 22.9247 27.6146 22.9247 28.0966V29.9332C22.9247 30.4152 22.534 30.8059 22.052 30.8059H17.3497C16.8677 30.8059 16.477 30.4152 16.477 29.9332V28.0966Z" fill="#F5A414"/>
+                <path d="M16.477 37.41C16.477 36.928 16.8677 36.5373 17.3497 36.5373H22.052C22.534 36.5373 22.9247 36.928 22.9247 37.41V39.2466C22.9247 39.7286 22.534 40.1194 22.052 40.1194H17.3497C16.8677 40.1194 16.477 39.7286 16.477 39.2466V37.41Z" fill="#F5A414"/>
+              </svg>
+              <h5>Verified Sellers</h5>
+              
+                <p>There are many variations of passages <br/> of Lorem Ipsum available, but majority <br/> going to use a passage.</p>
+                <a href='#' className='gold-text text-decoration-none fw-bold'>Learn More</a>
+              </div>
+            </div>
+            <div className='col d-flex'> 
+              <div className='shadow-lg p-3 mb-5 bg-body rounded' >
+                <svg width="59" height="52" viewBox="0 0 59 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M42.2705 21.5328V32.959M17.0246 21.5328L17.0246 32.959M3 27.5H55M8 50H51C54.3137 50 57 47.3137 57 44V15C57 11.6863 54.3137 9 51 9H8C4.68629 9 2 11.6863 2 15V44C2 47.3137 4.68629 50 8 50ZM40 9V5C40 3.34315 38.6569 2 37 2H21C19.3431 2 18 3.34315 18 5V9H40Z" stroke="#F5A414" stroke-width="4"/>
+                </svg>
+              <h5>Instant Service</h5>
+                
+                <p>There are many variations of passages <br/> of Lorem Ipsum available, but majority <br/> going to use a passage.</p>
+                <a href='#' className='gold-text text-decoration-none fw-bold'>Learn More</a>
+              </div>
+            </div>   
+        </div>
         </div>
       </div>
       {/* experience */}
@@ -129,6 +197,90 @@ export default function Home() {
       <h3>What Our Clients Say <span> About </span>Us</h3>
       <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore <br />
        magna aliqua ut dolor sit</p>
+
+       <div className='d-flex p-3 gap-5 text-start'>
+
+       <div className='p-2'>
+        <svg width="31" height="26" viewBox="0 0 31 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M13.95 3.075L8.475 13.275L5.025 14.25C5.425 13.5 5.875 12.9 6.375 12.45C6.875 11.95 7.45 11.7 8.1 11.7C9.55 11.7 10.85 12.3 12 13.5C13.2 14.65 13.8 16.15 13.8 18C13.8 19.95 13.125 21.625 11.775 23.025C10.475 24.425 8.85 25.125 6.9 25.125C5.05 25.125 3.425 24.45 2.025 23.1C0.675 21.7 0 20 0 18C0 17.2 0.15 16.275 0.45 15.225C0.8 14.175 1.425 12.8 2.325 11.1L8.325 0L13.95 3.075ZM30.825 3.075L25.35 13.275L21.975 14.25C22.325 13.5 22.75 12.9 23.25 12.45C23.8 11.95 24.375 11.7 24.975 11.7C26.425 11.7 27.75 12.3 28.95 13.5C30.15 14.65 30.75 16.15 30.75 18C30.75 19.95 30.075 21.625 28.725 23.025C27.425 24.425 25.8 25.125 23.85 25.125C22 25.125 20.375 24.45 18.975 23.1C17.625 21.7 16.95 20 16.95 18C16.95 17.2 17.1 16.275 17.4 15.225C17.7 14.175 18.3 12.8 19.2 11.1L25.275 0L30.825 3.075Z" fill="#F5A414"/>
+        </svg>
+        <p> There are  of Lorem Ipsum<br/> 
+        available, but the majority<br/> 
+         have su alteration in some<br/> 
+          form, by injected oir<br/> 
+            which don't look even<br/> 
+             slightly believable.</p>
+       <div className="d-flex pt-3">
+				<div><img src="/testimonial/Photo.png" width="50" className="rounded-circle" /></div>
+				<div className="ml-2">
+					<span className="text-dark fw-bold">Nattasha</span>
+				    <p className="para">Junior Lawyer</p>
+				</div>
+        </div>
+        </div>   
+
+        <div className='p-2'>
+        <div className="d-flex pt-3">
+        <div><img src="/testimonial/Photo (1).png" width="50" className="rounded-circle" /></div>
+				<div className="ml-2">
+					<span className="text-dark fw-bold">Minci pall</span>
+				    <p className="para">Consultant</p>
+            
+          </div>
+          </div>
+            <svg width="31" height="26" viewBox="0 0 31 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M13.95 3.075L8.475 13.275L5.025 14.25C5.425 13.5 5.875 12.9 6.375 12.45C6.875 11.95 7.45 11.7 8.1 11.7C9.55 11.7 10.85 12.3 12 13.5C13.2 14.65 13.8 16.15 13.8 18C13.8 19.95 13.125 21.625 11.775 23.025C10.475 24.425 8.85 25.125 6.9 25.125C5.05 25.125 3.425 24.45 2.025 23.1C0.675 21.7 0 20 0 18C0 17.2 0.15 16.275 0.45 15.225C0.8 14.175 1.425 12.8 2.325 11.1L8.325 0L13.95 3.075ZM30.825 3.075L25.35 13.275L21.975 14.25C22.325 13.5 22.75 12.9 23.25 12.45C23.8 11.95 24.375 11.7 24.975 11.7C26.425 11.7 27.75 12.3 28.95 13.5C30.15 14.65 30.75 16.15 30.75 18C30.75 19.95 30.075 21.625 28.725 23.025C27.425 24.425 25.8 25.125 23.85 25.125C22 25.125 20.375 24.45 18.975 23.1C17.625 21.7 16.95 20 16.95 18C16.95 17.2 17.1 16.275 17.4 15.225C17.7 14.175 18.3 12.8 19.2 11.1L25.275 0L30.825 3.075Z" fill="#F5A414"/>
+        </svg>
+        <p> There are  of Lorem Ipsum<br/> 
+        available, but the majority<br/> 
+         have su alteration in some<br/> 
+          form, by injected oir<br/> 
+            which don't look even<br/> 
+             slightly believable.</p>    
+				
+        
+        </div>
+
+        <div className='p-2'>
+        <svg width="31" height="26" viewBox="0 0 31 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M13.95 3.075L8.475 13.275L5.025 14.25C5.425 13.5 5.875 12.9 6.375 12.45C6.875 11.95 7.45 11.7 8.1 11.7C9.55 11.7 10.85 12.3 12 13.5C13.2 14.65 13.8 16.15 13.8 18C13.8 19.95 13.125 21.625 11.775 23.025C10.475 24.425 8.85 25.125 6.9 25.125C5.05 25.125 3.425 24.45 2.025 23.1C0.675 21.7 0 20 0 18C0 17.2 0.15 16.275 0.45 15.225C0.8 14.175 1.425 12.8 2.325 11.1L8.325 0L13.95 3.075ZM30.825 3.075L25.35 13.275L21.975 14.25C22.325 13.5 22.75 12.9 23.25 12.45C23.8 11.95 24.375 11.7 24.975 11.7C26.425 11.7 27.75 12.3 28.95 13.5C30.15 14.65 30.75 16.15 30.75 18C30.75 19.95 30.075 21.625 28.725 23.025C27.425 24.425 25.8 25.125 23.85 25.125C22 25.125 20.375 24.45 18.975 23.1C17.625 21.7 16.95 20 16.95 18C16.95 17.2 17.1 16.275 17.4 15.225C17.7 14.175 18.3 12.8 19.2 11.1L25.275 0L30.825 3.075Z" fill="#F5A414"/>
+        </svg>
+        <p> There are  of Lorem Ipsum<br/> 
+        available, but the majority<br/> 
+         have su alteration in some<br/> 
+          form, by injected oir<br/> 
+            which don't look even<br/> 
+             slightly believable.</p>
+        <div className="d-flex pt-3">
+        <div><img src="/testimonial/Photo (2).png" width="50" className="rounded-circle" /></div>
+				<div className="ml-2">
+					<span className="text-dark fw-bold">Julia Rose</span>
+				    <p className="para">Consultantr</p>
+				</div>
+        </div>
+        </div>
+
+        <div  className='p-2'>
+        <div className="d-flex pt-3">
+        <div><img src="/testimonial/Photo (3).png" width="50" className="rounded-circle" /></div>
+				<div className="ml-2">
+					<span className="text-dark fw-bold">John David</span>
+				    <p className="para">Designer</p>
+				</div>
+        
+        </div>
+        <svg width="31" height="26" viewBox="0 0 31 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M13.95 3.075L8.475 13.275L5.025 14.25C5.425 13.5 5.875 12.9 6.375 12.45C6.875 11.95 7.45 11.7 8.1 11.7C9.55 11.7 10.85 12.3 12 13.5C13.2 14.65 13.8 16.15 13.8 18C13.8 19.95 13.125 21.625 11.775 23.025C10.475 24.425 8.85 25.125 6.9 25.125C5.05 25.125 3.425 24.45 2.025 23.1C0.675 21.7 0 20 0 18C0 17.2 0.15 16.275 0.45 15.225C0.8 14.175 1.425 12.8 2.325 11.1L8.325 0L13.95 3.075ZM30.825 3.075L25.35 13.275L21.975 14.25C22.325 13.5 22.75 12.9 23.25 12.45C23.8 11.95 24.375 11.7 24.975 11.7C26.425 11.7 27.75 12.3 28.95 13.5C30.15 14.65 30.75 16.15 30.75 18C30.75 19.95 30.075 21.625 28.725 23.025C27.425 24.425 25.8 25.125 23.85 25.125C22 25.125 20.375 24.45 18.975 23.1C17.625 21.7 16.95 20 16.95 18C16.95 17.2 17.1 16.275 17.4 15.225C17.7 14.175 18.3 12.8 19.2 11.1L25.275 0L30.825 3.075Z" fill="#F5A414"/>
+        </svg>
+        <p> There are  of Lorem Ipsum<br/> 
+        available, but the majority<br/> 
+         have su alteration in some<br/> 
+          form, by injected oir<br/> 
+            which don't look even<br/> 
+             slightly believable.</p>
+
+			</div>
+       </div>
       </div>
       {/* contact */}
       <div className={`${styles.contactForm} d-flex flex-column w-100 justify-content-center align-items-center text-center`}>
