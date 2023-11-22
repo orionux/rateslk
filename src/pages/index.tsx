@@ -208,10 +208,10 @@ export default function Home() {
         available, but the majority<br/> 
          have su alteration in some<br/> 
           form, by injected oir<br/> 
-            which don't look even<br/> 
+            which don`t look even<br/> 
              slightly believable.</p>
        <div className="d-flex pt-3">
-				<div><img src="/testimonial/Photo.png" width="50" className="rounded-circle" /></div>
+				<div><Image src="/testimonial/Photo.png"  alt=""  width="50" height="50" className="rounded-circle" /></div>
 				<div className="ml-2">
 					<span className="text-dark fw-bold">Nattasha</span>
 				    <p className="para">Junior Lawyer</p>
@@ -221,7 +221,7 @@ export default function Home() {
 
         <div className='p-2'>
         <div className="d-flex pt-3">
-        <div><img src="/testimonial/Photo (1).png" width="50" className="rounded-circle" /></div>
+        <div><Image src="/testimonial/Photo (1).png"  alt=""  width="50" height="50" className="rounded-circle" /> </div>
 				<div className="ml-2">
 					<span className="text-dark fw-bold">Minci pall</span>
 				    <p className="para">Consultant</p>
@@ -235,7 +235,7 @@ export default function Home() {
         available, but the majority<br/> 
          have su alteration in some<br/> 
           form, by injected oir<br/> 
-            which don't look even<br/> 
+            which don`t look even<br/> 
              slightly believable.</p>    
 				
         
@@ -249,10 +249,10 @@ export default function Home() {
         available, but the majority<br/> 
          have su alteration in some<br/> 
           form, by injected oir<br/> 
-            which don't look even<br/> 
+            which don`t look even<br/> 
              slightly believable.</p>
         <div className="d-flex pt-3">
-        <div><img src="/testimonial/Photo (2).png" width="50" className="rounded-circle" /></div>
+        <div><Image src="/testimonial/Photo (2).png"  alt=""  width="50" height="50" className="rounded-circle" /></div>
 				<div className="ml-2">
 					<span className="text-dark fw-bold">Julia Rose</span>
 				    <p className="para">Consultantr</p>
@@ -262,7 +262,7 @@ export default function Home() {
 
         <div  className='p-2'>
         <div className="d-flex pt-3">
-        <div><img src="/testimonial/Photo (3).png" width="50" className="rounded-circle" /></div>
+        <div><Image src="/testimonial/Photo (3).png"  alt=""  width="50" height="50" className="rounded-circle" /> </div>
 				<div className="ml-2">
 					<span className="text-dark fw-bold">John David</span>
 				    <p className="para">Designer</p>
@@ -276,7 +276,7 @@ export default function Home() {
         available, but the majority<br/> 
          have su alteration in some<br/> 
           form, by injected oir<br/> 
-            which don't look even<br/> 
+            which don`t look even<br/> 
              slightly believable.</p>
 
 			</div>
