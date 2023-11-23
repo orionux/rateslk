@@ -270,10 +270,10 @@ export default function Home() {
           <button className='px-5 py-3 mt-3'>Get Started</button>
         </div>
         <div className="col-8 ">
-          <div className='row  '>
-            <div className='col d-flex ms-5' >
-              <div className='shadow-lg p-3 mb-5 bg-body servicetiles' >
-                <svg width="59" height="52" viewBox="0 0 59 52" fill="none" xmlns="http://www.w3.org/2000/svg" className='p-1 mb-2'>
+          <div className='row me-3 '>
+            <div className='col d-flex ms-2' >
+              <div className='shadow-lg p-3 mb-5 ms-0 bg-body servicetiles' >
+                <svg width="49" height="42" viewBox="0 0 59 52" fill="none" xmlns="http://www.w3.org/2000/svg" className='p-1 mb-2'>
                   <path d="M42.2705 21.5328V32.959M17.0246 21.5328L17.0246 32.959M3 27.5H55M8 50H51C54.3137 50 57 47.3137 57 44V15C57 11.6863 54.3137 9 51 9H8C4.68629 9 2 11.6863 2 15V44C2 47.3137 4.68629 50 8 50ZM40 9V5C40 3.34315 38.6569 2 37 2H21C19.3431 2 18 3.34315 18 5V9H40Z" stroke="#F5A414" stroke-width="4"/>
                 </svg>
                 <h5>Instant Service</h5>
@@ -282,8 +282,8 @@ export default function Home() {
               </div>
             </div>
             <div className='col d-flex'>
-              <div className='shadow-lg p-3 mt-5 bg-body servicetiles position-absolute trustservice'>
-              <svg width="53" height="56" viewBox="0 0 53 56" fill="none" xmlns="http://www.w3.org/2000/svg" className='p-1 mb-2'>
+              <div className='shadow-lg p-3 mt-5 ms-0 bg-body servicetiles position-absolute trustservice'>
+              <svg width="43" height="46" viewBox="0 0 53 56" fill="none" xmlns="http://www.w3.org/2000/svg" className='p-1 mb-2'>
                 <circle cx="11.7778" cy="43.5778" r="10.2778" stroke="#F5A414" stroke-width="3"/>
                 <circle cx="41.2221" cy="20.0222" r="10.2778" stroke="#F5A414" stroke-width="3"/>
                 <rect x="8.48076" y="11.5687" width="11.1643" height="6.22766" rx="3.11383" transform="rotate(-44.3122 8.48076 11.5687)" stroke="#F5A414" stroke-width="2"/>
@@ -302,10 +302,10 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className='row '>
-            <div className='col d-flex  ms-5'>
+          <div className='row'>
+            <div className='col d-flex  ps-5'>
               <div className='shadow-lg p-3 mb-1 bg-body servicetiles verified'>
-              <svg width="56" height="48" viewBox="0 0 56 48" fill="none" xmlns="http://www.w3.org/2000/svg" className='p-1 mb-2'>
+              <svg width="46" height="38" viewBox="0 0 56 48" fill="none" xmlns="http://www.w3.org/2000/svg" className='p-1 mb-2'>
                 <path d="M2 5C2 3.34315 3.34315 2 5 2H23.6567C25.3136 2 26.6567 3.34314 26.6567 5V46H4.99999C3.34314 46 2 44.6569 2 43V5Z" stroke="#F5A414" stroke-width="4"/>
                 <path d="M28.5073 25.0598C28.5073 23.4029 29.8505 22.0598 31.5073 22.0598H50.164C51.8209 22.0598 53.164 23.4029 53.164 25.0598V43.0001C53.164 44.6569 51.8209 46.0001 50.164 46.0001H28.5073V25.0598Z" stroke="#F5A414" stroke-width="4"/>
                 <path d="M5.73071 9.46971C5.73071 8.98772 6.12145 8.59698 6.60344 8.59698H11.3057C11.7877 8.59698 12.1785 8.98772 12.1785 9.46971V11.3063C12.1785 11.7883 11.7877 12.1791 11.3057 12.1791H6.60344C6.12145 12.1791 5.73071 11.7883 5.73071 11.3063V9.46971Z" fill="#F5A414"/>
@@ -327,9 +327,9 @@ export default function Home() {
                 <a href='#' className='gold-text text-decoration-none fw-bold'>Learn More</a>
               </div>
             </div>
-            <div className='col d-flex'> 
-              <div className='shadow-lg p-3 mt-5 bg-body servicetiles ' >
-                <svg width="59" height="52" viewBox="0 0 59 52" fill="none" xmlns="http://www.w3.org/2000/svg" className='p-1 mb-2'>
+            <div className='col d-flex ps-3'> 
+              <div className='shadow-lg p-3 mt-5  bg-body servicetiles' >
+                <svg width="49" height="42" viewBox="0 0 59 52" fill="none" xmlns="http://www.w3.org/2000/svg" className='p-1 mb-2'>
                   <path d="M42.2705 21.5328V32.959M17.0246 21.5328L17.0246 32.959M3 27.5H55M8 50H51C54.3137 50 57 47.3137 57 44V15C57 11.6863 54.3137 9 51 9H8C4.68629 9 2 11.6863 2 15V44C2 47.3137 4.68629 50 8 50ZM40 9V5C40 3.34315 38.6569 2 37 2H21C19.3431 2 18 3.34315 18 5V9H40Z" stroke="#F5A414" stroke-width="4"/>
                 </svg>
               <h5>Instant Service</h5>

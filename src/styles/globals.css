@@ -47,10 +47,11 @@
 }
 
 .servicetiles {
-  width: 21rem;
-  height: 15rem;
+  width: 18rem;
+  height: 13rem;
   border-radius: 29px;
   flex-shrink: 0;
+  font-size: 70%;
   
 }
 
