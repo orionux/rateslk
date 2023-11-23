@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import styles from '@/styles/Home.module.css'
-
+import { useState } from 'react';
+import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io';
 
 export default function Home() {
 
@@ -36,6 +37,13 @@ export default function Home() {
       buttonTxt: "Buy/Sell"
     }
   ]
+
+  const [showMore, setShowMore] = useState(false);
+
+  const toggleRows = () => {
+    setShowMore(!showMore);
+  };
+
   return (
     <>
       {/* hero */}
@@ -44,7 +52,185 @@ export default function Home() {
         <h2 className='mb-3'>Your Gateway To <span>Daily Rate</span> <br /> Fluctuations</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut <br /> labore et dolore magna aliqua ut dolor sit</p>
         <button className='px-3 py-3'>View vertual wallet rates</button>
+
+        <div className='col-11 p-5 mt-5 mb-0 bg-opacity-25 bg-light border border-3 rounded position-relative'>
+          <div className='position-absolute top-100 start-100 translate-middle '>
+          <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g filter="url(#filter0_d_203_4174)">
+          <circle cx="40" cy="37" r="37" fill="#F5A414"/>
+          </g>
+          <path d="M56.9439 33.9074C56.9439 29.7791 55.1688 25.82 52.0091 22.9009C48.8494 19.9817 44.564 18.3418 40.0955 18.3418C35.627 18.3418 31.3415 19.9817 28.1819 22.9009C25.0222 25.82 23.2471 29.7791 23.2471 33.9074" stroke="#333333" stroke-width="2.52991" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M19.04 42.5421V38.892C19.0402 38.0242 19.3543 37.1814 19.9324 36.4974C20.5105 35.8135 21.3195 35.3277 22.2307 35.1173L25.8952 34.269C26.0815 34.2261 26.2758 34.223 26.4635 34.2599C26.6512 34.2968 26.8273 34.3727 26.9785 34.4818C27.1298 34.591 27.2521 34.7305 27.3363 34.8898C27.4204 35.0491 27.4642 35.2241 27.4643 35.4014V46.0307C27.4646 46.2084 27.421 46.3838 27.3369 46.5435C27.2527 46.7033 27.1302 46.8432 26.9787 46.9526C26.8272 47.062 26.6507 47.138 26.4625 47.1748C26.2744 47.2116 26.0797 47.2083 25.8931 47.1651L22.2286 46.3187C21.3177 46.1079 20.5093 45.6219 19.9316 44.9381C19.3539 44.2542 19.0401 43.4115 19.04 42.544V42.5421Z" stroke="#333333" stroke-width="2.52991"/>
+          <path d="M61.1596 42.5421V38.892C61.1594 38.0242 60.8453 37.1814 60.2672 36.4974C59.6891 35.8135 58.8801 35.3277 57.9689 35.1173L54.3044 34.269C54.1182 34.2261 53.9238 34.223 53.7361 34.2599C53.5484 34.2968 53.3723 34.3727 53.2211 34.4818C53.0698 34.591 52.9475 34.7305 52.8634 34.8898C52.7792 35.0491 52.7354 35.2241 52.7354 35.4014V46.0307C52.7351 46.2082 52.7786 46.3834 52.8627 46.5429C52.9467 46.7025 53.069 46.8423 53.2202 46.9516C53.3715 47.061 53.5478 47.1371 53.7356 47.174C53.9235 47.211 54.118 47.208 54.3044 47.1651L57.9689 46.3187C58.8801 46.1083 59.6891 45.6225 60.2672 44.9386C60.8453 44.2546 61.1594 43.4118 61.1596 42.544V42.5421Z" stroke="#333333" stroke-width="2.52991"/>
+          <path d="M56.9524 47.5288V48.5017C56.9524 49.5337 56.5086 50.5235 55.7187 51.2533C54.9288 51.9831 53.8574 52.3931 52.7403 52.3931H45.3691" stroke="#333333" stroke-width="2.52991"/>
+          <path d="M43.2556 55.3102H36.9374C36.0996 55.3102 35.296 55.0028 34.7036 54.4554C34.1112 53.9081 33.7783 53.1657 33.7783 52.3917C33.7783 51.6176 34.1112 50.8753 34.7036 50.328C35.296 49.7806 36.0996 49.4731 36.9374 49.4731H43.2556C44.0934 49.4731 44.8969 49.7806 45.4894 50.328C46.0818 50.8753 46.4146 51.6176 46.4146 52.3917C46.4146 53.1657 46.0818 53.9081 45.4894 54.4554C44.8969 55.0028 44.0934 55.3102 43.2556 55.3102Z" stroke="#333333" stroke-width="2.52991"/>
+          <defs>
+          <filter id="filter0_d_203_4174" x="0.470085" y="0" width="79.0598" height="79.0598" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+          <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+          <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+          <feOffset dy="2.52991"/>
+          <feGaussianBlur stdDeviation="1.26496"/>
+          <feComposite in2="hardAlpha" operator="out"/>
+          <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+          <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_203_4174"/>
+          <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_203_4174" result="shape"/>
+          </filter>
+          </defs>
+          </svg>
+          <p className='text-warning '>Get Help</p>
+          </div>
+          <div className='row p-3'>
+            <div className='col'>
+          <div className='d-flex bg-opacity-75 bg-light gap-3 border rounded border-3'>
+            <Image src="/flags/image 8.png"  alt=""  width="130" height="85" className=' '/>
+            <div className=' '>
+              <p className='text-dark'>Buying</p>
+              <p className='text-dark fw-bold'>258.3525</p>
+            </div>
+            <div className=' '>
+              <p className='text-dark'>Selling</p>
+              <p className='text-dark fw-bold'>258.3525</p>
+            </div> 
+          </div>
+          </div>
+
+          <div className='col'>
+          <div className='d-flex bg-opacity-75 bg-light gap-3 border rounded border-3'>
+            <Image src="/flags/image 12.png"  alt=""  width="130" height="85" className=''/>
+            <div className=' '>
+              <p className='text-dark'>Buying</p>
+              <p className='text-dark fw-bold'>258.3525</p>
+            </div>
+            <div className=' '>
+              <p className='text-dark'>Selling</p>
+              <p className='text-dark fw-bold'>258.3525</p>
+            </div> 
+          </div>
+          </div>
+
+          <div className='col'>
+          <div className='d-flex bg-opacity-75 bg-light gap-3 border rounded border-3'>
+            <Image src="/flags/image 11.png"  alt=""  width="130" height="85" className=''/>
+            <div className=' '>
+              <p className='text-dark'>Buying</p>
+              <p className='text-dark fw-bold'>258.3525</p>
+            </div>
+            <div className=' '>
+              <p className='text-dark'>Selling</p>
+              <p className='text-dark fw-bold'>258.3525</p>
+            </div> 
+          </div>
+          </div>
+          
+          </div>
+
+          <div className={showMore ? 'row p-3' : 'd-none'}>
+            <div className='col'>
+          <div className='d-flex bg-opacity-75 bg-light gap-3 border-1 border rounded border-3'>
+            <Image src="/flags/image 9.png"  alt=""  width="130" height="85" className=''/>
+            <div className=' '>
+              <p className='text-dark'>Buying</p>
+              <p className='text-dark fw-bold'>258.3525</p>
+            </div>
+            <div className=' '>
+              <p className='text-dark'>Selling</p>
+              <p className='text-dark fw-bold'>258.3525</p>
+            </div> 
+          </div>
+          </div>
+
+          <div className='col'>
+          <div className='d-flex bg-opacity-75 bg-light gap-3 border rounded border-3'>
+            <Image src="/flags/image 10.png"  alt=""  width="130" height="85" className=''/>
+            <div className=' '>
+              <p className='text-dark'>Buying</p>
+              <p className='text-dark fw-bold'>258.3525</p>
+            </div>
+            <div className=' '>
+              <p className='text-dark'>Selling</p>
+              <p className='text-dark fw-bold'>258.3525</p>
+            </div> 
+          </div>
+          </div>
+
+          <div className='col'>
+          <div className='d-flex bg-opacity-75 bg-light gap-3 border rounded border-3'>
+            <Image src="/flags/image 13.png"  alt=""  width="130" height="85" className=''/>
+            <div className=' '>
+              <p className='text-dark'>Buying</p>
+              <p className='text-dark fw-bold'>258.3525</p>
+            </div>
+            <div className=' '>
+              <p className='text-dark'>Selling</p>
+              <p className='text-dark fw-bold'>258.3525</p>
+            </div> 
+          </div>
+          </div>
+          
+          </div>
+
+           <div className={showMore ? 'row p-3' : 'd-none'}>
+
+            <div className='col'>
+          <div className='d-flex bg-opacity-75 bg-light gap-3 border rounded border-3'>
+            <Image src="/flags/image 11.png"  alt=""  width="130" height="85" className=''/>
+            <div className=' '>
+              <p className='text-dark'>Buying</p>
+              <p className='text-dark fw-bold'>258.3525</p>
+            </div>
+            <div className=' '>
+              <p className='text-dark'>Selling</p>
+              <p className='text-dark fw-bold'>258.3525</p>
+            </div> 
+          </div>
+          </div>
+
+          <div className='col'>
+          <div className='d-flex bg-opacity-75 bg-light gap-3 border rounded border-3'>
+            <Image src="/flags/image 13 (1).png"  alt=""  width="130" height="85" className=''/>
+            <div className=' '>
+              <p className='text-dark'>Buying</p>
+              <p className='text-dark fw-bold'>258.3525</p>
+            </div>
+            <div className=' '>
+              <p className='text-dark'>Selling</p>
+              <p className='text-dark fw-bold'>258.3525</p>
+            </div> 
+          </div>
+          </div>
+
+          <div className='col'>
+          <div className='d-flex bg-opacity-75 bg-light gap-3 border rounded border-3'>
+            <Image src="/flags/image 8 (1).png"  alt=""  width="130" height="85" className=''/>
+            <div className=' '>
+              <p className='text-dark'>Buying</p>
+              <p className='text-dark fw-bold'>258.3525</p>
+            </div>
+            <div className=' '>
+              <p className='text-dark'>Selling</p>
+              <p className='text-dark fw-bold'>258.3525</p>
+            </div> 
+          </div>
+          </div>
+          
+          
+          </div>
+
+          <button onClick={toggleRows} className='bg-transparent text-light'>
+          {showMore ? 'See Less' : 'See All'}
+          {showMore ? <IoIosArrowUp /> : <IoIosArrowDown />}
+          </button>
+
+
+          
+          
+
+
+        </div>
+
       </div>
+
+
       {/* table */}
       <div className={`${styles.priceTable} d-flex flex-column text-center w-100 justify-content-center align-items-center`}>
         <h3>TODAY RATINGS</h3>
@@ -85,9 +271,9 @@ export default function Home() {
         </div>
         <div className="col-8 ">
           <div className='row  '>
-            <div className='col d-flex' >
-              <div className='shadow-lg p-3 mb-5 bg-body rounded' >
-                <svg width="59" height="52" viewBox="0 0 59 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <div className='col d-flex ms-5' >
+              <div className='shadow-lg p-3 mb-5 bg-body servicetiles' >
+                <svg width="59" height="52" viewBox="0 0 59 52" fill="none" xmlns="http://www.w3.org/2000/svg" className='p-1 mb-2'>
                   <path d="M42.2705 21.5328V32.959M17.0246 21.5328L17.0246 32.959M3 27.5H55M8 50H51C54.3137 50 57 47.3137 57 44V15C57 11.6863 54.3137 9 51 9H8C4.68629 9 2 11.6863 2 15V44C2 47.3137 4.68629 50 8 50ZM40 9V5C40 3.34315 38.6569 2 37 2H21C19.3431 2 18 3.34315 18 5V9H40Z" stroke="#F5A414" stroke-width="4"/>
                 </svg>
                 <h5>Instant Service</h5>
@@ -96,8 +282,8 @@ export default function Home() {
               </div>
             </div>
             <div className='col d-flex'>
-              <div className='shadow-lg p-3 mb-5 bg-body rounded'>
-              <svg width="53" height="56" viewBox="0 0 53 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <div className='shadow-lg p-3 mt-5 bg-body servicetiles position-absolute trustservice'>
+              <svg width="53" height="56" viewBox="0 0 53 56" fill="none" xmlns="http://www.w3.org/2000/svg" className='p-1 mb-2'>
                 <circle cx="11.7778" cy="43.5778" r="10.2778" stroke="#F5A414" stroke-width="3"/>
                 <circle cx="41.2221" cy="20.0222" r="10.2778" stroke="#F5A414" stroke-width="3"/>
                 <rect x="8.48076" y="11.5687" width="11.1643" height="6.22766" rx="3.11383" transform="rotate(-44.3122 8.48076 11.5687)" stroke="#F5A414" stroke-width="2"/>
@@ -117,9 +303,9 @@ export default function Home() {
             </div>
           </div>
           <div className='row '>
-            <div className='col d-flex'>
-              <div className='shadow-lg p-3 mb-5 bg-body rounded'>
-              <svg width="56" height="48" viewBox="0 0 56 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <div className='col d-flex  ms-5'>
+              <div className='shadow-lg p-3 mb-1 bg-body servicetiles verified'>
+              <svg width="56" height="48" viewBox="0 0 56 48" fill="none" xmlns="http://www.w3.org/2000/svg" className='p-1 mb-2'>
                 <path d="M2 5C2 3.34315 3.34315 2 5 2H23.6567C25.3136 2 26.6567 3.34314 26.6567 5V46H4.99999C3.34314 46 2 44.6569 2 43V5Z" stroke="#F5A414" stroke-width="4"/>
                 <path d="M28.5073 25.0598C28.5073 23.4029 29.8505 22.0598 31.5073 22.0598H50.164C51.8209 22.0598 53.164 23.4029 53.164 25.0598V43.0001C53.164 44.6569 51.8209 46.0001 50.164 46.0001H28.5073V25.0598Z" stroke="#F5A414" stroke-width="4"/>
                 <path d="M5.73071 9.46971C5.73071 8.98772 6.12145 8.59698 6.60344 8.59698H11.3057C11.7877 8.59698 12.1785 8.98772 12.1785 9.46971V11.3063C12.1785 11.7883 11.7877 12.1791 11.3057 12.1791H6.60344C6.12145 12.1791 5.73071 11.7883 5.73071 11.3063V9.46971Z" fill="#F5A414"/>
@@ -142,8 +328,8 @@ export default function Home() {
               </div>
             </div>
             <div className='col d-flex'> 
-              <div className='shadow-lg p-3 mb-5 bg-body rounded' >
-                <svg width="59" height="52" viewBox="0 0 59 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <div className='shadow-lg p-3 mt-5 bg-body servicetiles ' >
+                <svg width="59" height="52" viewBox="0 0 59 52" fill="none" xmlns="http://www.w3.org/2000/svg" className='p-1 mb-2'>
                   <path d="M42.2705 21.5328V32.959M17.0246 21.5328L17.0246 32.959M3 27.5H55M8 50H51C54.3137 50 57 47.3137 57 44V15C57 11.6863 54.3137 9 51 9H8C4.68629 9 2 11.6863 2 15V44C2 47.3137 4.68629 50 8 50ZM40 9V5C40 3.34315 38.6569 2 37 2H21C19.3431 2 18 3.34315 18 5V9H40Z" stroke="#F5A414" stroke-width="4"/>
                 </svg>
               <h5>Instant Service</h5>
@@ -201,15 +387,17 @@ export default function Home() {
        <div className='d-flex p-3 gap-5 text-start'>
 
        <div className='p-2'>
-        <svg width="31" height="26" viewBox="0 0 31 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <div className='nattasha'>
+        <svg width="31" height="26" viewBox="0 0 31 26" fill="none" xmlns="http://www.w3.org/2000/svg" >
         <path d="M13.95 3.075L8.475 13.275L5.025 14.25C5.425 13.5 5.875 12.9 6.375 12.45C6.875 11.95 7.45 11.7 8.1 11.7C9.55 11.7 10.85 12.3 12 13.5C13.2 14.65 13.8 16.15 13.8 18C13.8 19.95 13.125 21.625 11.775 23.025C10.475 24.425 8.85 25.125 6.9 25.125C5.05 25.125 3.425 24.45 2.025 23.1C0.675 21.7 0 20 0 18C0 17.2 0.15 16.275 0.45 15.225C0.8 14.175 1.425 12.8 2.325 11.1L8.325 0L13.95 3.075ZM30.825 3.075L25.35 13.275L21.975 14.25C22.325 13.5 22.75 12.9 23.25 12.45C23.8 11.95 24.375 11.7 24.975 11.7C26.425 11.7 27.75 12.3 28.95 13.5C30.15 14.65 30.75 16.15 30.75 18C30.75 19.95 30.075 21.625 28.725 23.025C27.425 24.425 25.8 25.125 23.85 25.125C22 25.125 20.375 24.45 18.975 23.1C17.625 21.7 16.95 20 16.95 18C16.95 17.2 17.1 16.275 17.4 15.225C17.7 14.175 18.3 12.8 19.2 11.1L25.275 0L30.825 3.075Z" fill="#F5A414"/>
         </svg>
-        <p> There are  of Lorem Ipsum<br/> 
+        <p className=' '> There are  of Lorem Ipsum<br/> 
         available, but the majority<br/> 
          have su alteration in some<br/> 
           form, by injected oir<br/> 
             which don`t look even<br/> 
              slightly believable.</p>
+        </div>     
        <div className="d-flex pt-3">
 				<div><Image src="/testimonial/Photo.png"  alt=""  width="50" height="50" className="rounded-circle" /></div>
 				<div className="ml-2">
@@ -228,6 +416,7 @@ export default function Home() {
             
           </div>
           </div>
+          <div className='minci'>
             <svg width="31" height="26" viewBox="0 0 31 26" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M13.95 3.075L8.475 13.275L5.025 14.25C5.425 13.5 5.875 12.9 6.375 12.45C6.875 11.95 7.45 11.7 8.1 11.7C9.55 11.7 10.85 12.3 12 13.5C13.2 14.65 13.8 16.15 13.8 18C13.8 19.95 13.125 21.625 11.775 23.025C10.475 24.425 8.85 25.125 6.9 25.125C5.05 25.125 3.425 24.45 2.025 23.1C0.675 21.7 0 20 0 18C0 17.2 0.15 16.275 0.45 15.225C0.8 14.175 1.425 12.8 2.325 11.1L8.325 0L13.95 3.075ZM30.825 3.075L25.35 13.275L21.975 14.25C22.325 13.5 22.75 12.9 23.25 12.45C23.8 11.95 24.375 11.7 24.975 11.7C26.425 11.7 27.75 12.3 28.95 13.5C30.15 14.65 30.75 16.15 30.75 18C30.75 19.95 30.075 21.625 28.725 23.025C27.425 24.425 25.8 25.125 23.85 25.125C22 25.125 20.375 24.45 18.975 23.1C17.625 21.7 16.95 20 16.95 18C16.95 17.2 17.1 16.275 17.4 15.225C17.7 14.175 18.3 12.8 19.2 11.1L25.275 0L30.825 3.075Z" fill="#F5A414"/>
         </svg>
@@ -238,10 +427,11 @@ export default function Home() {
             which don`t look even<br/> 
              slightly believable.</p>    
 				
-        
+             </div>
         </div>
 
         <div className='p-2'>
+        <div className='julia'>
         <svg width="31" height="26" viewBox="0 0 31 26" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M13.95 3.075L8.475 13.275L5.025 14.25C5.425 13.5 5.875 12.9 6.375 12.45C6.875 11.95 7.45 11.7 8.1 11.7C9.55 11.7 10.85 12.3 12 13.5C13.2 14.65 13.8 16.15 13.8 18C13.8 19.95 13.125 21.625 11.775 23.025C10.475 24.425 8.85 25.125 6.9 25.125C5.05 25.125 3.425 24.45 2.025 23.1C0.675 21.7 0 20 0 18C0 17.2 0.15 16.275 0.45 15.225C0.8 14.175 1.425 12.8 2.325 11.1L8.325 0L13.95 3.075ZM30.825 3.075L25.35 13.275L21.975 14.25C22.325 13.5 22.75 12.9 23.25 12.45C23.8 11.95 24.375 11.7 24.975 11.7C26.425 11.7 27.75 12.3 28.95 13.5C30.15 14.65 30.75 16.15 30.75 18C30.75 19.95 30.075 21.625 28.725 23.025C27.425 24.425 25.8 25.125 23.85 25.125C22 25.125 20.375 24.45 18.975 23.1C17.625 21.7 16.95 20 16.95 18C16.95 17.2 17.1 16.275 17.4 15.225C17.7 14.175 18.3 12.8 19.2 11.1L25.275 0L30.825 3.075Z" fill="#F5A414"/>
         </svg>
@@ -251,6 +441,7 @@ export default function Home() {
           form, by injected oir<br/> 
             which don`t look even<br/> 
              slightly believable.</p>
+        </div>
         <div className="d-flex pt-3">
         <div><Image src="/testimonial/Photo (2).png"  alt=""  width="50" height="50" className="rounded-circle" /></div>
 				<div className="ml-2">
@@ -269,6 +460,7 @@ export default function Home() {
 				</div>
         
         </div>
+        <div className='john'>
         <svg width="31" height="26" viewBox="0 0 31 26" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M13.95 3.075L8.475 13.275L5.025 14.25C5.425 13.5 5.875 12.9 6.375 12.45C6.875 11.95 7.45 11.7 8.1 11.7C9.55 11.7 10.85 12.3 12 13.5C13.2 14.65 13.8 16.15 13.8 18C13.8 19.95 13.125 21.625 11.775 23.025C10.475 24.425 8.85 25.125 6.9 25.125C5.05 25.125 3.425 24.45 2.025 23.1C0.675 21.7 0 20 0 18C0 17.2 0.15 16.275 0.45 15.225C0.8 14.175 1.425 12.8 2.325 11.1L8.325 0L13.95 3.075ZM30.825 3.075L25.35 13.275L21.975 14.25C22.325 13.5 22.75 12.9 23.25 12.45C23.8 11.95 24.375 11.7 24.975 11.7C26.425 11.7 27.75 12.3 28.95 13.5C30.15 14.65 30.75 16.15 30.75 18C30.75 19.95 30.075 21.625 28.725 23.025C27.425 24.425 25.8 25.125 23.85 25.125C22 25.125 20.375 24.45 18.975 23.1C17.625 21.7 16.95 20 16.95 18C16.95 17.2 17.1 16.275 17.4 15.225C17.7 14.175 18.3 12.8 19.2 11.1L25.275 0L30.825 3.075Z" fill="#F5A414"/>
         </svg>
@@ -278,6 +470,7 @@ export default function Home() {
           form, by injected oir<br/> 
             which don`t look even<br/> 
              slightly believable.</p>
+        </div>
 
 			</div>
        </div>

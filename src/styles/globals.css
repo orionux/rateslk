@@ -29,7 +29,39 @@
   color: gold;
 }
 
+.nattasha {
+  background: linear-gradient(180deg, #FFF8F0 -30.47%, rgba(255, 255, 255, 0.00) 154.12%), rgba(255, 255, 255, 0.49);
 
+}
+
+.minci {
+  background: linear-gradient(181deg, rgba(255, 255, 255, 0.00) -30.29%, #F0FDFF 124.81%);
+}
+
+.julia {
+  background: linear-gradient(180deg, #FFF4F8 -30.47%, rgba(255, 255, 255, 0.00) 154.12%);
+}
+
+.john {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) -30.56%, #F0FFED 135.08%);
+}
+
+.servicetiles {
+  width: 21rem;
+  height: 15rem;
+  border-radius: 29px;
+  flex-shrink: 0;
+  
+}
+
+.trustservice {
+  padding-left: 0px;
+}
+
+.verified {
+  padding-left: 0px;
+
+}
 
 @media screen and (max-width: 992px) {
   :root {
