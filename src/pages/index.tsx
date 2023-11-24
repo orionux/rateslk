@@ -427,21 +427,21 @@ export default function Home() {
         <h3 className='mb-5'>Get In Touch</h3>
         <form action="" className={` ${styles.FormContactUs}`}>
           <div className="d-flex flex-column flex-lg-row">
-            <div className="col-6 d-flex flex-column align-items-start px-2">
+            <div className="col-12 col-lg-6 d-flex flex-column align-items-start px-2">
               <label htmlFor="fullName">Full Name</label>
               <input type="text" placeholder='your full name here' name='fullName' id='fullName' />
             </div>
-            <div className="col-6 d-flex flex-column align-items-start  px-2">
+            <div className="col-12 col-lg-6 d-flex flex-column align-items-start  px-2">
               <label htmlFor="email">Email Address</label>
               <input type="email" placeholder='support@crptop.com' name='email' id='email' />
             </div>
           </div>
           <div className="d-flex flex-column flex-lg-row">
-            <div className="col-6 d-flex flex-column align-items-start  px-2">
+            <div className="col-12 col-lg-6 d-flex flex-column align-items-start  px-2">
               <label htmlFor="phoneNumber">Phone Number</label>
               <input type="tel" placeholder='your phone number' name='phoneNumber' id='phoneNumber' />
             </div>
-            <div className="col-6 d-flex flex-column align-items-start  px-2">
+            <div className="col-12 col-lg-6 d-flex flex-column align-items-start  px-2">
               <label htmlFor="subject">Subject</label>
               <input type="text" placeholder='how can we help' name='subject' id='subject' />
             </div>
