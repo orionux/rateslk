@@ -117,7 +117,7 @@ export default function Home() {
         <span className={`px-3 py-1 mb-0 ${styles.UpdatedTxt}`}>Updated on March 31, 2022</span>
         <h2 className='mb-3'>Your Gateway To <span>Daily Rate</span> <br /> Fluctuations</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut <br /> labore et dolore magna aliqua ut dolor sit</p>
-        <button className='px-3 py-3'>View vertual wallet rates</button>
+        <button className={`px-3 py-3`}>View vertual wallet rates</button>
 
         <div className='col-11 p-5 mt-5 mb-0 bg-opacity-25 bg-light border border-3 rounded position-relative'>
           <div className='row p-3'>

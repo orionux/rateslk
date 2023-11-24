@@ -68,12 +68,16 @@
   background-color: var(--color-primary);
   color: var(--color-secondary);
   text-transform: uppercase;
-  border: none;
+  border: solid 1px var(--color-primary);
   outline: none;
   font-size: var(--font-18);
   font-weight: 600;
+  transition: color 0.5s ease-in, background-color 0.5s ease-in;
 }
-
+.hero button:hover{
+  color: var(--color-primary);
+  background-color: var(--color-secondary);
+}
 
 /* table */
 .priceTable {
