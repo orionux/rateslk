@@ -376,17 +376,17 @@ export default function Home() {
         </div>
       </div>
       {/* experience */}
-      <div className={`${styles.experience} d-flex flex-column flex-lg-row w-100 justify-content-center align-items-center`}>
-        <div className={`${styles.leftImgWrapper} col-6 d-flex justify-content-center align-items-center px-2 px-lg-5`}>
+      <div className={`${styles.experience} d-flex flex-column flex-lg-row w-100 justify-content-center align-items-center py-5`}>
+        <div className={`${styles.leftImgWrapper} col-12 col-lg-6 d-flex justify-content-center align-items-center px-2 px-lg-5`}>
           <Image src="/layoutimg/experience.png" alt='' width={300} height={200} className='img-fluid'></Image>
         </div>
-        <div className="col-6 d-flex flex-column justify-content-center align-items-start text-start px-2 px-lg-5">
+        <div className="col-12 col-lg-6 d-flex flex-column justify-content-center align-items-start text-start px-2 px-lg-5 py-5">
           <h3>We are the <span>First Trusted</span> and <span>Experienced Team</span> in Sri Lanka</h3>
           <p className='mb-5'>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do <br />
             eiusmod tempor incididunt ut labore et dolore magna aliqua ut <br />
             dolor sit</p>
           <div className="d-flex flex-column flex-lg-row w-100">
-            <div className="col-6 d-flex flex-row justify-content-center align-items-center p-3">
+            <div className="col-12 col-lg-6 d-flex flex-row justify-content-center align-items-center p-3">
               <svg xmlns="http://www.w3.org/2000/svg" width="58" height="57" viewBox="0 0 58 57" fill="none">
                 <path d="M51.931 5.3674L48.0862 13.8527C47.9099 14.2417 47.8188 14.6638 47.8188 15.0908V52.9396C47.8188 54.0442 48.7142 54.9396 49.8188 54.9396H54.9541C56.0587 54.9396 56.9541 54.0442 56.9541 52.9396V15.0908C56.9541 14.6638 56.8629 14.2417 56.6867 13.8527L52.8419 5.3674C52.6645 4.97589 52.1084 4.97589 51.931 5.3674Z" stroke="#F5A414" strokeWidth="2" />
                 <path d="M47.8188 15.0908H52.9574H56.9541" stroke="#F5A414" strokeWidth="2" />
@@ -402,7 +402,7 @@ export default function Home() {
               <p className={`${styles.yearTxtWhite} mb-0 ps-3`}>99.9% <br />
                 Case Success</p>
             </div>
-            <div className="col-6 d-flex flex-row justify-content-center align-items-center p-3" style={{ backgroundColor: "#F5A414" }}>
+            <div className="col-12 col-lg-6 d-flex flex-row justify-content-center align-items-center p-3" style={{ backgroundColor: "#F5A414" }}>
               <div className="d-flex p-2 rounded-2" style={{ backgroundColor: "#333" }}>
                 <h3 className={`${styles.yearNumbers} mb-0`}>15+</h3>
               </div>

@@ -229,6 +229,12 @@
   font-size: var(--font-22) !important;
   font-weight: 400;
 }
+@media screen and (max-width: 992px){
+  .experience {
+    padding: 20px;
+  }
+}
+
 
 
 /* testimonials */
