@@ -481,3 +481,14 @@
   font-family: var(--font-family-secondary) !important;
   text-transform: none !important;
 }
+
+
+
+/* socialIconStyle */
+.socialIconStyle{
+  color: #fff;
+  transition: color 0.5s ease-in;
+}
+.socialIconStyle:hover{
+  color: var(--color-primary);
+}

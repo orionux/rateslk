@@ -128,7 +128,7 @@ const Footer = () => {
               socialMedia.map((socialLink) => {
                 return (
                   <>
-                    <Link className='text-white ps-3' href={socialLink.link}>{socialLink.icon}</Link>
+                    <Link className={`text-white ps-3 ${styles.socialIconStyle}`} href={socialLink.link}>{socialLink.icon}</Link>
                   </>
                 )
               })
