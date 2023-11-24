@@ -119,152 +119,156 @@ export default function Home() {
         <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut <br /> labore et dolore magna aliqua ut dolor sit</p>
         <button className={`px-3 py-3`}>View vertual wallet rates</button>
 
-        <div className='col-11 p-5 mt-5 mb-0 bg-opacity-25 bg-light border border-3 rounded position-relative'>
+       <div className='col-11 p-5 mt-5 mb-0 bg-opacity-25 bg-light border border-3 rounded position-relative'>
+
           <div className='row p-3'>
-            <div className='col'>
-              <div className='d-flex bg-opacity-75 bg-light gap-3 border rounded border-3'>
-                <Image src="/flags/image 8.png" alt="" width="130" height="85" className=' ' />
-                <div className=' '>
-                  <p className='text-dark'>Buying</p>
-                  <p className='text-dark fw-bold'>258.3525</p>
-                </div>
-                <div className=' '>
-                  <p className='text-dark'>Selling</p>
-                  <p className='text-dark fw-bold'>258.3525</p>
-                </div>
-              </div>
-            </div>
-
-            <div className='col'>
-              <div className='d-flex bg-opacity-75 bg-light gap-3 border rounded border-3'>
-                <Image src="/flags/image 12.png" alt="" width="130" height="85" className='' />
-                <div className=' '>
-                  <p className='text-dark'>Buying</p>
-                  <p className='text-dark fw-bold'>258.3525</p>
-                </div>
-                <div className=' '>
-                  <p className='text-dark'>Selling</p>
-                  <p className='text-dark fw-bold'>258.3525</p>
+              <div className='col'>
+                <div className='d-flex bg-opacity-75 bg-light gap-3 border rounded border-3'>
+                      <Image src="/flags/image 8.png" alt="" width="130" height="85" className=' ' />
+                      <div className=' '>
+                        <p className='text-dark'>Buying</p>
+                        <p className='text-dark fw-bold'>258.3525</p>
+                      </div>
+                      <div className=' '>
+                        <p className='text-dark'>Selling</p>
+                        <p className='text-dark fw-bold'>258.3525</p>
+                      </div>
                 </div>
               </div>
-            </div>
-
-            <div className='col'>
-              <div className='d-flex bg-opacity-75 bg-light gap-3 border rounded border-3'>
-                <Image src="/flags/image 11.png" alt="" width="130" height="85" className='' />
-                <div className=' '>
-                  <p className='text-dark'>Buying</p>
-                  <p className='text-dark fw-bold'>258.3525</p>
-                </div>
-                <div className=' '>
-                  <p className='text-dark'>Selling</p>
-                  <p className='text-dark fw-bold'>258.3525</p>
+          
+              <div className='col'>
+                <div className='d-flex bg-opacity-75 bg-light gap-3 border rounded border-3'>
+                      <Image src="/flags/image 12.png" alt="" width="130" height="85" className='' />
+                      <div className=' '>
+                        <p className='text-dark'>Buying</p>
+                        <p className='text-dark fw-bold'>258.3525</p>
+                      </div>
+                      <div className=' '>
+                        <p className='text-dark'>Selling</p>
+                        <p className='text-dark fw-bold'>258.3525</p>
+                      </div>
                 </div>
               </div>
-            </div>
 
+              <div className='col'>
+                <div className='d-flex bg-opacity-75 bg-light gap-3 border rounded border-3'>
+                        <Image src="/flags/image 11.png" alt="" width="130" height="85" className='' />
+                        <div className=' '>
+                          <p className='text-dark'>Buying</p>
+                          <p className='text-dark fw-bold'>258.3525</p>
+                        </div>
+                        <div className=' '>
+                          <p className='text-dark'>Selling</p>
+                          <p className='text-dark fw-bold'>258.3525</p>
+                        </div>
+                </div>
+              </div>
           </div>
 
           <div className={showMore ? 'row p-3' : 'd-none'}>
-            <div className='col'>
-              <div className='d-flex bg-opacity-75 bg-light gap-3 border-1 border rounded border-3'>
-                <Image src="/flags/image 9.png" alt="" width="130" height="85" className='' />
-                <div className=' '>
-                  <p className='text-dark'>Buying</p>
-                  <p className='text-dark fw-bold'>258.3525</p>
-                </div>
-                <div className=' '>
-                  <p className='text-dark'>Selling</p>
-                  <p className='text-dark fw-bold'>258.3525</p>
+                  <div className='col'>
+                    <div className='d-flex bg-opacity-75 bg-light gap-3 border-1 border rounded border-3'>
+                          <Image src="/flags/image 9.png" alt="" width="130" height="85" className='' />
+                          <div className=' '>
+                            <p className='text-dark'>Buying</p>
+                            <p className='text-dark fw-bold'>258.3525</p>
+                          </div>
+                          <div className=' '>
+                            <p className='text-dark'>Selling</p>
+                            <p className='text-dark fw-bold'>258.3525</p>
+                          </div>
+                    </div>
+                  </div>
+
+                  <div className='col'>
+                    <div className='d-flex bg-opacity-75 bg-light gap-3 border rounded border-3'>
+                            <Image src="/flags/image 10.png" alt="" width="130" height="85" className='' />
+                            <div className=' '>
+                              <p className='text-dark'>Buying</p>
+                              <p className='text-dark fw-bold'>258.3525</p>
+                            </div>
+                            <div className=' '>
+                              <p className='text-dark'>Selling</p>
+                              <p className='text-dark fw-bold'>258.3525</p>
+                            </div>
+                    </div>
+                  </div>
+
+              <div className='col'>
+                <div className='d-flex bg-opacity-75 bg-light gap-3 border rounded border-3'>
+                      <Image src="/flags/image 13.png" alt="" width="130" height="85" className='' />
+                      <div className=' '>
+                        <p className='text-dark'>Buying</p>
+                        <p className='text-dark fw-bold'>258.3525</p>
+                      </div>
+                      <div className=' '>
+                        <p className='text-dark'>Selling</p>
+                        <p className='text-dark fw-bold'>258.3525</p>
+                      </div>
                 </div>
               </div>
-            </div>
-
-            <div className='col'>
-              <div className='d-flex bg-opacity-75 bg-light gap-3 border rounded border-3'>
-                <Image src="/flags/image 10.png" alt="" width="130" height="85" className='' />
-                <div className=' '>
-                  <p className='text-dark'>Buying</p>
-                  <p className='text-dark fw-bold'>258.3525</p>
-                </div>
-                <div className=' '>
-                  <p className='text-dark'>Selling</p>
-                  <p className='text-dark fw-bold'>258.3525</p>
-                </div>
-              </div>
-            </div>
-
-            <div className='col'>
-              <div className='d-flex bg-opacity-75 bg-light gap-3 border rounded border-3'>
-                <Image src="/flags/image 13.png" alt="" width="130" height="85" className='' />
-                <div className=' '>
-                  <p className='text-dark'>Buying</p>
-                  <p className='text-dark fw-bold'>258.3525</p>
-                </div>
-                <div className=' '>
-                  <p className='text-dark'>Selling</p>
-                  <p className='text-dark fw-bold'>258.3525</p>
-                </div>
-              </div>
-            </div>
-
           </div>
-
+          
           <div className={showMore ? 'row p-3' : 'd-none'}>
 
-            <div className='col'>
-              <div className='d-flex bg-opacity-75 bg-light gap-3 border rounded border-3'>
-                <Image src="/flags/image 11.png" alt="" width="130" height="85" className='' />
-                <div className=' '>
-                  <p className='text-dark'>Buying</p>
-                  <p className='text-dark fw-bold'>258.3525</p>
+                <div className='col'>
+                  <div className='d-flex bg-opacity-75 bg-light gap-3 border rounded border-3'>
+                        <Image src="/flags/image 11.png" alt="" width="130" height="85" className='' />
+                        <div className=' '>
+                          <p className='text-dark'>Buying</p>
+                          <p className='text-dark fw-bold'>258.3525</p>
+                        </div>
+                        <div className=' '>
+                          <p className='text-dark'>Selling</p>
+                          <p className='text-dark fw-bold'>258.3525</p>
+                        </div>
+                  </div>
                 </div>
-                <div className=' '>
-                  <p className='text-dark'>Selling</p>
-                  <p className='text-dark fw-bold'>258.3525</p>
+
+                <div className='col'>
+                  <div className='d-flex bg-opacity-75 bg-light gap-3 border rounded border-3'>
+                    <Image src="/flags/image 13 (1).png" alt="" width="130" height="85" className='' />
+                    <div className=' '>
+                      <p className='text-dark'>Buying</p>
+                      <p className='text-dark fw-bold'>258.3525</p>
+                    </div>
+                    <div className=' '>
+                      <p className='text-dark'>Selling</p>
+                      <p className='text-dark fw-bold'>258.3525</p>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
 
-            <div className='col'>
-              <div className='d-flex bg-opacity-75 bg-light gap-3 border rounded border-3'>
-                <Image src="/flags/image 13 (1).png" alt="" width="130" height="85" className='' />
-                <div className=' '>
-                  <p className='text-dark'>Buying</p>
-                  <p className='text-dark fw-bold'>258.3525</p>
+                <div className='col'>
+                  <div className='d-flex bg-opacity-75 bg-light gap-3 border rounded border-3'>
+                    <Image src="/flags/image 8 (1).png" alt="" width="130" height="85" className='' />
+                    <div className=' '>
+                      <p className='text-dark'>Buying</p>
+                      <p className='text-dark fw-bold'>258.3525</p>
+                    </div>
+                    <div className=' '>
+                      <p className='text-dark'>Selling</p>
+                      <p className='text-dark fw-bold'>258.3525</p>
+                    </div>
+                  </div>
                 </div>
-                <div className=' '>
-                  <p className='text-dark'>Selling</p>
-                  <p className='text-dark fw-bold'>258.3525</p>
-                </div>
-              </div>
-            </div>
+          </div>      
+      
 
-            <div className='col'>
-              <div className='d-flex bg-opacity-75 bg-light gap-3 border rounded border-3'>
-                <Image src="/flags/image 8 (1).png" alt="" width="130" height="85" className='' />
-                <div className=' '>
-                  <p className='text-dark'>Buying</p>
-                  <p className='text-dark fw-bold'>258.3525</p>
-                </div>
-                <div className=' '>
-                  <p className='text-dark'>Selling</p>
-                  <p className='text-dark fw-bold'>258.3525</p>
-                </div>
-              </div>
-            </div>
+        <button onClick={toggleRows} className='bg-transparent text-light'>
+          {showMore ? 'See Less' : 'See All'}
+          {showMore ? <IoIosArrowUp /> : <IoIosArrowDown />}
+        </button>
 
 
-          </div>
 
-          <button onClick={toggleRows} className='bg-transparent text-light'>
-            {showMore ? 'See Less' : 'See All'}
-            {showMore ? <IoIosArrowUp /> : <IoIosArrowDown />}
-          </button>
 
-        </div>
+
 
       </div>
+
+      </div>
+
       {/* table */}
       <div className={`${styles.priceTable} d-flex flex-column text-center w-100 justify-content-center align-items-center`}>
         <h3>TODAY RATINGS</h3>
