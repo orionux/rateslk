@@ -85,7 +85,7 @@ export default function Home() {
           </>
         ) : (
           <>
-            <div className={`d-flex flex-column ${styles.testimonialsCard}`}>
+            <div className={`d-flex flex-column-reverse flex-lg-column ${styles.testimonialsCard}`}>
               <div className="d-flex align-items-center pt-3">
                 <div>
                   <Image src={testimonial.image} alt="" width={100} height={100} className="rounded-circle" />
@@ -413,12 +413,12 @@ export default function Home() {
         </div>
       </div>
       {/* testimonials */}
-      <div className={`${styles.testimonials} d-flex flex-column w-100 justify-content-center align-items-center text-center`}>
+      <div className={`${styles.testimonials} d-flex flex-column w-100 justify-content-center align-items-center text-center py-5`}>
         <h3>What Our Clients Say <span> About </span>Us</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore <br />
           magna aliqua ut dolor sit</p>
 
-        <div className='d-flex p-3 gap-5 text-start'>
+        <div className='d-flex flex-column flex-lg-row p-0 p-lg-3 gap-lg-5 text-start'>
           {renderTestimonials()}
         </div>
       </div>
