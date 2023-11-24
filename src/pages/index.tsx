@@ -113,7 +113,7 @@ export default function Home() {
       <GetHelpButton />
 
       {/* hero */}
-      <div className={`${styles.hero} d-flex flex-column text-center w-100 justify-content-center align-items-center`}>
+      <div className={`${styles.hero} d-flex flex-column text-center w-100 justify-content-center align-items-center py-5`}>
         <span className={`px-3 py-1 mb-0 ${styles.UpdatedTxt}`}>Updated on March 31, 2022</span>
         <h2 className='mb-3'>Your Gateway To <span>Daily Rate</span> <br /> Fluctuations</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut <br /> labore et dolore magna aliqua ut dolor sit</p>
