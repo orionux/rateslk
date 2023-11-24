@@ -8,7 +8,22 @@
   --font-72: 72px;
   --font-30: 30px;
   --font-20: 20px;
+  --font-20-footer: 20px;
   --font-15: 15px;
+  --font-28: 28px;
+
+  --color-primary: #F5A414;
+  --color-white: #fff;
+  --color-secondary: #333;
+  --color-table-green: #00F9191F;
+  --color-table-purple: #9000F91F;
+  --color-light-green: #CAFFAA;
+  --color-dark-green: #289AB0;
+  --color-light-pink: #FFE1ED;
+  --color-dark-pink: #C5819C;
+
+  --font-family-primary: 'Inter', sans-serif;
+  --font-family-secondary: 'Ubuntu', sans-serif;
 }
 
 @media screen and (max-width: 1400px) {
@@ -21,50 +36,18 @@
     --font-30: 30px;
     --font-20: 18px;
     --font-15: 12px;
+    --font-28: 22px;
+    --font-20-footer: 16px;
     --bs-table-bg: #333 !important;
   }
 }
 
-.gold-text {
-  color: gold;
-}
 
-.nattasha {
-  background: linear-gradient(180deg, #FFF8F0 -30.47%, rgba(255, 255, 255, 0.00) 154.12%), rgba(255, 255, 255, 0.49);
 
-}
 
-.minci {
-  background: linear-gradient(181deg, rgba(255, 255, 255, 0.00) -30.29%, #F0FDFF 124.81%);
-}
 
-.julia {
-  background: linear-gradient(180deg, #FFF4F8 -30.47%, rgba(255, 255, 255, 0.00) 154.12%);
-}
 
-.john {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) -30.56%, #F0FFED 135.08%);
-}
-
-.servicetiles {
-  width: 18rem;
-  height: 13rem;
-  border-radius: 29px;
-  flex-shrink: 0;
-  font-size: 70%;
-  
-}
-
-.trustservice {
-  padding-left: 0px;
-}
-
-.verified {
-  padding-left: 0px;
-
-}
-
-@media screen and (max-width: 992px) {
+/* @media screen and (max-width: 992px) {
   :root {
     
   }
@@ -74,7 +57,7 @@
   :root {
     
   }
-}
+} */
 
 * {
   box-sizing: border-box;
@@ -98,7 +81,7 @@ a {
 }
 
 h1, h2, h3, h4, h5, h6, p, a, ul, ol, li, span, input, select, option, button, textarea, div{
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-family-primary)
 } 
 
 table{

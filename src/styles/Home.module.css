@@ -16,13 +16,13 @@
 
 /* header */
 .nav-link {
-  color: #333333 !important;
+  color: var(--color-secondary) !important;
   font-weight: 500;
   font-size: var(--font-18) !important;
 }
 
 .navButton {
-  background-color: #F5A414;
+  background-color: var(--color-primary);
   border-radius: 6px;
 }
 
@@ -45,66 +45,75 @@
 }
 
 .hero h2 {
-  color: #ffffff;
+  color: var(--color-white);
   font-size: var(--font-72);
   font-weight: 700;
   font-family: 'Ubuntu', sans-serif !important;
 }
 
 .hero h2 span {
-  color: #F5A414;
+  color: var(--color-primary);
   font-size: var(--font-72);
   font-weight: 700;
 }
 
 .hero p {
-  color: #ffffff;
+  color: var(--color-white);
   font-size: var(--font-18);
   font-weight: 300;
   line-height: 26px;
 }
 
 .hero button {
-  background-color: #F5A414;
-  color: #333333;
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
   text-transform: uppercase;
-  border: none;
+  border: solid 1px var(--color-primary);
   outline: none;
   font-size: var(--font-18);
   font-weight: 600;
+  transition: color 0.5s ease-in, background-color 0.5s ease-in;
 }
-
+.hero button:hover{
+  color: var(--color-primary);
+  background-color: var(--color-secondary);
+}
 
 /* table */
 .priceTable {
-  background-color: #fff;
+  background-color: var(--color-white);
   min-height: 80vh;
   padding: 100px;
 }
 
 .priceTable h3 {
-  color: #333;
+  color: var(--color-secondary);
   font-family: 'Ubuntu', sans-serif !important;
   font-size: var(--font-42);
   font-weight: 700;
 }
 
 .priceTable p {
-  color: #333;
+  color: var(--color-secondary);
   font-family: 'Ubuntu', sans-serif !important;
   font-size: var(--font-20);
   font-weight: 500;
 }
+@media screen and (max-width: 992px){
+  .priceTable {
+    padding: 20px;
+  }
+}
 
-/* table */
+/* services */
 .services {
   background-color: #F8F8F8;
-  min-height: 80vh;
+  min-height: 140vh;
   padding: 100px;
 }
 
 .leftCol h3 {
-  color: #333;
+  color: var(--color-secondary);
   font-family: 'Ubuntu', sans-serif !important;
   font-size: var(--font-40);
   font-weight: 700;
@@ -115,35 +124,95 @@
   font-weight: 400;
 }
 .leftCol span {
-  color: #F5A414;
+  color: var(--color-primary);
 }
 
 .spanRed {
-  color: #C5819C !important;
-  background-color: #FFE1ED;
+  color: var(--color-dark-pink) !important;
+  background-color: var(--color-light-pink);
   font-size: var(--font-18);
 }
 
 .spanGreen{
-  color: #289AB0 !important;
-  background-color: #CAFFAA;
+  color: var(--color-dark-green) !important;
+  background-color: var(--color-light-green);
   font-size: var(--font-18);
 }
 .services button{
   font-size: var(--font-18);
   font-weight: 500;
-  color: #333;
-  background-color: #fff;
+  color: var(--color-secondary);
+  background-color: var(--color-white);
   border: none;
   outline: none;
 }
+.rightCol p {
+  color: #797979;
+  font-size: var(--font-18);
+  font-weight: 400;
+}
+.rightCol h5 {
+  font-family: var(--font-family-secondary);
+  color: var(--color-secondary);
+  font-size: var(--font-30);
+  font-weight: 500;
+}
+.rightCol a{
+  font-family: var(--font-family-secondary);
+  color: var(--color-primary);
+  font-size: var(--font-20);
+  font-weight: 600;
+}
+.card1, .card2, .card3, .card4{
+  height: 265px !important;
+}
+.card2, .card3, .card4{
+  position: absolute;
+  bottom: 0;
+}
+.cardRow{
+  min-height: 280px;
+}
+.card1{
+  margin-bottom: 50px;
+}
+.card2{
+  margin-top: 0px;
+  margin-left: 20px;
+}
+.card3{
+  margin-bottom: 25px;
+  margin-left: 25px;
+  margin-right: -25px;
+}
+.card4{
+  margin-top: 100px;
+  margin-right: -75px;
+  margin-left: 50px;
+}
+@media screen and (max-width: 992px){
+  .services {
+    padding: 20px;
+  }
+  .card1, .card2, .card3, .card4{
+    margin: 0 !important;
+    position: relative;
+  }
+  .cardRow{
+    height: max-content;
+  }
+  .services button{
+    width: 100%;
+  }
+}
+
 
 /* table */
 .tableStyles{
   border: none !important;
 }
 .buysellbtn{
-  background-color: #F5A414;
+  background-color: var(--color-primary);
   border: none;
   font-size: var(--font-18);
   border-radius: 4px;
@@ -162,15 +231,15 @@
 }
 
 .tableHeader{
-  background-color: #333 !important;
+  background-color: var(--color-secondary) !important;
   font-size: 14px;
   font-weight: 100 !important;
 }
 .tableHeaderCellPurple{
-  background-color: #9000F91F !important;
+  background-color: var(--color-table-purple) !important;
 }
 .tableHeaderCellGreen{
-  background-color: #00F9191F !important;
+  background-color: var(--color-table-green) !important;
 }
 .purpleData{
   color: #160422 !important;
@@ -189,7 +258,7 @@
 
 /* experience */
 .experience {
-  background-color: #333333;
+  background-color: var(--color-secondary);
   min-height: 80vh;
   padding: 100px;
 }
@@ -199,7 +268,7 @@
 }
 
 .experience h3 {
-  color: #fff;
+  color: var(--color-white);
   font-family: 'Ubuntu', sans-serif !important;
   font-size: var(--font-40);
   font-weight: 700;
@@ -210,36 +279,42 @@
   font-weight: 400;
 }
 .experience span {
-  color: #F5A414;
+  color: var(--color-primary);
 }
 
 .yearNumbers{
-  color: #fff;
+  color: var(--color-white);
   font-family: 'Ubuntu', sans-serif !important;
   font-size: 30px !important;
   font-weight: 600 !important;
 }
 .yearTxtWhite{
-  color: #fff !important;
+  color: var(--color-white) !important;
   font-size: var(--font-22) !important;
   font-weight: 400;
 }
 .yearTxt{
-  color: #333 !important;
+  color: var(--color-secondary) !important;
   font-size: var(--font-22) !important;
   font-weight: 400;
 }
+@media screen and (max-width: 992px){
+  .experience {
+    padding: 20px;
+  }
+}
+
 
 
 /* testimonials */
 .testimonials {
-  background-color: #fff;
+  background-color: var(--color-white);
   min-height: 80vh;
   padding: 100px;
 }
 
 .testimonials h3 {
-  color: #333;
+  color: var(--color-secondary);
   font-family: 'Ubuntu', sans-serif !important;
   font-size: var(--font-40);
   font-weight: 700;
@@ -250,9 +325,13 @@
   font-weight: 400;
 }
 .testimonials span {
-  color: #F5A414;
+  color: var(--color-primary);
 }
-
+@media screen and (max-width: 992px){
+  .testimonials {
+    padding: 20px;
+  }
+}
 
 
 /* contact */
@@ -263,7 +342,7 @@
 }
 
 .contactForm h3 {
-  color: #333;
+  color: var(--color-secondary);
   font-family: 'Ubuntu', sans-serif !important;
   font-size: var(--font-40);
   font-weight: 700;
@@ -272,18 +351,18 @@
   width: 60vw;
 }
 .FormContactUs label{
-  color: #333;
+  color: var(--color-secondary);
   font-size: var(--font-18);
   font-weight: 700;
   margin-bottom: 10px;
 }
 .FormContactUs input, .FormContactUs textarea{
-  color: #333;
+  color: var(--color-secondary);
   font-size: var(--font-18);
   font-weight: 500;
   width: 100%;
   border: solid 1px #DADADA;
-  background-color: #fff;
+  background-color: var(--color-white);
   padding: 15px 20px;
   margin-bottom: 30px;
 }
@@ -298,24 +377,118 @@
   font-weight: 300;
 }
 .FormContactUs button{
-  background-color: #333;
-  border: none;
+  background-color: var(--color-secondary);
+  border: solid 1px var(--color-secondary);
   padding: 20px 49px 20px 49px;
-  color: #fff;
+  color: var(--color-white);
   font-size: var(--font-18);
+  transition: color 0.5s ease-in, background-color 0.5s ease-in;
+}
+.FormContactUs button:hover{
+  background-color: var(--color-white);
+  color: var(--color-secondary);
 }
 
+@media screen and (max-width: 992px){
+  .contactForm {
+    padding: 20px ;
+  }
+  .FormContactUs{
+    width: 100%;
+  }
+  .FormContactUs button{
+    width: 100%;
+  }
+}
 
 
 
 
 /* footer */
 .footerWrap{
-  background-color: #333333;
+  background-color: var(--color-secondary);
   height: auto;
   width: 100vw;
-  color: #fff !important;
-}
-.footerWrap{
+  color: var(--color-white) !important;
   
+}
+.footerWrap hr{
+  background-color: rgba(255, 255, 255, 0.30) !important;
+  color: rgba(255, 255, 255, 0.30) !important;
+}
+.footerWrap h5, .footerWrap p, .footerWrap span, .footerWrap a{
+  font-family: var(--font-family-secondary) !important;
+}
+.footerWrap h5{
+  font-size: var(--font-28);
+}
+.footerWrap p, .footerWrap span, .footerWrap a{
+  font-size: var(--font-20-footer);
+}
+.footerWrap a{
+  text-decoration: none !important;
+  color: var(--color-white);
+  transition: color 0.5s ease-in;
+}
+.footerWrap a:hover{
+  color: var(--color-primary);
+}
+.footerWrap span{
+  color: var(--color-primary);
+}
+
+.testimonial2 {
+  background: linear-gradient(181deg, rgba(255, 255, 255, 0.00) -30.29%, #F0FDFF 124.81%);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.testimonial1 {
+  background: linear-gradient(180deg, #FFF4F8 -30.47%, rgba(255, 255, 255, 0.00) 154.12%);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.testiminialDesc{
+  font-size: var(--font-18);
+  font-weight: 400;
+  color: var(--color-secondary) !important;
+}
+.testiminialName{
+  font-size: var(--font-28) !important;
+  color: var(--color-secondary) !important;
+  font-weight: 700 !important;
+}
+.testiminialRole{
+  font-size: var(--font-18) !important;
+  color: var(--color-primary) !important;
+  font-weight: 400 !important;
+}
+
+/* get help button */
+.getHelpButton{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background-color: transparent !important;
+  border: none;
+  outline: none;
+  z-index: 999;
+}
+.getHelpButton p{
+  color: var(--color-primary);
+  font-size: var(--font-20);
+  font-weight: 500;
+  font-family: var(--font-family-secondary) !important;
+  text-transform: none !important;
+}
+
+
+
+/* socialIconStyle */
+.socialIconStyle{
+  color: #fff;
+  transition: color 0.5s ease-in;
+}
+.socialIconStyle:hover{
+  color: var(--color-primary);
 }
