@@ -310,7 +310,7 @@
 .testimonials {
   background-color: var(--color-white);
   min-height: 80vh;
-  padding: 100px;
+  padding: 45px;
 }
 
 .testimonials h3 {
