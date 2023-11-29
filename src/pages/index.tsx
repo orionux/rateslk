@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import styles from '@/styles/Home.module.css'
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io';
 import GetHelpButton from '@/components/buttons/getHelpButton';
 import ExchangeRates from '@/components/buttons/ExchangeRates';
@@ -107,6 +107,23 @@ export default function Home() {
     ));
   };
 
+
+  const [exchangeRates, setExchangeRates] = useState<any>(null);
+
+  useEffect(() => {
+    const fetchExchangeRates = async () => {
+      try {
+        const response = await fetch('/api/getExchangeRates');
+        const data = await response.json();
+        console.log("Data : ", data)
+        setExchangeRates(data);
+      } catch (error) {
+        console.error('Error fetching exchange rates:', error);
+      }
+    };
+
+    fetchExchangeRates();
+  }, []);
   return (
     <>
       {/* get help button*/}
@@ -119,149 +136,152 @@ export default function Home() {
         <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut <br /> labore et dolore magna aliqua ut dolor sit</p>
         <button className={`px-3 py-3`}>View vertual wallet rates</button>
 
-       <div className='col-11 p-5 mt-5 mb-0 bg-opacity-25 bg-light border border-3 rounded position-relative'>
-
-      <div className='col-12 d-flex flex-wrap'>         
-          
-              <div className='d-flex col-12 col-md-6 col-lg-4 pb-3 justify-content-center'>
-              <div className='d-flex bg-opacity-75 bg-light gap-3 border rounded border-3 pe-3'>
-                      <Image src="/flags/image 8.png" alt="" width="130" height="75" className=' p-1 align-self-center' />
-                      <div className=' align-self-center '>
-                        <p className='text-dark mb-0'>Buying</p>
-                        <p className='text-dark fw-bold mb-0'>258.3525</p>
-                      </div>
-                      <div className='align-self-center  '>
-                        <p className='text-dark mb-0'>Selling</p>
-                        <p className='text-dark fw-bold mb-0'>258.3525</p>
-                      </div>
-                </div>
-              </div>
-          
-              <div className='d-flex col-12 col-md-6 col-lg-4 pb-3 justify-content-center'>
-              <div className='d-flex bg-opacity-75 bg-light gap-3 border rounded border-3 pe-3'>
-                      <Image src="/flags/image 12.png" alt="" width="130" height="75" className='p-1 align-self-center' />
-                      <div className=' align-self-center'>
-                        <p className='text-dark mb-0'>Buying</p>
-                        <p className='text-dark fw-bold mb-0'>258.3525</p>
-                      </div>
-                      <div className=' align-self-center'>
-                        <p className='text-dark mb-0'>Selling</p>
-                        <p className='text-dark fw-bold mb-0'>258.3525</p>
-                      </div>
-                </div>
-              </div>
-
-              <div className='d-flex col-12 col-md-6 col-lg-4 pb-3 justify-content-center'>
-              <div className='d-flex bg-opacity-75 bg-light gap-3 border rounded border-3 pe-3'>
-                        <Image src="/flags/image 11.png" alt="" width="130" height="75" className='p-1 align-self-center' />
-                        <div className=' align-self-center'>
-                          <p className='text-dark mb-0'>Buying</p>
-                          <p className='text-dark fw-bold mb-0'>258.3525</p>
-                        </div>
-                        <div className=' align-self-center'>
-                          <p className='text-dark mb-0'>Selling</p>
-                          <p className='text-dark fw-bold mb-0'>258.3525</p>
-                        </div>
-                </div>
-              </div>
-          
-
-          
-              <div className={showMore ? 'd-flex col-12 col-md-6 col-lg-4 pb-3 justify-content-center' : 'd-none'}>
-              <div className='d-flex bg-opacity-75 bg-light gap-3  border rounded border-3 pe-3'>
-                          <Image src="/flags/image 9.png" alt="" width="130" height="75" className='p-1 align-self-center' />
-                          <div className='align-self-center '>
-                            <p className='text-dark mb-0'>Buying</p>
-                            <p className='text-dark fw-bold mb-0'>258.3525</p>
-                          </div>
-                          <div className=' align-self-center'>
-                            <p className='text-dark mb-0'>Selling</p>
-                            <p className='text-dark fw-bold mb-0'>258.3525</p>
-                          </div>
+        <div className='col-11 p-5 mt-5 mb-0 bg-opacity-25 bg-light border border-3 rounded position-relative'>
+          {exchangeRates && (
+            <div className='col-12 d-flex flex-wrap'>
+              {exchangeRates.usd && (
+                <div className='d-flex col-12 col-md-6 col-lg-4 pb-3 px-2 justify-content-center'>
+                  <div className='d-flex bg-opacity-75 bg-light w-100 border rounded border-3 justify-content-between'>
+                    <Image src="/flags/usd.png" alt="" width="130" height="75" className=' p-1 align-self-center' />
+                    <div className=' align-self-center '>
+                      <p className='text-dark mb-0'>Buying</p>
+                      <p className='text-dark fw-bold mb-0'>{exchangeRates.usd.buyValue}</p>
+                    </div>
+                    <div className='align-self-center pe-2 '>
+                      <p className='text-dark mb-0'>Selling</p>
+                      <p className='text-dark fw-bold mb-0'>{exchangeRates.usd.sellValue}</p>
                     </div>
                   </div>
-
-                  <div className={showMore ? 'd-flex col-12 col-md-6 col-lg-4 pb-3 justify-content-center' : 'd-none'}>
-                  <div className='d-flex bg-opacity-75 bg-light gap-3 border rounded border-3 pe-3'>
-                            <Image src="/flags/image 10.png" alt="" width="130" height="75" className='p-1 align-self-center' />
-                            <div className='align-self-center '>
-                              <p className='text-dark mb-0'>Buying</p>
-                              <p className='text-dark fw-bold mb-0'>258.3525</p>
-                            </div>
-                            <div className=' align-self-center'>
-                              <p className='text-dark mb-0'>Selling</p>
-                              <p className='text-dark fw-bold mb-0'>258.3525</p>
-                            </div>
+                </div>
+              )}
+              {exchangeRates.gbp && (
+                <div className='d-flex col-12 col-md-6 col-lg-4 pb-3 px-2 justify-content-center'>
+                  <div className='d-flex bg-opacity-75 bg-light w-100 border rounded border-3 justify-content-between'>
+                    <Image src="/flags/gbp.png" alt="" width="130" height="75" className='p-1 align-self-center' />
+                    <div className=' align-self-center'>
+                      <p className='text-dark mb-0'>Buying</p>
+                      <p className='text-dark fw-bold mb-0'>{exchangeRates.gbp.buyValue}</p>
+                    </div>
+                    <div className=' align-self-center pe-2'>
+                      <p className='text-dark mb-0'>Selling</p>
+                      <p className='text-dark fw-bold mb-0'>{exchangeRates.gbp.sellValue}</p>
                     </div>
                   </div>
-
-                  <div className={showMore ? 'd-flex col-12 col-md-6 col-lg-4 pb-3 justify-content-center' : 'd-none'}>
-                  <div className='d-flex bg-opacity-75 bg-light gap-3 border rounded border-3 pe-3'>
-                      <Image src="/flags/image 13.png" alt="" width="130" height="85" className='p-1 align-self-center' />
-                      <div className=' align-self-center'>
-                        <p className='text-dark mb-0'>Buying</p>
-                        <p className='text-dark fw-bold mb-0'>258.3525</p>
-                      </div>
-                      <div className='align-self-center '>
-                        <p className='text-dark mb-0'>Selling</p>
-                        <p className='text-dark fw-bold mb-0'>258.3525</p>
-                      </div>
                 </div>
-              </div>
-          
-          
-          
-
-              <div className={showMore ? 'd-flex col-12 col-md-6 col-lg-4 pb-3 justify-content-center' : 'd-none'}>
-              <div className='d-flex bg-opacity-75 bg-light gap-3 border rounded border-3  pe-3'>
-                        <Image src="/flags/image 11.png" alt="" width="130" height="75" className='p-1 align-self-center' />
-                        <div className=' align-self-center'>
-                          <p className='text-dark mb-0'>Buying</p>
-                          <p className='text-dark fw-bold mb-0'>258.3525</p>
-                        </div>
-                        <div className=' align-self-center'>
-                          <p className='text-dark mb-0'>Selling</p>
-                          <p className='text-dark fw-bold mb-0'>258.3525</p>
-                        </div>
+              )}
+              {exchangeRates.eur && (
+                <div className='d-flex col-12 col-md-6 col-lg-4 pb-3 px-2 justify-content-center'>
+                  <div className='d-flex bg-opacity-75 bg-light w-100 border rounded border-3 justify-content-between'>
+                    <Image src="/flags/eur.png" alt="" width="130" height="75" className='p-1 align-self-center' />
+                    <div className=' align-self-center'>
+                      <p className='text-dark mb-0'>Buying</p>
+                      <p className='text-dark fw-bold mb-0'>{exchangeRates.eur.buyValue}</p>
+                    </div>
+                    <div className=' align-self-center pe-2'>
+                      <p className='text-dark mb-0'>Selling</p>
+                      <p className='text-dark fw-bold mb-0'>{exchangeRates.eur.sellValue}</p>
+                    </div>
                   </div>
                 </div>
-
-                <div className={showMore ? 'd-flex col-12 col-md-6 col-lg-4 pb-3 justify-content-center' : 'd-none'}>
-                <div className='d-flex bg-opacity-75 bg-light gap-3 border rounded border-3 pe-3'>
-                    <Image src="/flags/image 13 (1).png" alt="" width="130" height="75" className='p-1 align-self-center' />
+              )}
+              {exchangeRates.jpy && (
+                <div className={showMore ? 'd-flex col-12 col-md-6 col-lg-4 pb-3 px-2 justify-content-center' : 'd-none'}>
+                  <div className='d-flex bg-opacity-75 bg-light w-100  border rounded border-3 justify-content-between'>
+                    <Image src="/flags/image 9.png" alt="" width="130" height="75" className='p-1 align-self-center' />
                     <div className='align-self-center '>
                       <p className='text-dark mb-0'>Buying</p>
-                      <p className='text-dark fw-bold mb-0'>258.3525</p>
+                      <p className='text-dark fw-bold mb-0'>{exchangeRates.jpy.buyValue}</p>
                     </div>
-                    <div className=' align-self-center'>
+                    <div className=' align-self-center pe-2'>
                       <p className='text-dark mb-0'>Selling</p>
-                      <p className='text-dark fw-bold mb-0'>258.3525</p>
+                      <p className='text-dark fw-bold mb-0'>{exchangeRates.jpy.sellValue}</p>
                     </div>
                   </div>
                 </div>
+              )}
 
-                <div className={showMore ? 'd-flex col-12 col-md-6 col-lg-4 pb-3 justify-content-center' : 'd-none'}>
-                <div className='d-flex  bg-opacity-75 bg-light gap-3 border rounded border-3 pe-3'>
-                    <Image src="/flags/image 8 (1).png" alt="" width="130" height="75" className='align-self-center' />
-                    <div className=' align-self-center'>
+              {exchangeRates.cnh && (
+                <div className={showMore ? 'd-flex col-12 col-md-6 col-lg-4 pb-3 px-2 justify-content-center' : 'd-none'}>
+                  <div className='d-flex bg-opacity-75 bg-light w-100  border rounded border-3 justify-content-between'>
+                    <Image src="/flags/cnh.png" alt="" width="130" height="75" className='p-1 align-self-center' />
+                    <div className='align-self-center '>
                       <p className='text-dark mb-0'>Buying</p>
-                      <p className='text-dark fw-bold mb-0'>258.3525</p>
+                      <p className='text-dark fw-bold mb-0'>{exchangeRates.cnh.buyValue}</p>
                     </div>
-                    <div className=' align-self-center'>
+                    <div className=' align-self-center pe-2'>
                       <p className='text-dark mb-0'>Selling</p>
-                      <p className='text-dark fw-bold mb-0'>258.3525</p>
+                      <p className='text-dark fw-bold mb-0'>{exchangeRates.cnh.sellValue}</p>
                     </div>
                   </div>
                 </div>
-                     
-      </div>
+              )}
+              {exchangeRates.aud && (
+                <div className={showMore ? 'd-flex col-12 col-md-6 col-lg-4 pb-3 px-2 justify-content-center' : 'd-none'}>
+                  <div className='d-flex bg-opacity-75 bg-light w-100 border rounded border-3 justify-content-between'>
+                    <Image src="/flags/image 9.png" alt="" width="130" height="75" className='p-1 align-self-center' />
+                    <div className='align-self-center '>
+                      <p className='text-dark mb-0'>Buying</p>
+                      <p className='text-dark fw-bold mb-0'>{exchangeRates.aud.buyValue}</p>
+                    </div>
+                    <div className=' align-self-center pe-2'>
+                      <p className='text-dark mb-0'>Selling</p>
+                      <p className='text-dark fw-bold mb-0'>{exchangeRates.aud.sellValue}</p>
+                    </div>
+                  </div>
+                </div>
+              )}
 
-        <button onClick={toggleRows} className='bg-transparent text-light'>
-          {showMore ? 'See Less' : 'See All'}
-          {showMore ? <IoIosArrowUp /> : <IoIosArrowDown />}
-        </button>
+              <div className={showMore ? 'd-flex col-12 col-md-6 col-lg-4 pb-3 px-2 justify-content-center' : 'd-none'}>
+                <div className='d-flex bg-opacity-75 bg-light w-100 border rounded border-3 justify-content-between'>
+                  <Image src="/flags/image 11.png" alt="" width="130" height="75" className='p-1 align-self-center' />
+                  <div className=' align-self-center'>
+                    <p className='text-dark mb-0'>Buying</p>
+                    <p className='text-dark fw-bold mb-0'>258.3525</p>
+                  </div>
+                  <div className=' align-self-center pe-2'>
+                    <p className='text-dark mb-0'>Selling</p>
+                    <p className='text-dark fw-bold mb-0'>258.3525</p>
+                  </div>
+                </div>
+              </div>
 
-      </div>
+              <div className={showMore ? 'd-flex col-12 col-md-6 col-lg-4 pb-3 px-2 justify-content-center' : 'd-none'}>
+                <div className='d-flex bg-opacity-75 bg-light w-100 border rounded border-3 justify-content-between'>
+                  <Image src="/flags/image 13 (1).png" alt="" width="130" height="75" className='p-1 align-self-center' />
+                  <div className='align-self-center '>
+                    <p className='text-dark mb-0'>Buying</p>
+                    <p className='text-dark fw-bold mb-0'>258.3525</p>
+                  </div>
+                  <div className=' align-self-center pe-2'>
+                    <p className='text-dark mb-0'>Selling</p>
+                    <p className='text-dark fw-bold mb-0'>258.3525</p>
+                  </div>
+                </div>
+              </div>
+              <div className={showMore ? 'd-flex col-12 col-md-6 col-lg-4 pb-3 px-2 justify-content-center' : 'd-none'}>
+                <div className='d-flex bg-opacity-75 bg-light w-100 border rounded border-3 justify-content-between'>
+                  <Image src="/flags/image 8 (1).png" alt="" width="130" height="75" className='p-1 align-self-center' />
+                  <div className='align-self-center '>
+                    <p className='text-dark mb-0'>Buying</p>
+                    <p className='text-dark fw-bold mb-0'>258.3525</p>
+                  </div>
+                  <div className=' align-self-center pe-2'>
+                    <p className='text-dark mb-0'>Selling</p>
+                    <p className='text-dark fw-bold mb-0'>258.3525</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          )}
+
+
+          <button onClick={toggleRows} className='bg-transparent text-light'>
+            {showMore ? 'See Less' : 'See All'}
+            {showMore ? <IoIosArrowUp /> : <IoIosArrowDown />}
+          </button>
+
+        </div>
 
       </div>
 
@@ -307,7 +327,7 @@ export default function Home() {
         <div className={`col-12 col-lg-8 ps-0 ps-lg-2 ${styles.rightCol}`}>
           <div className={`d-flex flex-column flex-lg-row ${styles.cardRow}`}>
             <div className='col-12 col-lg-6 d-flex p-2 position-relative' >
-              <div className={`shadow-lg p-4 d-flex flex-column justify-content-center bg-white ${styles.card1}`} style={{borderRadius: "30px"}}  >
+              <div className={`shadow-lg p-4 d-flex flex-column justify-content-center bg-white ${styles.card1}`} style={{ borderRadius: "30px" }}  >
                 <Image src={'/icons/bag.png'} alt="" width={40} height={40} className="img-fluid mb-4" />
                 <h5>Instant Service</h5>
                 <p className='mb-0'>There are many variations of passages of Lorem Ipsum available, but majority going to use a passage.</p>
@@ -315,7 +335,7 @@ export default function Home() {
               </div>
             </div>
             <div className='col-12 col-lg-6 d-flex p-2 position-relative'>
-              <div className={`shadow-lg p-4 d-flex flex-column justify-content-center bg-white ${styles.card2}`} style={{borderRadius: "30px"}} >
+              <div className={`shadow-lg p-4 d-flex flex-column justify-content-center bg-white ${styles.card2}`} style={{ borderRadius: "30px" }} >
                 <Image src={'/icons/trust.png'} alt="" width={40} height={40} className="img-fluid mb-4" />
                 <h5>Trust Service</h5>
                 <p className='mb-0'>There are many variations of passages of Lorem Ipsum available, but majority going to use a passage.</p>
@@ -325,7 +345,7 @@ export default function Home() {
           </div>
           <div className={`d-flex flex-column flex-lg-row ${styles.cardRow}`}>
             <div className='col-12 col-lg-6 d-flex p-2 position-relative'>
-              <div className={`shadow-lg p-4 d-flex flex-column justify-content-center bg-white ${styles.card3}`} style={{borderRadius: "30px"}} >
+              <div className={`shadow-lg p-4 d-flex flex-column justify-content-center bg-white ${styles.card3}`} style={{ borderRadius: "30px" }} >
                 <Image src={'/icons/building.png'} alt="" width={40} height={40} className="img-fluid mb-4" />
                 <h5>Verified Sellers</h5>
                 <p className='mb-0'>There are many variations of passages of Lorem Ipsum available, but majority going to use a passage.</p>
@@ -333,7 +353,7 @@ export default function Home() {
               </div>
             </div>
             <div className='col-12 col-lg-6 d-flex p-2 position-relative'>
-              <div className={`shadow-lg p-4 d-flex flex-column justify-content-center bg-white ${styles.card4}`} style={{borderRadius: "30px"}} >
+              <div className={`shadow-lg p-4 d-flex flex-column justify-content-center bg-white ${styles.card4}`} style={{ borderRadius: "30px" }} >
                 <Image src={'/icons/bag.png'} alt="" width={40} height={40} className="img-fluid mb-4" />
                 <h5>Instant Service</h5>
                 <p className='mb-0'>There are many variations of passages of Lorem Ipsum available, but majority going to use a passage.</p>
