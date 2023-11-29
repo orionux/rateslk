@@ -187,7 +187,7 @@ export default function Home() {
               {exchangeRates.jpy && (
                 <div className={showMore ? 'd-flex col-12 col-md-6 col-lg-4 pb-3 px-2 justify-content-center' : 'd-none'}>
                   <div className='d-flex bg-opacity-75 bg-light w-100  border rounded border-3 justify-content-between'>
-                    <Image src="/flags/image 9.png" alt="" width="130" height="75" className='p-1 align-self-center' />
+                    <Image src="/flags/jpy.png" alt="" width="130" height="75" className='p-1 align-self-center' />
                     <div className='align-self-center '>
                       <p className='text-dark mb-0'>Buying</p>
                       <p className='text-dark fw-bold mb-0'>{exchangeRates.jpy.buyValue}</p>
@@ -218,7 +218,7 @@ export default function Home() {
               {exchangeRates.aud && (
                 <div className={showMore ? 'd-flex col-12 col-md-6 col-lg-4 pb-3 px-2 justify-content-center' : 'd-none'}>
                   <div className='d-flex bg-opacity-75 bg-light w-100 border rounded border-3 justify-content-between'>
-                    <Image src="/flags/image 9.png" alt="" width="130" height="75" className='p-1 align-self-center' />
+                    <Image src="/flags/aud.png" alt="" width="130" height="75" className='p-1 align-self-center' />
                     <div className='align-self-center '>
                       <p className='text-dark mb-0'>Buying</p>
                       <p className='text-dark fw-bold mb-0'>{exchangeRates.aud.buyValue}</p>
@@ -233,7 +233,7 @@ export default function Home() {
 
               <div className={showMore ? 'd-flex col-12 col-md-6 col-lg-4 pb-3 px-2 justify-content-center' : 'd-none'}>
                 <div className='d-flex bg-opacity-75 bg-light w-100 border rounded border-3 justify-content-between'>
-                  <Image src="/flags/image 11.png" alt="" width="130" height="75" className='p-1 align-self-center' />
+                  <Image src="/flags/image 13.png" alt="" width="130" height="75" className='p-1 align-self-center' />
                   <div className=' align-self-center'>
                     <p className='text-dark mb-0'>Buying</p>
                     <p className='text-dark fw-bold mb-0'>258.3525</p>
@@ -247,7 +247,7 @@ export default function Home() {
 
               <div className={showMore ? 'd-flex col-12 col-md-6 col-lg-4 pb-3 px-2 justify-content-center' : 'd-none'}>
                 <div className='d-flex bg-opacity-75 bg-light w-100 border rounded border-3 justify-content-between'>
-                  <Image src="/flags/image 13 (1).png" alt="" width="130" height="75" className='p-1 align-self-center' />
+                  <Image src="/flags/image 13.png" alt="" width="130" height="75" className='p-1 align-self-center' />
                   <div className='align-self-center '>
                     <p className='text-dark mb-0'>Buying</p>
                     <p className='text-dark fw-bold mb-0'>258.3525</p>
@@ -260,7 +260,7 @@ export default function Home() {
               </div>
               <div className={showMore ? 'd-flex col-12 col-md-6 col-lg-4 pb-3 px-2 justify-content-center' : 'd-none'}>
                 <div className='d-flex bg-opacity-75 bg-light w-100 border rounded border-3 justify-content-between'>
-                  <Image src="/flags/image 8 (1).png" alt="" width="130" height="75" className='p-1 align-self-center' />
+                  <Image src="/flags/image 13.png" alt="" width="130" height="75" className='p-1 align-self-center' />
                   <div className='align-self-center '>
                     <p className='text-dark mb-0'>Buying</p>
                     <p className='text-dark fw-bold mb-0'>258.3525</p>
