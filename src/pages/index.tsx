@@ -328,6 +328,7 @@ export default function Home() {
           <div className={`d-flex flex-column flex-lg-row ${styles.cardRow}`}>
             <div className='col-12 col-lg-6 d-flex p-2 position-relative' >
               <div className={`shadow-lg p-4 d-flex flex-column justify-content-center bg-white ${styles.card1}`} style={{ borderRadius: "30px" }}  >
+                <Image src={'/icons/card_icon_1.png'} alt="" width={120} height={120} className={`img-fluid ${styles.cardicon} p-2`} />
                 <Image src={'/icons/bag.png'} alt="" width={40} height={40} className="img-fluid mb-4" />
                 <h5>Instant Service</h5>
                 <p className='mb-0'>There are many variations of passages of Lorem Ipsum available, but majority going to use a passage.</p>
@@ -336,6 +337,7 @@ export default function Home() {
             </div>
             <div className='col-12 col-lg-6 d-flex p-2 position-relative'>
               <div className={`shadow-lg p-4 d-flex flex-column justify-content-center bg-white ${styles.card2}`} style={{ borderRadius: "30px" }} >
+              <Image src={'/icons/card_icon_3.png'} alt="" width={120} height={120} className={`img-fluid ${styles.cardicon}`} />
                 <Image src={'/icons/trust.png'} alt="" width={40} height={40} className="img-fluid mb-4" />
                 <h5>Trust Service</h5>
                 <p className='mb-0'>There are many variations of passages of Lorem Ipsum available, but majority going to use a passage.</p>
@@ -346,6 +348,7 @@ export default function Home() {
           <div className={`d-flex flex-column flex-lg-row ${styles.cardRow}`}>
             <div className='col-12 col-lg-6 d-flex p-2 position-relative'>
               <div className={`shadow-lg p-4 d-flex flex-column justify-content-center bg-white ${styles.card3}`} style={{ borderRadius: "30px" }} >
+              <Image src={'/icons/card_icon_2.png'} alt="" width={120} height={120} className={`img-fluid ${styles.cardicon}`} />
                 <Image src={'/icons/building.png'} alt="" width={40} height={40} className="img-fluid mb-4" />
                 <h5>Verified Sellers</h5>
                 <p className='mb-0'>There are many variations of passages of Lorem Ipsum available, but majority going to use a passage.</p>
@@ -354,6 +357,7 @@ export default function Home() {
             </div>
             <div className='col-12 col-lg-6 d-flex p-2 position-relative'>
               <div className={`shadow-lg p-4 d-flex flex-column justify-content-center bg-white ${styles.card4}`} style={{ borderRadius: "30px" }} >
+              <Image src={'/icons/card_icon_4.png'} alt="" width={120} height={120} className={`img-fluid ${styles.cardicon}`} />
                 <Image src={'/icons/bag.png'} alt="" width={40} height={40} className="img-fluid mb-4" />
                 <h5>Instant Service</h5>
                 <p className='mb-0'>There are many variations of passages of Lorem Ipsum available, but majority going to use a passage.</p>
