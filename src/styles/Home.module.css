@@ -505,7 +505,19 @@
 }
 
 .flegImage{
-  width: 75px;
-  height: 75px;
+  width: 55px;
+  height: 55px;
   border-radius: 100%;
+}
+.flagBox{
+  background-color: #ffffff7e;
+}
+.flagBox h3{
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--color-secondary) !important;
+  font-family: var(--font-family-secondary) !important;
+}
+.currencyColBorder{
+  border-right: solid 1px #6D6D70;
 }
