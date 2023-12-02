@@ -254,7 +254,7 @@ export default function Home() {
           )}
 
 
-          <button onClick={toggleRows} className='bg-transparent text-light'>
+          <button onClick={toggleRows} className='bg-transparent text-light' style={{border:"none !important;"}}>
             {showMore ? 'See Less' : 'See All'}
             {showMore ? <IoIosArrowUp /> : <IoIosArrowDown />}
           </button>

@@ -213,9 +213,10 @@
     width: 90px;
     height: 90px;
   }
-  .card1, .card2, .card3, .card4{
+  .card1, .card2, .card3, .card4, .card5{
     margin: 0 !important;
     position: relative;
+    height: max-content !important;
   }
   .cardRow{
     height: max-content;
