@@ -71,7 +71,8 @@ const Footer = () => {
 
   return (
     <>
-      <div className={`d-flex flex-column ${styles.footerWrap} px-2 px-lg-5 py-5`}>
+      <div className={`d-flex flex-column ${styles.footerWrap} px-2 px-lg-5 py-5 justify-content-center align-items-center w-100`}>
+        <div className="d-flex flex-column max-width-extra-large w-100">
         <div className="d-flex flex-column flex-lg-row px-0 px-lg-5 py-0 py-lg-5">
           <div className="col-12 col-lg-3 d-flex flex-column justify-content-center align-items-center justify-content-lg-start align-items-lg-start">
             <div className='w-100 px-3'>
@@ -111,7 +112,7 @@ const Footer = () => {
             ))}
           </div>
           <div className="col-12 col-lg-3 px-3 d-flex flex-column justify-content-start align-items-start">
-            <FooterTitle title='Conatct Us' />
+            <FooterTitle title='Contact Us' />
             <p className='text-center text-lg-start'>Head Office Address 121 King Street,<br />Melbourne West,Australia</p>
             <p>Phone: <Link href={"tel: 011 9876 54321"}>(011) 9876 54321</Link></p>
             <p>Email: <Link href={"mailto:info@example.com"}>info@example.com</Link></p>
@@ -138,6 +139,7 @@ const Footer = () => {
 
         </div>
         <hr />
+        </div>
       </div>
     </>
   )

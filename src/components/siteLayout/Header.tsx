@@ -7,8 +7,8 @@ import styles from '@/styles/Home.module.css'
 const Header = () => {
   return (
     <>
-      <div className="d-flex w-100 px-2 px-lg-5 py-2">
-        <nav className="navbar navbar-expand-lg w-100">
+      <div className="d-flex w-100 px-2 px-lg-5 py-2 justify-content-center align-items-center">
+        <nav className="max-width-extra-large navbar navbar-expand-lg w-100">
           <div className="container-fluid">
             <Link className="navbar-brand" href="#">
               <Image src={"/layoutimg/Logo.png"} width={120} height={80} alt={''} className='img-fluid' />

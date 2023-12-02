@@ -128,7 +128,6 @@ export default function Home() {
     <>
       {/* get help button*/}
       <GetHelpButton />
-
       {/* hero */}
       <div className={`${styles.hero} d-flex flex-column text-center w-100 justify-content-center align-items-center py-5`}>
         <span className={`px-3 py-1 mb-0 ${styles.UpdatedTxt}`}>Updated on March 31, 2022</span>
@@ -136,7 +135,7 @@ export default function Home() {
         <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut <br /> labore et dolore magna aliqua ut dolor sit</p>
         <button className={`px-3 py-3`}>View vertual wallet rates</button>
 
-        <div className='col-11 p-5 mt-5 mb-0 bg-opacity-25 bg-light border border-3 rounded position-relative'>
+        <div className='max-width-extra-large col-11 p-5 mt-5 mb-0 bg-opacity-25 bg-light border border-3 rounded position-relative'>
           {exchangeRates && (
             <div className='col-12 d-flex flex-wrap'>
               {exchangeRates.usd && (
@@ -178,7 +177,7 @@ export default function Home() {
               {exchangeRates.gbp && (
                 <div className='d-flex col-12 col-md-6 col-lg-4 pb-3 px-2 justify-content-center'>
                   <div className='d-flex bg-opacity-75 bg-light w-100 border rounded border-3 justify-content-between'>
-                  <div className={`d-flex flex-column ${styles.flagBox} col-4`}>
+                    <div className={`d-flex flex-column ${styles.flagBox} col-4`}>
                       <Image src="/flags/gbp.png" alt="" width="130" height="75" className={`p-1 align-self-center ${styles.flegImage}`} />
                       <h3>GBP</h3>
                     </div>
@@ -193,11 +192,11 @@ export default function Home() {
                   </div>
                 </div>
               )}
-              
+
               {exchangeRates.jpy && (
                 <div className={showMore ? 'd-flex col-12 col-md-6 col-lg-4 pb-3 px-2 justify-content-center' : 'd-none'}>
                   <div className='d-flex bg-opacity-75 bg-light w-100  border rounded border-3 justify-content-between'>
-                  <div className={`d-flex flex-column ${styles.flagBox} col-4`}>
+                    <div className={`d-flex flex-column ${styles.flagBox} col-4`}>
                       <Image src="/flags/jpy.png" alt="" width="130" height="75" className={`p-1 align-self-center ${styles.flegImage}`} />
                       <h3>JPY</h3>
                     </div>
@@ -212,7 +211,7 @@ export default function Home() {
                   </div>
                 </div>
               )}
-               {exchangeRates.aud && (
+              {exchangeRates.aud && (
                 <div className={showMore ? 'd-flex col-12 col-md-6 col-lg-4 pb-3 px-2 justify-content-center' : 'd-none'}>
                   <div className='d-flex bg-opacity-75 bg-light w-100 border rounded border-3 justify-content-between'>
                     <div className={`d-flex flex-column ${styles.flagBox} col-4`}>
@@ -234,7 +233,7 @@ export default function Home() {
               {exchangeRates.cnh && (
                 <div className={showMore ? 'd-flex col-12 col-md-6 col-lg-4 pb-3 px-2 justify-content-center' : 'd-none'}>
                   <div className='d-flex bg-opacity-75 bg-light w-100  border rounded border-3 justify-content-between'>
-                  <div className={`d-flex flex-column ${styles.flagBox} col-4`}>
+                    <div className={`d-flex flex-column ${styles.flagBox} col-4`}>
                       <Image src="/flags/cnh.png" alt="" width="130" height="75" className={`p-1 align-self-center ${styles.flegImage}`} />
                       <h3>WON</h3>
                     </div>
@@ -254,20 +253,18 @@ export default function Home() {
           )}
 
 
-          <button onClick={toggleRows} className='bg-transparent text-light' style={{border:"none !important;"}}>
+          <button onClick={toggleRows} className='bg-transparent text-light' style={{ border: "none !important;" }}>
             {showMore ? 'See Less' : 'See All'}
             {showMore ? <IoIosArrowUp /> : <IoIosArrowDown />}
           </button>
 
         </div>
-
       </div>
-
       {/* table */}
       <div className={`${styles.priceTable} d-flex flex-column text-center w-100 justify-content-center align-items-center`}>
         <h3>TODAY RATINGS</h3>
         <p>Check out our freshly updated exchange rates today and get the best deal for your money!</p>
-        <table className={`table my-5 ${styles.tableStyles}`}>
+        <table className={`table my-5 ${styles.tableStyles} max-width-extra-large`}>
           <thead className={``}>
             <tr className={`${styles.tableHeader} table-dark`}>
               <th scope="col"></th>
@@ -290,71 +287,72 @@ export default function Home() {
           </tbody>
         </table>
       </div>
-      {/* <ExchangeRates   /> */}
       {/* services */}
       <div className={`${styles.services} d-flex flex-column flex-lg-row w-100 justify-content-center align-items-center`}>
-        <div className={`col-12 col-lg-4 pe-0 pe-lg-2 text-start ${styles.leftCol} py-5`}>
-          <h3>Why <br /> you should <span>choose us</span></h3>
-          <p>Always strive to provide trust and updated virtual currency exchange rates to avoid uncernities in the market and be supportive. <br></br>
-For all your virtual currency exchange needs, our expertise sellers stand by your side.</p>
-          <div className="d-flex flex-column flex-lg-row justify-content-between">
-            <span className={`${styles.spanRed} px-5 py-3 mb-3 mb-lg-0`}>24/7 Support</span>
-            <span className={`${styles.spanGreen} px-5 py-3`}>99% Secured</span>
+        <div className="max-width-extra-large d-flex flex-column flex-lg-row w-100 justify-content-center align-items-center">
+          <div className={`col-12 col-lg-4 pe-0 pe-lg-2 text-start ${styles.leftCol} py-5`}>
+            <h3>Why <br /> you should <span>choose us</span></h3>
+            <p>Always strive to provide trust and updated virtual currency exchange rates to avoid uncernities in the market and be supportive. <br></br>
+              For all your virtual currency exchange needs, our expertise sellers stand by your side.</p>
+            <div className="d-flex flex-column flex-lg-row justify-content-between">
+              <span className={`${styles.spanRed} px-5 py-3 mb-3 mb-lg-0`}>24/7 Support</span>
+              <span className={`${styles.spanGreen} px-5 py-3`}>99% Secured</span>
+            </div>
+            <button className='px-5 py-3 mt-3'>Get Started</button>
           </div>
-          <button className='px-5 py-3 mt-3'>Get Started</button>
-        </div>
-        <div className={`col-12 col-lg-8 ps-0 ps-lg-2 ${styles.rightCol}`}>
-          <div className={`d-flex flex-column flex-lg-row ${styles.cardRow}`}>
-            <div className='col-12 col-lg-6 d-flex p-2 position-relative' >
-              <div className={`shadow-lg p-4 d-flex flex-column justify-content-center bg-white ${styles.card1}`} style={{ borderRadius: "30px" }}  >
-                <Image src={'/icons/Group (4).png'} alt="" width={120} height={120} className={`img-fluid ${styles.cardicon} p-2`} />
-                <Image src={'/icons/Group.png'} alt="" width={40} height={40} className="img-fluid mb-4" />
-                <h5>Instant 24/7 Support</h5>
-                <p className='mb-0'>Get help round the clock from a professional, fast support team.
-&quot;Your money, your confidence, our expertise.&quot;</p>
-                <Link href='#' className='text-decoration-none mt-4'>Learn More</Link>
+          <div className={`col-12 col-lg-8 ps-0 ps-lg-2 ${styles.rightCol}`}>
+            <div className={`d-flex flex-column flex-lg-row ${styles.cardRow}`}>
+              <div className='col-12 col-lg-6 d-flex p-2 position-relative' >
+                <div className={`shadow-lg p-4 d-flex flex-column justify-content-center bg-white ${styles.card1}`} style={{ borderRadius: "30px" }}  >
+                  <Image src={'/icons/Group (4).png'} alt="" width={120} height={120} className={`img-fluid ${styles.cardicon} p-2`} />
+                  <Image src={'/icons/Group.png'} alt="" width={40} height={40} className="img-fluid mb-4" />
+                  <h5>Instant 24/7 Support</h5>
+                  <p className='mb-0'>Get help round the clock from a professional, fast support team.
+                    &quot;Your money, your confidence, our expertise.&quot;</p>
+                  <Link href='#' className='text-decoration-none mt-4'>Learn More</Link>
+                </div>
+              </div>
+              <div className='col-12 col-lg-6 d-flex p-2 position-relative'>
+                <div className={`shadow-lg p-4 d-flex flex-column justify-content-center bg-white ${styles.card2}`} style={{ borderRadius: "30px" }} >
+                  <Image src={'/icons/Group (3).png'} alt="" width={120} height={120} className={`img-fluid ${styles.cardicon}`} />
+                  <Image src={'/icons/Group (2).png'} alt="" width={40} height={40} className="img-fluid mb-4" />
+                  <h5>Verified Sellers</h5>
+                  <p className='mb-0'>We partner with the best of the best buyers and sellers. Verified sellers expertise to provide smooth service in exchange e-currencies with trust.
+                    &quot;Experience the best exchange rate; every day, all day.&quot;</p>
+                  <Link href='#' className='text-decoration-none mt-4'>Learn More</Link>
+                </div>
               </div>
             </div>
-            <div className='col-12 col-lg-6 d-flex p-2 position-relative'>
-              <div className={`shadow-lg p-4 d-flex flex-column justify-content-center bg-white ${styles.card2}`} style={{ borderRadius: "30px" }} >
-                <Image src={'/icons/Group (3).png'} alt="" width={120} height={120} className={`img-fluid ${styles.cardicon}`} />
-                <Image src={'/icons/Group (2).png'} alt="" width={40} height={40} className="img-fluid mb-4" />
-                <h5>Verified Sellers</h5>
-                <p className='mb-0'>We partner with the best of the best buyers and sellers. Verified sellers expertise to provide smooth service in exchange e-currencies with trust.
-                &quot;Experience the best exchange rate; every day, all day.&quot;</p>
-                <Link href='#' className='text-decoration-none mt-4'>Learn More</Link>
+            <div className={`d-flex flex-column flex-lg-row ${styles.cardRow}`}>
+              <div className='col-12 col-lg-6 d-flex p-2 position-relative'>
+                <div className={`shadow-lg p-4 d-flex flex-column justify-content-center bg-white ${styles.card3}`} style={{ borderRadius: "30px" }} >
+                  <Image src={'/icons/Group (5).png'} alt="" width={120} height={120} className={`img-fluid ${styles.cardicon}`} />
+                  <Image src={'/icons/Group (1).png'} alt="" width={40} height={40} className="img-fluid mb-4" />
+                  <h5>No Contracts</h5>
+                  <p className='mb-0'>That&apos;s right! NO CONTRACTS! We want you to do business with us because of our excellent customer service and professional solutions, not by obligation!
+                    &quot;Exchange hassle-free, travel worry-free.&quot;</p>
+                  <Link href='#' className='text-decoration-none mt-4'>Learn More</Link>
+                </div>
+              </div>
+              <div className='col-12 col-lg-6 d-flex p-2 position-relative'>
+                <div className={`shadow-lg p-4 d-flex flex-column justify-content-center bg-white ${styles.card4}`} style={{ borderRadius: "30px" }} >
+                  <Image src={'/icons/Icon (1).png'} alt="" width={100} height={120} className={`img-fluid ${styles.cardicon}`} />
+                  <Image src={'/icons/Icon.png'} alt="" width={40} height={40} className="img-fluid mb-4" />
+                  <h5>We CARE about your business!</h5>
+                  <p className='mb-0'>You&apos;re in good hands with Rates.lk. We care about your business&apos;s well-being. &quot;From euros to dollars, we&apos;ve got you covered.&quot;</p>
+                  <Link href='#' className='text-decoration-none mt-4'>Learn More</Link>
+                </div>
               </div>
             </div>
-          </div>
-          <div className={`d-flex flex-column flex-lg-row ${styles.cardRow}`}>
-            <div className='col-12 col-lg-6 d-flex p-2 position-relative'>
-              <div className={`shadow-lg p-4 d-flex flex-column justify-content-center bg-white ${styles.card3}`} style={{ borderRadius: "30px" }} >
-                <Image src={'/icons/Group (5).png'} alt="" width={120} height={120} className={`img-fluid ${styles.cardicon}`} />
-                <Image src={'/icons/Group (1).png'} alt="" width={40} height={40} className="img-fluid mb-4" />
-                <h5>No Contracts</h5>
-                <p className='mb-0'>That&apos;s right! NO CONTRACTS! We want you to do business with us because of our excellent customer service and professional solutions, not by obligation! 
-                &quot;Exchange hassle-free, travel worry-free.&quot;</p>
-                <Link href='#' className='text-decoration-none mt-4'>Learn More</Link>
-              </div>
-            </div>
-            <div className='col-12 col-lg-6 d-flex p-2 position-relative'>
-              <div className={`shadow-lg p-4 d-flex flex-column justify-content-center bg-white ${styles.card4}`} style={{ borderRadius: "30px" }} >
-                <Image src={'/icons/Icon (1).png'} alt="" width={100} height={120} className={`img-fluid ${styles.cardicon}`} />
-                <Image src={'/icons/Icon.png'} alt="" width={40} height={40} className="img-fluid mb-4" />
-                <h5>We CARE about your business!</h5>
-                <p className='mb-0'>You&apos;re in good hands with Rates.lk. We care about your business&apos;s well-being. &quot;From euros to dollars, we&apos;ve got you covered.&quot;</p>
-                <Link href='#' className='text-decoration-none mt-4'>Learn More</Link>
-              </div>
-            </div>
-          </div>
-          <div className={`d-flex flex-column flex-lg-row ${styles.cardRow}`}>
-            <div className='col-12 col-lg-6 d-flex p-2 position-relative'>
-              <div className={`shadow-lg p-4 d-flex flex-column justify-content-center bg-white ${styles.card5}`} style={{ borderRadius: "30px" }} >
-                <Image src={'/icons/Frame (1).png'} alt="" width={120} height={120} className={`img-fluid ${styles.cardicon}`} />
-                <Image src={'/icons/Frame.png'} alt="" width={40} height={40} className="img-fluid mb-4" />
-                <h5>Satisfaction</h5>
-                <p className='mb-0'>100% Satisfaction is our goal, providing prompt service in a reliable and fair manner where our services and solutions need us again and again. &quot;Exchange like a pro, travel like a boss.&quot;</p>
-                <Link href='#' className='text-decoration-none mt-4'>Learn More</Link>
+            <div className={`d-flex flex-column flex-lg-row ${styles.cardRow}`}>
+              <div className='col-12 col-lg-6 d-flex p-2 position-relative'>
+                <div className={`shadow-lg p-4 d-flex flex-column justify-content-center bg-white ${styles.card5}`} style={{ borderRadius: "30px" }} >
+                  <Image src={'/icons/Frame (1).png'} alt="" width={120} height={120} className={`img-fluid ${styles.cardicon}`} />
+                  <Image src={'/icons/Frame.png'} alt="" width={40} height={40} className="img-fluid mb-4" />
+                  <h5>Satisfaction</h5>
+                  <p className='mb-0'>100% Satisfaction is our goal, providing prompt service in a reliable and fair manner where our services and solutions need us again and again. &quot;Exchange like a pro, travel like a boss.&quot;</p>
+                  <Link href='#' className='text-decoration-none mt-4'>Learn More</Link>
+                </div>
               </div>
             </div>
           </div>
@@ -362,6 +360,7 @@ For all your virtual currency exchange needs, our expertise sellers stand by you
       </div>
       {/* experience */}
       <div className={`${styles.experience} d-flex flex-column flex-lg-row w-100 justify-content-center align-items-center py-5`}>
+        <div className="max-width-extra-large d-flex flex-column flex-lg-row w-100 justify-content-center align-items-center">
         <div className={`${styles.leftImgWrapper} col-12 col-lg-6 d-flex justify-content-center align-items-center px-2 px-lg-5`}>
           <Image src="/layoutimg/experience.png" alt='' width={300} height={200} className='img-fluid'></Image>
         </div>
@@ -396,6 +395,7 @@ For all your virtual currency exchange needs, our expertise sellers stand by you
             </div>
           </div>
         </div>
+        </div>
       </div>
       {/* testimonials */}
       <div className={`${styles.testimonials} d-flex flex-column w-100 justify-content-center align-items-center text-center py-5`}>
@@ -403,14 +403,14 @@ For all your virtual currency exchange needs, our expertise sellers stand by you
         <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore <br />
           magna aliqua ut dolor sit</p>
 
-        <div className='d-flex flex-column flex-lg-row p-0 p-lg-3 gap-lg-5 text-start'>
+        <div className='max-width-extra-large d-flex flex-column flex-lg-row p-0 p-lg-3 gap-lg-5 text-start'>
           {renderTestimonials()}
         </div>
       </div>
       {/* contact */}
       <div className={`${styles.contactForm} d-flex flex-column w-100 justify-content-center align-items-center text-center`}>
         <h3 className='mb-5'>Get In Touch</h3>
-        <form action="" className={` ${styles.FormContactUs}`}>
+        <form action="" className={` ${styles.FormContactUs} max-width-extra-large`}>
           <div className="d-flex flex-column flex-lg-row">
             <div className="col-12 col-lg-6 d-flex flex-column align-items-start px-2">
               <label htmlFor="fullName">Full Name</label>
