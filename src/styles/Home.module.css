@@ -74,7 +74,8 @@
   font-weight: 600;
   transition: color 0.5s ease-in, background-color 0.5s ease-in;
 }
-.hero button:hover{
+
+.hero button:hover {
   color: var(--color-primary);
   background-color: var(--color-secondary);
 }
@@ -99,7 +100,8 @@
   font-size: var(--font-20);
   font-weight: 500;
 }
-@media screen and (max-width: 992px){
+
+@media screen and (max-width: 992px) {
   .priceTable {
     padding: 20px;
   }
@@ -118,11 +120,13 @@
   font-size: var(--font-40);
   font-weight: 700;
 }
+
 .leftCol p {
   color: hsl(0, 0%, 47%);
   font-size: var(--font-18);
   font-weight: 400;
 }
+
 .leftCol span {
   color: var(--color-primary);
 }
@@ -133,11 +137,12 @@
   font-size: var(--font-18);
 }
 
-.spanGreen{
+.spanGreen {
   color: var(--color-dark-green) !important;
   background-color: var(--color-light-green);
   font-size: var(--font-18);
 }
+
 /* .services button{
   font-size: var(--font-18);
   font-weight: 500;
@@ -151,87 +156,115 @@
   font-size: var(--font-18);
   font-weight: 400;
 }
+
 .rightCol h5 {
   font-family: var(--font-family-secondary);
   color: var(--color-secondary);
   font-size: var(--font-30);
   font-weight: 500;
 }
-.rightCol a{
+
+.rightCol a {
   font-family: var(--font-family-secondary);
   color: var(--color-primary);
   font-size: var(--font-20);
   font-weight: 600;
 }
-.card1, .card2, .card3, .card4, .card5{
+
+.card1,
+.card2,
+.card3,
+.card4,
+.card5 {
   height: 290px !important;
 }
-.card2, .card3, .card4, .card5{
+
+.card2,
+.card3,
+.card4,
+.card5 {
   position: absolute;
   bottom: 0;
 }
-.cardRow{
+
+.cardRow {
   min-height: 280px;
 }
-.card1{
+
+.card1 {
   margin-bottom: 50px;
 }
-.card2{
+
+.card2 {
   margin-top: 0px;
   margin-left: 20px;
   margin-right: -20px;
   margin-bottom: 20px;
 }
-.card3{
+
+.card3 {
   margin-bottom: 25px;
   margin-left: 25px;
   margin-right: -25px;
 }
-.card4{
+
+.card4 {
   margin-top: 100px;
   margin-right: -75px;
   margin-left: 50px;
   margin-bottom: -20px;
 }
-.card5{
+
+.card5 {
   margin-top: 20px;
   margin-bottom: -20px;
-    margin-left: 60px;
-    margin-right: -60px;
+  margin-left: 60px;
+  margin-right: -60px;
 }
-.cardicon{
+
+.cardicon {
   position: absolute;
   top: 0;
   right: 0;
   border-radius: 25px;
 }
-@media screen and (max-width: 992px){
+
+@media screen and (max-width: 992px) {
   .services {
     padding: 20px;
   }
-  .cardicon{
+
+  .cardicon {
     width: 90px;
     height: 90px;
   }
-  .card1, .card2, .card3, .card4, .card5{
+
+  .card1,
+  .card2,
+  .card3,
+  .card4,
+  .card5 {
     margin: 0 !important;
     position: relative;
     height: max-content !important;
   }
-  .cardRow{
+
+  .cardRow {
     height: max-content;
   }
-  .services button{
+
+  .services button {
     width: 100%;
   }
 }
 
 
 /* table */
-.tableStyles{
+.tableStyles {
   border: none !important;
 }
-.buysellbtn{
+
+.buysellbtn {
   background-color: var(--color-primary);
   border: none;
   font-size: var(--font-18);
@@ -239,39 +272,46 @@
   min-width: 150px;
   font-weight: 600;
 }
-.tableData{
+
+.tableData {
   font-size: var(--font-18);
   font-weight: 600;
 }
-.tableImage{
+
+.tableImage {
   width: auto !important;
   height: 20px !important;
   float: left;
   padding-left: 30px;
 }
 
-.tableHeader{
+.tableHeader {
   background-color: var(--color-secondary) !important;
   font-size: 14px;
   font-weight: 100 !important;
 }
-.tableHeaderCellPurple{
+
+.tableHeaderCellPurple {
   background-color: var(--color-table-purple) !important;
 }
-.tableHeaderCellGreen{
+
+.tableHeaderCellGreen {
   background-color: var(--color-table-green) !important;
 }
-.purpleData{
+
+.purpleData {
   color: #160422 !important;
   font-weight: 600;
   font-size: 18px;
 }
-.greenData{
+
+.greenData {
   color: #2d4b30 !important;
   font-weight: 600;
   font-size: 18px;
 }
-.tableDataLight{
+
+.tableDataLight {
   background-color: #F8F8F8 !important;
 }
 
@@ -282,7 +322,8 @@
   min-height: 80vh;
   padding: 100px;
 }
-.leftImgWrapper img{
+
+.leftImgWrapper img {
   width: 100% !important;
   height: auto !important;
 }
@@ -293,32 +334,37 @@
   font-size: var(--font-40);
   font-weight: 700;
 }
+
 .experience p {
   color: #E0E0E0;
   font-size: var(--font-18);
   font-weight: 400;
 }
+
 .experience span {
   color: var(--color-primary);
 }
 
-.yearNumbers{
+.yearNumbers {
   color: var(--color-white);
   font-family: 'Ubuntu', sans-serif !important;
   font-size: 30px !important;
   font-weight: 600 !important;
 }
-.yearTxtWhite{
+
+.yearTxtWhite {
   color: var(--color-white) !important;
   font-size: var(--font-22) !important;
   font-weight: 400;
 }
-.yearTxt{
+
+.yearTxt {
   color: var(--color-secondary) !important;
   font-size: var(--font-22) !important;
   font-weight: 400;
 }
-@media screen and (max-width: 992px){
+
+@media screen and (max-width: 992px) {
   .experience {
     padding: 20px;
   }
@@ -339,15 +385,18 @@
   font-size: var(--font-40);
   font-weight: 700;
 }
+
 .testimonials p {
   color: #797979;
   font-size: var(--font-18);
   font-weight: 400;
 }
+
 .testimonials span {
   color: var(--color-primary);
 }
-@media screen and (max-width: 992px){
+
+@media screen and (max-width: 992px) {
   .testimonials {
     padding: 20px;
   }
@@ -367,16 +416,20 @@
   font-size: var(--font-40);
   font-weight: 700;
 }
-.FormContactUs{
+
+.FormContactUs {
   width: 60vw;
 }
-.FormContactUs label{
+
+.FormContactUs label {
   color: var(--color-secondary);
   font-size: var(--font-18);
   font-weight: 700;
   margin-bottom: 10px;
 }
-.FormContactUs input, .FormContactUs textarea{
+
+.FormContactUs input,
+.FormContactUs textarea {
   color: var(--color-secondary);
   font-size: var(--font-18);
   font-weight: 500;
@@ -386,17 +439,22 @@
   padding: 15px 20px;
   margin-bottom: 30px;
 }
-.FormContactUs input{
+
+.FormContactUs input {
   border-radius: 50px;
 }
-.FormContactUs textarea{
+
+.FormContactUs textarea {
   border-radius: 30px;
 }
-.FormContactUs input::placeholder, .FormContactUs textarea::placeholder{
+
+.FormContactUs input::placeholder,
+.FormContactUs textarea::placeholder {
   color: #797979;
   font-weight: 300;
 }
-.FormContactUs button{
+
+.FormContactUs button {
   background-color: var(--color-secondary);
   border: solid 1px var(--color-secondary);
   padding: 20px 49px 20px 49px;
@@ -404,19 +462,22 @@
   font-size: var(--font-18);
   transition: color 0.5s ease-in, background-color 0.5s ease-in;
 }
-.FormContactUs button:hover{
+
+.FormContactUs button:hover {
   background-color: var(--color-white);
   color: var(--color-secondary);
 }
 
-@media screen and (max-width: 992px){
+@media screen and (max-width: 992px) {
   .contactForm {
-    padding: 20px ;
+    padding: 20px;
   }
-  .FormContactUs{
+
+  .FormContactUs {
     width: 100%;
   }
-  .FormContactUs button{
+
+  .FormContactUs button {
     width: 100%;
   }
 }
@@ -425,35 +486,47 @@
 
 
 /* footer */
-.footerWrap{
+.footerWrap {
   background-color: var(--color-secondary);
   height: auto;
   width: 100vw;
   color: var(--color-white) !important;
-  
+
 }
-.footerWrap hr{
+
+.footerWrap hr {
   background-color: rgba(255, 255, 255, 0.30) !important;
   color: rgba(255, 255, 255, 0.30) !important;
 }
-.footerWrap h5, .footerWrap p, .footerWrap span, .footerWrap a{
+
+.footerWrap h5,
+.footerWrap p,
+.footerWrap span,
+.footerWrap a {
   font-family: var(--font-family-secondary) !important;
 }
-.footerWrap h5{
+
+.footerWrap h5 {
   font-size: var(--font-28);
 }
-.footerWrap p, .footerWrap span, .footerWrap a{
+
+.footerWrap p,
+.footerWrap span,
+.footerWrap a {
   font-size: var(--font-20-footer);
 }
-.footerWrap a{
+
+.footerWrap a {
   text-decoration: none !important;
   color: var(--color-white);
   transition: color 0.5s ease-in;
 }
-.footerWrap a:hover{
+
+.footerWrap a:hover {
   color: var(--color-primary);
 }
-.footerWrap span{
+
+.footerWrap span {
   color: var(--color-primary);
 }
 
@@ -468,24 +541,27 @@
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
-.testiminialDesc{
+
+.testiminialDesc {
   font-size: var(--font-18);
   font-weight: 400;
   color: var(--color-secondary) !important;
 }
-.testiminialName{
+
+.testiminialName {
   font-size: var(--font-28) !important;
   color: var(--color-secondary) !important;
   font-weight: 700 !important;
 }
-.testiminialRole{
+
+.testiminialRole {
   font-size: var(--font-18) !important;
   color: var(--color-primary) !important;
   font-weight: 400 !important;
 }
 
 /* get help button */
-.getHelpButton{
+.getHelpButton {
   position: fixed;
   bottom: 0;
   right: 0;
@@ -494,7 +570,8 @@
   outline: none;
   z-index: 999;
 }
-.getHelpButton p{
+
+.getHelpButton p {
   color: var(--color-primary);
   font-size: var(--font-20);
   font-weight: 500;
@@ -505,33 +582,37 @@
 
 
 /* socialIconStyle */
-.socialIconStyle{
+.socialIconStyle {
   color: #fff;
   transition: color 0.5s ease-in;
 }
-.socialIconStyle:hover{
+
+.socialIconStyle:hover {
   color: var(--color-primary);
 }
 
-.flegImage{
+.flegImage {
   width: 55px;
   height: 55px;
   border-radius: 100%;
 }
-.flagBox{
+
+.flagBox {
   background-color: #ffffff7e;
 }
-.flagBox h3{
+
+.flagBox h3 {
   font-size: 16px;
   font-weight: 800;
   color: var(--color-secondary) !important;
   font-family: var(--font-family-secondary) !important;
 }
-.currencyColBorder{
+
+.currencyColBorder {
   border-right: solid 1px #6D6D70;
 }
 
-.yellowButton{
+.yellowButton {
   background-color: var(--color-primary);
   color: var(--color-secondary);
   text-transform: uppercase;
@@ -541,7 +622,59 @@
   font-weight: 600;
   transition: color 0.5s ease-in, background-color 0.5s ease-in;
 }
-.yellowButton:hover{
+
+.yellowButton:hover {
   color: var(--color-primary);
   background-color: transparent;
+}
+
+.cryptoCard {
+  box-shadow: -7px 0px 50px 0px rgba(0, 0, 0, 0.24), 0px 4px 8.5px 0px rgba(0, 0, 0, 0.11);
+  background-color: #FEFEFE;
+  border-radius: 12px !important;
+}
+
+.buyCol {
+  background-color: rgba(144, 0, 249, 0.12);
+}
+
+.sellCol {
+  background-color: rgba(0, 249, 114, 0.12);
+}
+
+.lastCol {
+  background-color: #fff;
+  border-radius: 12px !important;
+}
+
+.telBox {
+  background-color: var(--color-secondary);
+  color: #fff !important;
+}
+
+
+.buyCol p {
+  color: #363636;
+  font-family: var(--font-family-secondary) !important;
+  font-size: var(--font-22);
+  font-weight: 700;
+}
+
+.buyCol h3 {
+  color: #050505;
+  font-family: var(--font-family-secondary) !important;
+  font-size: var(--font-30);
+  font-weight: 700;
+}
+
+.lastCol a {
+  color: #363636;
+  font-family: var(--font-family-secondary) !important;
+  font-size: var(--font-18);
+  font-weight: 700;
+  text-decoration: none;
+}
+.cryptoCard img{
+  height: 80px !important;
+  width: auto !important;
 }

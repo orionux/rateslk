@@ -2,6 +2,7 @@ import Image from 'next/image'
 import styles from '@/styles/Home.module.css'
 import { useEffect, useState } from 'react';
 import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io';
+import { FaPhoneAlt } from "react-icons/fa";
 import GetHelpButton from '@/components/buttons/getHelpButton';
 import ExchangeRates from '@/components/buttons/ExchangeRates';
 import Link from 'next/link';
@@ -129,10 +130,11 @@ export default function Home() {
       {/* get help button*/}
       <GetHelpButton />
       {/* hero */}
-      <div className={`${styles.hero} d-flex flex-column text-center w-100 justify-content-center align-items-center py-5`}>
+      <div className={`${styles.hero} d-flex flex-column text-center w-100 justify-content-center align-items-center py-5 px-2`}>
         <span className={`px-3 py-1 mb-0 ${styles.UpdatedTxt}`}>Updated on March 31, 2022</span>
         <h2 className='mb-3'>Put your <span>trust</span>  in us, <span>exchange</span> <br /> with confidence.</h2>
-        <p>Elevate your currency exchange experience with us. Trust, Expertise, Excellence – Your premier destination for seamless transactions and unmatched service..</p>
+        <p className='d-none d-lg-flex'>Elevate your currency exchange experience with us. Trust, Expertise, Excellence – Your <br></br> premier destination for seamless transactions and unmatched service..</p>
+        <p className='d-flex d-lg-none'>Elevate your currency exchange experience with us. Trust, Expertise, Excellence – Your premier destination for seamless transactions and unmatched service..</p>
         <button className={`px-3 py-3`}>View vertual wallet rates</button>
 
         <div className='max-width-extra-large col-11 p-2 p-lg-5 mt-5 mb-0 bg-opacity-25 bg-light border border-3 rounded position-relative'>
@@ -264,7 +266,7 @@ export default function Home() {
       <div className={`${styles.priceTable} d-flex flex-column text-center w-100 justify-content-center align-items-center`}>
         <h3>TODAY RATINGS</h3>
         <p>Check out our freshly updated exchange rates today and get the best deal for your money!</p>
-        <table className={`table my-5 ${styles.tableStyles} max-width-extra-large`}>
+        {/* <table className={`table my-5 ${styles.tableStyles} max-width-extra-large`}>
           <thead className={``}>
             <tr className={`${styles.tableHeader} table-dark`}>
               <th scope="col"></th>
@@ -285,7 +287,89 @@ export default function Home() {
               </tr>
             ))}
           </tbody>
-        </table>
+        </table> */}
+        <div className="d-flex flex-column flex-lg-row w-100 p-0 m-0 max-width-extra-large">
+          <div className={`col-12 col-lg-3 p-2 `}>
+            <div className={`d-flex flex-column ${styles.cryptoCard} justify-content-center align-items-center w-100`}>
+              <Image src={"/priceLogos/deriv.png"} width={130} height={90} alt="" className={`img-fluid py-4`} />
+              <div className={`d-flex flex-column justify-content-center align-items-center w-100 px-2 py-3 ${styles.buyCol}`}>
+                <p className='text-dark mb-0'>Buying</p>
+                <h3 className='text-dark fw-bold mb-0'>500</h3>
+              </div>
+              <div className={`d-flex flex-column justify-content-center align-items-center w-100 px-2 py-3 ${styles.sellCol}`}>
+                <p className='text-dark mb-0'>Selling</p>
+                <h3 className='text-dark fw-bold mb-0'>500</h3>
+              </div>
+              <div className={`d-flex flex-column justify-content-center align-items-center w-100 px-3 py-4 ${styles.lastCol}`}>
+                <button className={`${styles.buysellbtn} px-3 py-3 w-100`}>Buy/Sell</button>
+                <div className={`d-flex pt-3 justify-content-center align-items-center `}>
+                    <Image src={"/icons/tel.jpg"} width={30} height={30} alt="" className={`img-fluid me-2`} />
+                  <Link href={"#"}>+94 715 665 586</Link>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className={`col-12 col-lg-3 p-2 `}>
+            <div className={`d-flex flex-column ${styles.cryptoCard} justify-content-center align-items-center w-100`}>
+              <Image src={"/priceLogos/skrill.png"} width={130} height={90} alt="" className={`img-fluid py-4`} />
+              <div className={`d-flex flex-column justify-content-center align-items-center w-100 px-2 py-3 ${styles.buyCol}`}>
+                <p className='text-dark mb-0'>Buying</p>
+                <h3 className='text-dark fw-bold mb-0'>500</h3>
+              </div>
+              <div className={`d-flex flex-column justify-content-center align-items-center w-100 px-2 py-3 ${styles.sellCol}`}>
+                <p className='text-dark mb-0'>Selling</p>
+                <h3 className='text-dark fw-bold mb-0'>500</h3>
+              </div>
+              <div className={`d-flex flex-column justify-content-center align-items-center w-100 px-3 py-4 ${styles.lastCol}`}>
+                <button className={`${styles.buysellbtn} px-3 py-3 w-100`}>Buy/Sell</button>
+                <div className={`d-flex pt-3 justify-content-center align-items-center `}>
+                    <Image src={"/icons/tel.jpg"} width={30} height={30} alt="" className={`img-fluid me-2`} />
+                  <Link href={"#"}>+94 715 665 586</Link>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className={`col-12 col-lg-3 p-2 `}>
+            <div className={`d-flex flex-column ${styles.cryptoCard} justify-content-center align-items-center w-100`}>
+              <Image src={"/priceLogos/payoneer.png"} width={130} height={90} alt="" className={`img-fluid py-4`} />
+              <div className={`d-flex flex-column justify-content-center align-items-center w-100 px-2 py-3 ${styles.buyCol}`}>
+                <p className='text-dark mb-0'>Buying</p>
+                <h3 className='text-dark fw-bold mb-0'>500</h3>
+              </div>
+              <div className={`d-flex flex-column justify-content-center align-items-center w-100 px-2 py-3 ${styles.sellCol}`}>
+                <p className='text-dark mb-0'>Selling</p>
+                <h3 className='text-dark fw-bold mb-0'>500</h3>
+              </div>
+              <div className={`d-flex flex-column justify-content-center align-items-center w-100 px-3 py-4 ${styles.lastCol}`}>
+                <button className={`${styles.buysellbtn} px-3 py-3 w-100`}>Buy/Sell</button>
+                <div className={`d-flex pt-3 justify-content-center align-items-center `}>
+                    <Image src={"/icons/tel.jpg"} width={30} height={30} alt="" className={`img-fluid me-2`} />
+                  <Link href={"#"}>+94 715 665 586</Link>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className={`col-12 col-lg-3 p-2 `}>
+            <div className={`d-flex flex-column ${styles.cryptoCard} justify-content-center align-items-center w-100`}>
+              <Image src={"/priceLogos/Amazon.png"} width={130} height={90} alt="" className={`img-fluid py-4`} />
+              <div className={`d-flex flex-column justify-content-center align-items-center w-100 px-2 py-3 ${styles.buyCol}`}>
+                <p className='text-dark mb-0'>Buying</p>
+                <h3 className='text-dark fw-bold mb-0'>500</h3>
+              </div>
+              <div className={`d-flex flex-column justify-content-center align-items-center w-100 px-2 py-3 ${styles.sellCol}`}>
+                <p className='text-dark mb-0'>Selling</p>
+                <h3 className='text-dark fw-bold mb-0'>500</h3>
+              </div>
+              <div className={`d-flex flex-column justify-content-center align-items-center w-100 px-3 py-4 ${styles.lastCol}`}>
+                <button className={`${styles.buysellbtn} px-3 py-3 w-100`}>Buy/Sell</button>
+                <div className={`d-flex pt-3 justify-content-center align-items-center `}>
+                    <Image src={"/icons/tel.jpg"} width={30} height={30} alt="" className={`img-fluid me-2`} />
+                  <Link href={"#"}>+94 715 665 586</Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       {/* services */}
       <div className={`${styles.services} d-flex flex-column flex-lg-row w-100 justify-content-center align-items-center`}>
@@ -361,40 +445,40 @@ export default function Home() {
       {/* experience */}
       <div className={`${styles.experience} d-flex flex-column flex-lg-row w-100 justify-content-center align-items-center py-5`}>
         <div className="max-width-extra-large d-flex flex-column flex-lg-row w-100 justify-content-center align-items-center">
-        <div className={`${styles.leftImgWrapper} col-12 col-lg-6 d-flex justify-content-center align-items-center px-2 px-lg-5`}>
-          <Image src="/layoutimg/experience.png" alt='' width={300} height={200} className='img-fluid'></Image>
-        </div>
-        <div className="col-12 col-lg-6 d-flex flex-column justify-content-center align-items-start text-start px-2 px-lg-5 py-5">
-          <h3>We are the <span>First Trusted</span> and <span>Experienced Team</span> in Sri Lanka</h3>
-          <p className='mb-5'>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do <br />
-            eiusmod tempor incididunt ut labore et dolore magna aliqua ut <br />
-            dolor sit</p>
-          <div className="d-flex flex-column flex-lg-row w-100">
-            <div className="col-12 col-lg-6 d-flex flex-row justify-content-center align-items-center p-3">
-              <svg xmlns="http://www.w3.org/2000/svg" width="58" height="57" viewBox="0 0 58 57" fill="none">
-                <path d="M51.931 5.3674L48.0862 13.8527C47.9099 14.2417 47.8188 14.6638 47.8188 15.0908V52.9396C47.8188 54.0442 48.7142 54.9396 49.8188 54.9396H54.9541C56.0587 54.9396 56.9541 54.0442 56.9541 52.9396V15.0908C56.9541 14.6638 56.8629 14.2417 56.6867 13.8527L52.8419 5.3674C52.6645 4.97589 52.1084 4.97589 51.931 5.3674Z" stroke="#F5A414" strokeWidth="2" />
-                <path d="M47.8188 15.0908H52.9574H56.9541" stroke="#F5A414" strokeWidth="2" />
-                <rect x="6.83413" y="25.1445" width="28.0038" height="2.33365" rx="1.16683" fill="#F5A414" />
-                <rect x="8.16779" y="8.97559" width="10.1678" height="7.83413" rx="1.5" stroke="#F5A414" strokeWidth="2" />
-                <rect x="6.83413" y="36.8125" width="28.0038" height="2.33365" rx="1.16683" fill="#F5A414" />
-                <rect x="6.83413" y="42.6465" width="17.5024" height="2.33365" rx="1.16683" fill="#F5A414" />
-                <rect x="6.83413" y="30.9785" width="28.0038" height="2.33365" rx="1.16683" fill="#F5A414" />
-                <path d="M47.8188 49.8301H56.9541" stroke="#F5A414" strokeWidth="2" />
-                <path d="M1 8.80762V48.1925C1 52.0585 4.13401 55.1925 8 55.1925H34.2603C38.1263 55.1925 41.2603 52.0585 41.2603 48.1925V16.5358C41.2603 14.5484 40.4154 12.6546 38.9365 11.3269L30.3278 3.59866C29.0432 2.44548 27.3778 1.80762 25.6516 1.80762H8C4.13401 1.80762 1 4.94162 1 8.80762Z" stroke="#F5A414" strokeWidth="2" />
-                <path d="M25.9808 2.02441V11.6961C25.9808 13.9053 27.7716 15.6961 29.9808 15.6961H40.2902" stroke="#F5A414" strokeWidth="2" strokeLinecap="round" />
-              </svg>
-              <p className={`${styles.yearTxtWhite} mb-0 ps-3`}>99.9% <br />
-                Case Success</p>
-            </div>
-            <div className="col-12 col-lg-6 d-flex flex-row justify-content-center align-items-center p-3" style={{ backgroundColor: "#F5A414" }}>
-              <div className="d-flex p-2 rounded-2" style={{ backgroundColor: "#333" }}>
-                <h3 className={`${styles.yearNumbers} mb-0`}>15+</h3>
+          <div className={`${styles.leftImgWrapper} col-12 col-lg-6 d-flex justify-content-center align-items-center px-2 px-lg-5`}>
+            <Image src="/layoutimg/experience.png" alt='' width={300} height={200} className='img-fluid'></Image>
+          </div>
+          <div className="col-12 col-lg-6 d-flex flex-column justify-content-center align-items-start text-start px-2 px-lg-5 py-5">
+            <h3>We are the <span>First Trusted</span> and <span>Experienced Team</span> in Sri Lanka</h3>
+            <p className='mb-5'>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do <br />
+              eiusmod tempor incididunt ut labore et dolore magna aliqua ut <br />
+              dolor sit</p>
+            <div className="d-flex flex-column flex-lg-row w-100">
+              <div className="col-12 col-lg-6 d-flex flex-row justify-content-center align-items-center p-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="58" height="57" viewBox="0 0 58 57" fill="none">
+                  <path d="M51.931 5.3674L48.0862 13.8527C47.9099 14.2417 47.8188 14.6638 47.8188 15.0908V52.9396C47.8188 54.0442 48.7142 54.9396 49.8188 54.9396H54.9541C56.0587 54.9396 56.9541 54.0442 56.9541 52.9396V15.0908C56.9541 14.6638 56.8629 14.2417 56.6867 13.8527L52.8419 5.3674C52.6645 4.97589 52.1084 4.97589 51.931 5.3674Z" stroke="#F5A414" strokeWidth="2" />
+                  <path d="M47.8188 15.0908H52.9574H56.9541" stroke="#F5A414" strokeWidth="2" />
+                  <rect x="6.83413" y="25.1445" width="28.0038" height="2.33365" rx="1.16683" fill="#F5A414" />
+                  <rect x="8.16779" y="8.97559" width="10.1678" height="7.83413" rx="1.5" stroke="#F5A414" strokeWidth="2" />
+                  <rect x="6.83413" y="36.8125" width="28.0038" height="2.33365" rx="1.16683" fill="#F5A414" />
+                  <rect x="6.83413" y="42.6465" width="17.5024" height="2.33365" rx="1.16683" fill="#F5A414" />
+                  <rect x="6.83413" y="30.9785" width="28.0038" height="2.33365" rx="1.16683" fill="#F5A414" />
+                  <path d="M47.8188 49.8301H56.9541" stroke="#F5A414" strokeWidth="2" />
+                  <path d="M1 8.80762V48.1925C1 52.0585 4.13401 55.1925 8 55.1925H34.2603C38.1263 55.1925 41.2603 52.0585 41.2603 48.1925V16.5358C41.2603 14.5484 40.4154 12.6546 38.9365 11.3269L30.3278 3.59866C29.0432 2.44548 27.3778 1.80762 25.6516 1.80762H8C4.13401 1.80762 1 4.94162 1 8.80762Z" stroke="#F5A414" strokeWidth="2" />
+                  <path d="M25.9808 2.02441V11.6961C25.9808 13.9053 27.7716 15.6961 29.9808 15.6961H40.2902" stroke="#F5A414" strokeWidth="2" strokeLinecap="round" />
+                </svg>
+                <p className={`${styles.yearTxtWhite} mb-0 ps-3`}>99.9% <br />
+                  Case Success</p>
               </div>
-              <p className={`${styles.yearTxt} mb-0 ps-3`}>Years<br />
-                Experience</p>
+              <div className="col-12 col-lg-6 d-flex flex-row justify-content-center align-items-center p-3" style={{ backgroundColor: "#F5A414" }}>
+                <div className="d-flex p-2 rounded-2" style={{ backgroundColor: "#333" }}>
+                  <h3 className={`${styles.yearNumbers} mb-0`}>15+</h3>
+                </div>
+                <p className={`${styles.yearTxt} mb-0 ps-3`}>Years<br />
+                  Experience</p>
+              </div>
             </div>
           </div>
-        </div>
         </div>
       </div>
       {/* testimonials */}
