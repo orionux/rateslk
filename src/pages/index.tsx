@@ -398,7 +398,7 @@ export default function Home() {
         </div>
       </div>
       {/* testimonials */}
-      <div className={`${styles.testimonials} d-flex flex-column w-100 justify-content-center align-items-center text-center py-5`}>
+      {/* <div className={`${styles.testimonials} d-flex flex-column w-100 justify-content-center align-items-center text-center py-5`}>
         <h3>What Our Clients Say <span> About </span>Us</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore <br />
           magna aliqua ut dolor sit</p>
@@ -406,7 +406,7 @@ export default function Home() {
         <div className='max-width-extra-large d-flex flex-column flex-lg-row p-0 p-lg-3 gap-lg-5 text-start'>
           {renderTestimonials()}
         </div>
-      </div>
+      </div> */}
       {/* contact */}
       <div className={`${styles.contactForm} d-flex flex-column w-100 justify-content-center align-items-center text-center`}>
         <h3 className='mb-5'>Get In Touch</h3>
