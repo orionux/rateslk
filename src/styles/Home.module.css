@@ -678,3 +678,63 @@
   height: 80px !important;
   width: auto !important;
 }
+
+
+/*sidebar*/
+
+.sidebar {
+  width: 0;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  z-index: 1;
+  background-image: url('/icons/sidebarback.png');
+  background-size: 300px 125px;
+  background-repeat: no-repeat; 
+  background-position: right 200px ;
+  
+}
+
+.sidebar.open {
+  width: 75%;
+}
+
+.toggButton {
+  font-size: 40px;
+  cursor: pointer;
+  position: fixed;
+  top: 1px;
+  right: 1px; 
+  z-index: 2;
+  color: grey;
+  border-color: black;
+  border-width: 10px;
+  border-radius: 25%;
+  
+}
+
+
+
+@media screen and (max-width: 767px) {
+  .sidebar {
+    padding-top: 15px;
+    
+  }
+}
+
+@media screen and (min-width: 768px)  and (max-width: 991px) {
+  .sidebar {
+    padding-top: 15px;
+    background-position: right 200px;
+  }
+
+  .sidebar.open {
+    width: 50%;
+  }
+}
+
