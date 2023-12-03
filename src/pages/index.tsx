@@ -6,6 +6,9 @@ import { FaPhoneAlt } from "react-icons/fa";
 import GetHelpButton from '@/components/buttons/getHelpButton';
 import ExchangeRates from '@/components/buttons/ExchangeRates';
 import Link from 'next/link';
+import { Rates } from 'typings';
+import { fetchRates } from '../utils/fetchRates'
+import { GetStaticProps } from 'next';
 
 
 interface Testimonial {
@@ -22,7 +25,13 @@ const testimonials: Testimonial[] = [
   { name: 'John David', role: 'Designer', image: '/testimonial/Photo (3).png', content: 'There are of Lorem Ipsum available, but the majority have su alteration in some form, by injected oir which don`t look even slightly believable.' },
 ];
 
-export default function Home() {
+
+type Props = {
+  rates: Rates[];
+}
+const Home = ({ rates }: Props) => {
+
+  // console.log("rates: ", rates)
 
   const tableData = [
     {
@@ -289,86 +298,39 @@ export default function Home() {
           </tbody>
         </table> */}
         <div className="d-flex flex-column flex-lg-row w-100 p-0 m-0 max-width-extra-large">
-          <div className={`col-12 col-lg-3 p-2 `}>
-            <div className={`d-flex flex-column ${styles.cryptoCard} justify-content-center align-items-center w-100`}>
-              <Image src={"/priceLogos/deriv.png"} width={130} height={90} alt="" className={`img-fluid py-4 ${styles.logoImages}`} />
-              <div className={`d-flex flex-column justify-content-center align-items-center w-100 px-2 py-3 ${styles.buyCol}`}>
-                <p className='text-dark mb-0'>Buying</p>
-                <h3 className='text-dark fw-bold mb-0'>500</h3>
-              </div>
-              <div className={`d-flex flex-column justify-content-center align-items-center w-100 px-2 py-3 ${styles.sellCol}`}>
-                <p className='text-dark mb-0'>Selling</p>
-                <h3 className='text-dark fw-bold mb-0'>500</h3>
-              </div>
-              <div className={`d-flex flex-column justify-content-center align-items-center w-100 px-3 py-4 ${styles.lastCol}`}>
-                <button className={`${styles.buysellbtn} px-3 py-3 w-100`}>Buy/Sell</button>
-                <div className={`d-flex pt-3 justify-content-center align-items-center `}>
-                    <Image src={"/icons/tel.jpg"} width={30} height={30} alt="" className={`img-fluid me-2`} />
-                  <Link href={"#"}>+94 715 665 586</Link>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className={`col-12 col-lg-3 p-2 `}>
-            <div className={`d-flex flex-column ${styles.cryptoCard} justify-content-center align-items-center w-100`}>
-              <Image src={"/priceLogos/skrill.png"} width={130} height={90} alt="" className={`img-fluid py-4 ${styles.logoImages}`} />
-              <div className={`d-flex flex-column justify-content-center align-items-center w-100 px-2 py-3 ${styles.buyCol}`}>
-                <p className='text-dark mb-0'>Buying</p>
-                <h3 className='text-dark fw-bold mb-0'>500</h3>
-              </div>
-              <div className={`d-flex flex-column justify-content-center align-items-center w-100 px-2 py-3 ${styles.sellCol}`}>
-                <p className='text-dark mb-0'>Selling</p>
-                <h3 className='text-dark fw-bold mb-0'>500</h3>
-              </div>
-              <div className={`d-flex flex-column justify-content-center align-items-center w-100 px-3 py-4 ${styles.lastCol}`}>
-                <button className={`${styles.buysellbtn} px-3 py-3 w-100`}>Buy/Sell</button>
-                <div className={`d-flex pt-3 justify-content-center align-items-center `}>
-                    <Image src={"/icons/tel.jpg"} width={30} height={30} alt="" className={`img-fluid me-2`} />
-                  <Link href={"#"}>+94 715 665 586</Link>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className={`col-12 col-lg-3 p-2 `}>
-            <div className={`d-flex flex-column ${styles.cryptoCard} justify-content-center align-items-center w-100`}>
-              <Image src={"/priceLogos/payoneer.png"} width={130} height={90} alt="" className={`img-fluid py-4 ${styles.logoImages}`} />
-              <div className={`d-flex flex-column justify-content-center align-items-center w-100 px-2 py-3 ${styles.buyCol}`}>
-                <p className='text-dark mb-0'>Buying</p>
-                <h3 className='text-dark fw-bold mb-0'>500</h3>
-              </div>
-              <div className={`d-flex flex-column justify-content-center align-items-center w-100 px-2 py-3 ${styles.sellCol}`}>
-                <p className='text-dark mb-0'>Selling</p>
-                <h3 className='text-dark fw-bold mb-0'>500</h3>
-              </div>
-              <div className={`d-flex flex-column justify-content-center align-items-center w-100 px-3 py-4 ${styles.lastCol}`}>
-                <button className={`${styles.buysellbtn} px-3 py-3 w-100`}>Buy/Sell</button>
-                <div className={`d-flex pt-3 justify-content-center align-items-center `}>
-                    <Image src={"/icons/tel.jpg"} width={30} height={30} alt="" className={`img-fluid me-2`} />
-                  <Link href={"#"}>+94 715 665 586</Link>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className={`col-12 col-lg-3 p-2 `}>
-            <div className={`d-flex flex-column ${styles.cryptoCard} justify-content-center align-items-center w-100`}>
-              <Image src={"/priceLogos/Amazon.png"} width={130} height={90} alt="" className={`img-fluid py-4 ${styles.logoImages}`} />
-              <div className={`d-flex flex-column justify-content-center align-items-center w-100 px-2 py-3 ${styles.buyCol}`}>
-                <p className='text-dark mb-0'>Buying</p>
-                <h3 className='text-dark fw-bold mb-0'>500</h3>
-              </div>
-              <div className={`d-flex flex-column justify-content-center align-items-center w-100 px-2 py-3 ${styles.sellCol}`}>
-                <p className='text-dark mb-0'>Selling</p>
-                <h3 className='text-dark fw-bold mb-0'>500</h3>
-              </div>
-              <div className={`d-flex flex-column justify-content-center align-items-center w-100 px-3 py-4 ${styles.lastCol}`}>
-                <button className={`${styles.buysellbtn} px-3 py-3 w-100`}>Buy/Sell</button>
-                <div className={`d-flex pt-3 justify-content-center align-items-center `}>
-                    <Image src={"/icons/tel.jpg"} width={30} height={30} alt="" className={`img-fluid me-2`} />
-                  <Link href={"#"}>+94 715 665 586</Link>
-                </div>
-              </div>
-            </div>
-          </div>
+          {
+            rates.map((rate, index) => {
+              return (
+                <>
+                  <div className={`col-12 col-lg-3 p-2 `} key={index}>
+                    <div className={`d-flex flex-column ${styles.cryptoCard} justify-content-center align-items-center w-100`}>
+                      {/* <Image src={`${rate.mainImage}`} width={130} height={90} alt="" className={`img-fluid py-4 ${styles.logoImages}`} /> */}
+                      {rate.imageUrl ? (
+                        <Image src={`${rate.imageUrl}`} width={130} height={90} alt="" className={`img-fluid py-4 ${styles.logoImages}`} />
+                      ) : (
+                        <div>Image not available</div>
+                      )}
+                      <div className={`d-flex flex-column justify-content-center align-items-center w-100 px-2 py-3 ${styles.buyCol}`}>
+                        <p className='text-dark mb-0'>Buying</p>
+                        <h3 className='text-dark fw-bold mb-0'>{rate.buyRate}</h3>
+                      </div>
+                      <div className={`d-flex flex-column justify-content-center align-items-center w-100 px-2 py-3 ${styles.sellCol}`}>
+                        <p className='text-dark mb-0'>Selling</p>
+                        <h3 className='text-dark fw-bold mb-0'>{rate.sellRate}</h3>
+                      </div>
+                      <div className={`d-flex flex-column justify-content-center align-items-center w-100 px-3 py-4 ${styles.lastCol}`}>
+                        <button className={`${styles.buysellbtn} px-3 py-3 w-100`}>Buy/Sell</button>
+                        <div className={`d-flex pt-3 justify-content-center align-items-center `}>
+                          <Image src={"/icons/tel.jpg"} width={30} height={30} alt="" className={`img-fluid me-2`} />
+                          <Link href={"#"}>+94 715 665 586</Link>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </>
+              )
+            })
+          }
         </div>
       </div>
       {/* services */}
@@ -526,4 +488,16 @@ export default function Home() {
       </div>
     </>
   )
+}
+export default Home
+
+export const getStaticProps: GetStaticProps<Props> = async () => {
+  const rates: Rates[] = await fetchRates();
+
+  return {
+    props: {
+      rates
+    },
+    revalidate: 10,
+  }
 }
