@@ -135,7 +135,7 @@ export default function Home() {
         <p>Elevate your currency exchange experience with us. Trust, Expertise, Excellence – Your premier destination for seamless transactions and unmatched service..</p>
         <button className={`px-3 py-3`}>View vertual wallet rates</button>
 
-        <div className='max-width-extra-large col-11 p-5 mt-5 mb-0 bg-opacity-25 bg-light border border-3 rounded position-relative'>
+        <div className='max-width-extra-large col-11 p-2 p-lg-5 mt-5 mb-0 bg-opacity-25 bg-light border border-3 rounded position-relative'>
           {exchangeRates && (
             <div className='col-12 d-flex flex-wrap'>
               {exchangeRates.usd && (
