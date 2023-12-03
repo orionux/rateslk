@@ -132,7 +132,7 @@ export default function Home() {
       <div className={`${styles.hero} d-flex flex-column text-center w-100 justify-content-center align-items-center py-5`}>
         <span className={`px-3 py-1 mb-0 ${styles.UpdatedTxt}`}>Updated on March 31, 2022</span>
         <h2 className='mb-3'>Put your <span>trust</span>  in us, <span>exchange</span> <br /> with confidence.</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut <br /> labore et dolore magna aliqua ut dolor sit</p>
+        <p>Elevate your currency exchange experience with us. Trust, Expertise, Excellence – Your premier destination for seamless transactions and unmatched service..</p>
         <button className={`px-3 py-3`}>View vertual wallet rates</button>
 
         <div className='max-width-extra-large col-11 p-5 mt-5 mb-0 bg-opacity-25 bg-light border border-3 rounded position-relative'>

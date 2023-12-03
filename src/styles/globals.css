@@ -42,6 +42,22 @@
   }
 }
 
+@media screen and (max-width: 992px) {
+  :root {
+    --font-18: 14px;
+    --font-40: 32px;
+    --font-42: 32px;
+    --font-22: 18px;
+    --font-72: 36px;
+    --font-30: 30px;
+    --font-20: 18px;
+    --font-15: 12px;
+    --font-28: 22px;
+    --font-20-footer: 16px;
+    --bs-table-bg: #333 !important;
+  }
+}
+
 
 
 
