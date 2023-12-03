@@ -291,7 +291,7 @@ export default function Home() {
         <div className="d-flex flex-column flex-lg-row w-100 p-0 m-0 max-width-extra-large">
           <div className={`col-12 col-lg-3 p-2 `}>
             <div className={`d-flex flex-column ${styles.cryptoCard} justify-content-center align-items-center w-100`}>
-              <Image src={"/priceLogos/deriv.png"} width={130} height={90} alt="" className={`img-fluid py-4`} />
+              <Image src={"/priceLogos/deriv.png"} width={130} height={90} alt="" className={`img-fluid py-4 ${styles.logoImages}`} />
               <div className={`d-flex flex-column justify-content-center align-items-center w-100 px-2 py-3 ${styles.buyCol}`}>
                 <p className='text-dark mb-0'>Buying</p>
                 <h3 className='text-dark fw-bold mb-0'>500</h3>
@@ -311,7 +311,7 @@ export default function Home() {
           </div>
           <div className={`col-12 col-lg-3 p-2 `}>
             <div className={`d-flex flex-column ${styles.cryptoCard} justify-content-center align-items-center w-100`}>
-              <Image src={"/priceLogos/skrill.png"} width={130} height={90} alt="" className={`img-fluid py-4`} />
+              <Image src={"/priceLogos/skrill.png"} width={130} height={90} alt="" className={`img-fluid py-4 ${styles.logoImages}`} />
               <div className={`d-flex flex-column justify-content-center align-items-center w-100 px-2 py-3 ${styles.buyCol}`}>
                 <p className='text-dark mb-0'>Buying</p>
                 <h3 className='text-dark fw-bold mb-0'>500</h3>
@@ -331,7 +331,7 @@ export default function Home() {
           </div>
           <div className={`col-12 col-lg-3 p-2 `}>
             <div className={`d-flex flex-column ${styles.cryptoCard} justify-content-center align-items-center w-100`}>
-              <Image src={"/priceLogos/payoneer.png"} width={130} height={90} alt="" className={`img-fluid py-4`} />
+              <Image src={"/priceLogos/payoneer.png"} width={130} height={90} alt="" className={`img-fluid py-4 ${styles.logoImages}`} />
               <div className={`d-flex flex-column justify-content-center align-items-center w-100 px-2 py-3 ${styles.buyCol}`}>
                 <p className='text-dark mb-0'>Buying</p>
                 <h3 className='text-dark fw-bold mb-0'>500</h3>
@@ -351,7 +351,7 @@ export default function Home() {
           </div>
           <div className={`col-12 col-lg-3 p-2 `}>
             <div className={`d-flex flex-column ${styles.cryptoCard} justify-content-center align-items-center w-100`}>
-              <Image src={"/priceLogos/Amazon.png"} width={130} height={90} alt="" className={`img-fluid py-4`} />
+              <Image src={"/priceLogos/Amazon.png"} width={130} height={90} alt="" className={`img-fluid py-4 ${styles.logoImages}`} />
               <div className={`d-flex flex-column justify-content-center align-items-center w-100 px-2 py-3 ${styles.buyCol}`}>
                 <p className='text-dark mb-0'>Buying</p>
                 <h3 className='text-dark fw-bold mb-0'>500</h3>
