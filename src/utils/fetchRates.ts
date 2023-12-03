@@ -12,7 +12,6 @@ export const fetchRates = async () => {
     // console.log('Query:', query);
     const data = await client.fetch(query);
 
-    // const data = await res.json();
     const rates: Rates[] = data;
 
     return rates;
