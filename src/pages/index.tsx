@@ -298,7 +298,7 @@ export default function Home() {
               <span className={`${styles.spanRed} px-5 py-3 mb-3 mb-lg-0`}>24/7 Support</span>
               <span className={`${styles.spanGreen} px-5 py-3`}>99% Secured</span>
             </div>
-            <button className='px-5 py-3 mt-3'>Get Started</button>
+            <button className={`px-5 py-3 mt-3 ${styles.yellowButton}`}>Get Started</button>
           </div>
           <div className={`col-12 col-lg-8 ps-0 ps-lg-2 ${styles.rightCol}`}>
             <div className={`d-flex flex-column flex-lg-row ${styles.cardRow}`}>
