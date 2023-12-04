@@ -4,7 +4,7 @@ import React from 'react'
 import styles from '@/styles/Home.module.css'
 
 import { useState } from 'react';
-import { IoMdClose, IoIosMenu } from 'react-icons/io';
+import { IoMdClose } from 'react-icons/io';
 
 const Header = () => {
 
@@ -31,9 +31,7 @@ const Header = () => {
               <span className="navbar-toggler-icon"></span>
             </button>
             
-      {/*<div className={`${styles.toggButton} d-lg-none d-flex justify-content-center`} onClick={toggleSidebar}>
-        <IoIosMenu className='border border-grey' />
-  </div>*/}
+    
 
       
       <div className={`${styles.sidebar} ${isSidebarOpen ? styles.open : ''}`}>
@@ -50,13 +48,13 @@ const Header = () => {
         </div>
 
         <div className={`${styles.menu} ps-4 text-start`}>
-          <a href=''className='text-decoration-none text-dark'>Daily Rates</a>
+          <a href='#'className='text-decoration-none text-dark'>Daily Rates</a>
           <hr />
-          <a href='' className='text-decoration-none text-dark'>Contact Us</a>
+          <a href='#' className='text-decoration-none text-dark'>Contact Us</a>
           <hr />
-          <a href='' className='text-decoration-none text-dark'>Get Help</a>
+          <a href='#' className='text-decoration-none text-dark'>Get Help</a>
           <hr />
-          <a href='' className='text-decoration-none text-dark'>What`s New</a>
+          <a href='#' className='text-decoration-none text-dark'>What`s New</a>
           <hr />
         </div>
       </div>
@@ -83,7 +81,7 @@ const Header = () => {
         </nav>
       </div>
     </>
-  )
-}
+  );
+};
 
 export default Header

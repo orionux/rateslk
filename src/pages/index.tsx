@@ -408,7 +408,7 @@ const Home = ({ rates }: Props) => {
       <div className={`${styles.experience} d-flex flex-column flex-lg-row w-100 justify-content-center align-items-center py-5`}>
         <div className="max-width-extra-large d-flex flex-column flex-lg-row w-100 justify-content-center align-items-center">
           <div className={`${styles.leftImgWrapper} col-12 col-lg-6 d-flex justify-content-center align-items-center px-2 px-lg-5`}>
-            <Image src="/layoutimg/experience.png" alt='' width={300} height={200} className='img-fluid'></Image>
+            <Image src="/layoutimg/dollar.png" alt='' width={700} height={700} className='img-fluid'></Image>
           </div>
           <div className="col-12 col-lg-6 d-flex flex-column justify-content-center align-items-start text-start px-2 px-lg-5 py-5">
             <h3>We are the <span>First Trusted</span> and <span>Experienced Team</span> in Sri Lanka</h3>
