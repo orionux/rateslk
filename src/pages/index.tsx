@@ -146,12 +146,12 @@ const Home = ({ rates }: Props) => {
         <p className='d-flex d-lg-none'>Elevate your currency exchange experience with us. Trust, Expertise, Excellence – Your premier destination for seamless transactions and unmatched service..</p>
         <button className={`px-3 py-3`}>View vertual wallet rates</button>
 
-        <div className='max-width-extra-large col-11 p-2 p-lg-5 mt-5 mb-0 bg-opacity-25 bg-light border border-3 rounded position-relative'>
+        <div className={`max-width-extra-large col-11 p-2 p-lg-5 mt-5 mb-0 position-relative ${styles.flagBackColor} `}>
           {exchangeRates && (
             <div className='col-12 d-flex flex-wrap'>
               {exchangeRates.usd && (
                 <div className='d-flex col-12 col-md-6 col-lg-4 pb-3 px-2 justify-content-center'>
-                  <div className='d-flex bg-opacity-75 bg-light w-100 border rounded border-3 justify-content-between'>
+                  <div className='d-flex bg-opacity-75 bg-light w-100 border rounded-3 border-3 justify-content-between'>
                     <div className={`d-flex flex-column ${styles.flagBox} col-4`}>
                       <Image src="/flags/usd.png" alt="" width="130" height="75" className={`p-1 align-self-center ${styles.flegImage}`} />
                       <h3>USD</h3>
@@ -169,7 +169,7 @@ const Home = ({ rates }: Props) => {
               )}
               {exchangeRates.eur && (
                 <div className='d-flex col-12 col-md-6 col-lg-4 pb-3 px-2 justify-content-center'>
-                  <div className='d-flex bg-opacity-75 bg-light w-100 border rounded border-3 justify-content-between'>
+                  <div className='d-flex bg-opacity-75 bg-light w-100 border rounded-3 border-3 justify-content-between'>
                     <div className={`d-flex flex-column ${styles.flagBox} col-4`}>
                       <Image src="/flags/eur.png" alt="" width="130" height="75" className={`p-1 align-self-center ${styles.flegImage}`} />
                       <h3>EUR</h3>
@@ -187,7 +187,7 @@ const Home = ({ rates }: Props) => {
               )}
               {exchangeRates.gbp && (
                 <div className='d-flex col-12 col-md-6 col-lg-4 pb-3 px-2 justify-content-center'>
-                  <div className='d-flex bg-opacity-75 bg-light w-100 border rounded border-3 justify-content-between'>
+                  <div className='d-flex bg-opacity-75 bg-light w-100 border rounded-3 border-3 justify-content-between'>
                     <div className={`d-flex flex-column ${styles.flagBox} col-4`}>
                       <Image src="/flags/gbp.png" alt="" width="130" height="75" className={`p-1 align-self-center ${styles.flegImage}`} />
                       <h3>GBP</h3>
@@ -206,7 +206,7 @@ const Home = ({ rates }: Props) => {
 
               {exchangeRates.jpy && (
                 <div className={showMore ? 'd-flex col-12 col-md-6 col-lg-4 pb-3 px-2 justify-content-center' : 'd-none'}>
-                  <div className='d-flex bg-opacity-75 bg-light w-100  border rounded border-3 justify-content-between'>
+                  <div className='d-flex bg-opacity-75 bg-light w-100  border rounded-3 border-3 justify-content-between'>
                     <div className={`d-flex flex-column ${styles.flagBox} col-4`}>
                       <Image src="/flags/jpy.png" alt="" width="130" height="75" className={`p-1 align-self-center ${styles.flegImage}`} />
                       <h3>JPY</h3>
@@ -224,7 +224,7 @@ const Home = ({ rates }: Props) => {
               )}
               {exchangeRates.aud && (
                 <div className={showMore ? 'd-flex col-12 col-md-6 col-lg-4 pb-3 px-2 justify-content-center' : 'd-none'}>
-                  <div className='d-flex bg-opacity-75 bg-light w-100 border rounded border-3 justify-content-between'>
+                  <div className='d-flex bg-opacity-75 bg-light w-100 border rounded-3 border-3 justify-content-between'>
                     <div className={`d-flex flex-column ${styles.flagBox} col-4`}>
                       <Image src="/flags/aud.png" alt="" width="130" height="75" className={`p-1 align-self-center ${styles.flegImage}`} />
                       <h3>AUD</h3>
@@ -243,7 +243,7 @@ const Home = ({ rates }: Props) => {
 
               {exchangeRates.cnh && (
                 <div className={showMore ? 'd-flex col-12 col-md-6 col-lg-4 pb-3 px-2 justify-content-center' : 'd-none'}>
-                  <div className='d-flex bg-opacity-75 bg-light w-100  border rounded border-3 justify-content-between'>
+                  <div className= 'd-flex bg-opacity-75 bg-light w-100  border rounded-3 border-3 justify-content-between'>
                     <div className={`d-flex flex-column ${styles.flagBox} col-4`}>
                       <Image src="/flags/cnh.png" alt="" width="130" height="75" className={`p-1 align-self-center ${styles.flegImage}`} />
                       <h3>WON</h3>

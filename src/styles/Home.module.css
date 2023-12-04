@@ -598,7 +598,7 @@
 }
 
 .flagBox {
-  background-color: #ffffff7e;
+  background-color: #F4F4F4;
 }
 
 .flagBox h3 {
@@ -608,8 +608,20 @@
   font-family: var(--font-family-secondary) !important;
 }
 
+.flagBackColor {
+  background-color: rgba(245, 245, 245, 0.36);
+  border-radius: 20px;
+  border: 3px solid #FFF;
+  backdrop-filter: blur(1px);
+}
+
+.buySellBox {
+  
+}
+
 .currencyColBorder {
   border-right: solid 1px #6D6D70;
+
 }
 
 .yellowButton {
