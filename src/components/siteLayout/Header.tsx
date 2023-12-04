@@ -63,16 +63,16 @@ const Header = () => {
           <div className="d-flex">
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
               <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                <li className="nav-item px-2">
+                <li className="nav-item px-4">
                   <a className="nav-link active" aria-current="page" href="#">Home</a>
                 </li>
-                <li className="nav-item px-2">
+                <li className="nav-item px-4">
                   <a className="nav-link" href="#">Buy</a>
                 </li>
-                <li className="nav-item px-2">
+                <li className="nav-item px-4">
                   <a className="nav-link" href="#">Sell</a>
                 </li>
-                <li className={`nav-item px-2 ${styles.navButton}`}>
+                <li className={`nav-item px-4 ${styles.navButton}`}>
                   <a className="nav-link" href="#">Register</a>
                 </li>
               </ul>
