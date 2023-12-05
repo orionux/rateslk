@@ -273,7 +273,7 @@ const Home = ({ rates }: Props) => {
         </div>
       </div>
       {/* table */}
-      <div className={`${styles.priceTable} d-flex flex-column text-center w-100 justify-content-center align-items-center`}>
+      <div className={`${styles.priceTable} d-flex flex-column text-center w-100 justify-content-center align-items-center`} id='TodayRatingsSec'>
         <h3 className='pt-5'>TODAY RATINGS</h3>
         <p className='pb-5 mb-5'>Check out our freshly updated exchange rates today and get the best deal for your money!</p>
         <div className="d-flex row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 w-100 p-0 m-0 max-width-extra-large justify-content-center">
