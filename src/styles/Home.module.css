@@ -641,14 +641,18 @@
   box-shadow: -7px 0px 50px 0px rgba(0, 0, 0, 0.24), 0px 4px 8.5px 0px rgba(0, 0, 0, 0.11);
   background-color: #FEFEFE;
   border-radius: 12px !important;
+  
 }
 
 .buyCol {
   background-color: rgba(144, 0, 249, 0.12);
+  border-radius: 50px;
+  
 }
 
 .sellCol {
   background-color: rgba(0, 249, 114, 0.12);
+  border-radius: 50px;
 }
 
 .lastCol {
@@ -684,7 +688,7 @@
   text-decoration: none;
 }
 .logoImages{
-  height: 80px !important;
+  height: 90px !important;
   width: auto !important;
 }
 

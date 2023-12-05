@@ -282,20 +282,20 @@ const Home = ({ rates }: Props) => {
               return (
                 <>
                   <div className={`col-12 col-sm-6 col-md-4 col-lg-3 p-2 `} key={index}>
-                    <div className={`d-flex flex-column ${styles.cryptoCard} justify-content-center align-items-center w-100`}>
+                    <div className={`d-flex flex-column ${styles.cryptoCard} justify-content-center align-items-center w-100 m-2 `}>
                       {/* <Image src={`${rate.mainImage}`} width={130} height={90} alt="" className={`img-fluid py-4 ${styles.logoImages}`} /> */}
                       {rate.imageUrl ? (
-                        <Image src={`${rate.imageUrl}`} width={130} height={90} alt="" className={`img-fluid py-4 ${styles.logoImages}`} />
+                        <Image src={`${rate.imageUrl}`} width={130} height={90} alt="" className={`img-fluid py-4 px-4 my-3 ${styles.logoImages}`} />
                       ) : (
                         <div>Image not available</div>
                       )}
-                      <div className={`d-flex flex-column justify-content-center align-items-center w-100 px-2 py-3 ${styles.buyCol}`}>
-                        <p className='text-dark mb-0'>Buying</p>
-                        <h3 className='text-dark fw-bold mb-0'>{rate.buyRate}</h3>
+                      <div className={`d-flex flex-column justify-content-center align-items-center w-75 px-2 py-3 mb-1 ${styles.buyCol}`}>
+                        <p className='text-dark fw-medium fs-5 mb-0'>Buying</p>
+                        <h3 className='text-dark fw-bold mb-0 fs-4'>{rate.buyRate}</h3>
                       </div>
-                      <div className={`d-flex flex-column justify-content-center align-items-center w-100 px-2 py-3 ${styles.sellCol}`}>
-                        <p className='text-dark mb-0'>Selling</p>
-                        <h3 className='text-dark fw-bold mb-0'>{rate.sellRate}</h3>
+                      <div className={`d-flex flex-column justify-content-center align-items-center w-75 px-2 py-3 ${styles.sellCol}`}>
+                        <p className='text-dark fw-medium fs-5 mb-0'>Selling</p>
+                        <h3 className='text-dark fw-bold mb-0 fs-4'>{rate.sellRate}</h3>
                       </div>
                       <div className={`d-flex flex-column justify-content-center align-items-center w-100 px-3 py-4 ${styles.lastCol}`}>
                         <button className={`${styles.buysellbtn} px-3 py-3 w-100`}>Buy/Sell</button>
