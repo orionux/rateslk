@@ -699,22 +699,22 @@
   width: 0;
   height: 100%;
   position: fixed;
-  top: 0;
+  top: 5%;
   left: 0;
   background-color: white;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
   z-index: 1;
-  background-image: url('/icons/sidebarback.png');
-  background-size: 300px 125px;
+  background-image: url('/siderback.png');
+  background-size: 260px 90px;
   background-repeat: no-repeat; 
-  background-position: right 200px ;
+  background-position: center center;
   
 }
 
 .sidebar.open {
-  width: 75%;
+  width: 30%;
 }
 
 .toggButton {
@@ -733,21 +733,24 @@
 
 
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 599px) {
   .sidebar {
     padding-top: 15px;
     
   }
+  .sidebar.open {
+    width: 75%;
+  }
 }
 
-@media screen and (min-width: 768px)  and (max-width: 991px) {
+@media screen and (min-width: 600px)  and (max-width: 991px) {
   .sidebar {
     padding-top: 15px;
-    background-position: right 200px;
+    background-position: center center;
   }
 
   .sidebar.open {
-    width: 50%;
+    width: 40%;
   }
 }
 
