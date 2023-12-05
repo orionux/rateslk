@@ -77,7 +77,7 @@ const Header = () => {
                   <a className="nav-link" href="#TodayRatingsSec">Sell</a>
                 </li>
                 <li className={`nav-item px-4 ${styles.navButton}`}>
-                  <a className="nav-link" href="/">Register</a>
+                  <a className="nav-link" href="#">Register</a>
                 </li>
               </ul>
             </div>

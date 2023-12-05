@@ -312,6 +312,28 @@ const Home = ({ rates }: Props) => {
           }
         </div>
       </div>
+      {/*Agent Services*/}
+      <div className={`${styles.agentServices} text-center w-100 justify-content-center align-items-center `}>
+        <h3 className='pt-0 fw-bold fs-1'>Agent Services</h3>
+        <p className='pb-5 mb-5 fw-medium fs-5'>Feel free to contact us to get agent services of world lead companies</p>
+        <div className='d-flex row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 w-100 p-0 m-0 max-width-extra-large justify-content-center align-items-center'>
+          <div className={` ${styles.agentServicesBox} shadow p-3 mb-5  bg-white rounded d-flex justify-content-center align-items-center`}>
+            <Image src='/agentservices/1xbet.png' alt='' width={150} height={40} className=''/>
+          </div>
+          <div className={` ${styles.agentServicesBox}  shadow p-3 mb-5  bg-white rounded d-flex justify-content-center align-items-center`}>
+            <Image src='/agentservices/deriv.png' alt='' width={150} height={50} className=''/>
+          </div>
+          <div className={` ${styles.agentServicesBox}  shadow p-3 mb-5  bg-white rounded d-flex justify-content-center align-items-center`}>
+            <Image src='/agentservices/ttrust.png' alt='' width={180} height={50} className=''/>
+          </div>
+          <div className={` ${styles.agentServicesBox} shadow p-3 mb-5  bg-white rounded d-flex justify-content-center align-items-center`}>
+            <Image src='/agentservices/melbet.png' alt='' width={150} height={80} className=''/>
+          </div>
+        </div>
+        <div>
+          <button className={`${styles.agentServicesBtn} mt-5`}>CONTACT US</button>
+        </div>  
+      </div>
       {/* services */}
       <div className={`${styles.services} d-flex flex-column flex-lg-row w-100 justify-content-center align-items-center`}>
         <div className="max-width-extra-large d-flex flex-column flex-lg-row w-100 justify-content-center align-items-center">
