@@ -50,6 +50,10 @@ const Header = () => {
         <div className={`${styles.menu} ps-4 text-start`}>
           <a href='#'className='text-decoration-none text-dark'>Daily Rates</a>
           <hr />
+          <a href='#'className='text-decoration-none text-dark'>E Wallet</a>
+          <hr />
+          <a href='#'className='text-decoration-none text-dark'>Agent Services</a>
+          <hr />
           <a href='#' className='text-decoration-none text-dark'>Contact Us</a>
           <hr />
           <a href='#' className='text-decoration-none text-dark'>Get Help</a>
