@@ -313,7 +313,7 @@ const Home = ({ rates }: Props) => {
         </div>
       </div>
       {/*Agent Services*/}
-      <div className={`${styles.agentServices} text-center w-100 justify-content-center align-items-center `}>
+      <div className={`${styles.agentServices} text-center w-100 d-flex flex-column justify-content-center align-items-center `}>
         <h3 className='pt-0 fw-bold fs-1'>Agent Services</h3>
         <p className='pb-5 mb-5 fw-medium fs-5'>Feel free to contact us to get agent services of world lead companies</p>
         <div className='d-flex row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 w-100 p-0 m-0 max-width-extra-large justify-content-center align-items-center'>
