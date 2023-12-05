@@ -352,21 +352,21 @@ const Home = ({ rates }: Props) => {
               <div className='col-12 col-lg-6 d-flex p-2 position-relative' >
                 <div className={`shadow-lg p-4 d-flex flex-column justify-content-center bg-white ${styles.card1}`} style={{ borderRadius: "30px" }}  >
                   <Image src={'/icons/Group (4).png'} alt="" width={120} height={120} className={`img-fluid ${styles.cardicon} p-2`} />
-                  <Image src={'/icons/Group.png'} alt="" width={40} height={40} className="img-fluid mb-4" />
-                  <h5>Instant 24/7 Support</h5>
+                  <Image src={'/icons/Group.png'} alt="" width={40} height={40} className="img-fluid mb-3" />
+                  <h5 className='position-relative'>Instant 24/7 Support</h5>
                   <p className='mb-0'>Get help round the clock from a professional, fast support team.
                     &quot;Your money, your confidence, our expertise.&quot;</p>
-                  <Link href='#' className='text-decoration-none mt-4'>Learn More</Link>
+                  <Link href='#' className='text-decoration-none mt-3'>Learn More</Link>
                 </div>
               </div>
               <div className='col-12 col-lg-6 d-flex p-2 position-relative'>
                 <div className={`shadow-lg p-4 d-flex flex-column justify-content-center bg-white ${styles.card2}`} style={{ borderRadius: "30px" }} >
                   <Image src={'/icons/Group (3).png'} alt="" width={120} height={120} className={`img-fluid ${styles.cardicon}`} />
-                  <Image src={'/icons/Group (2).png'} alt="" width={40} height={40} className="img-fluid mb-4" />
-                  <h5>Verified Sellers</h5>
+                  <Image src={'/icons/Group (2).png'} alt="" width={30} height={30} className="img-fluid pb-2" />
+                  <h5 className='position-relative'>Verified Sellers</h5>
                   <p className='mb-0'>We partner with the best of the best buyers and sellers. Verified sellers expertise to provide smooth service in exchange e-currencies with trust.
                     &quot;Experience the best exchange rate; every day, all day.&quot;</p>
-                  <Link href='#' className='text-decoration-none mt-4'>Learn More</Link>
+                  <Link href='#' className='text-decoration-none mt-3'>Learn More</Link>
                 </div>
               </div>
             </div>
@@ -374,20 +374,20 @@ const Home = ({ rates }: Props) => {
               <div className='col-12 col-lg-6 d-flex p-2 position-relative'>
                 <div className={`shadow-lg p-4 d-flex flex-column justify-content-center bg-white ${styles.card3}`} style={{ borderRadius: "30px" }} >
                   <Image src={'/icons/Group (5).png'} alt="" width={120} height={120} className={`img-fluid ${styles.cardicon}`} />
-                  <Image src={'/icons/Group (1).png'} alt="" width={40} height={40} className="img-fluid mb-4" />
-                  <h5>No Contracts</h5>
+                  <Image src={'/icons/Group (1).png'} alt="" width={40} height={40} className="img-fluid pt-1 pb-3" />
+                  <h5 className='position-relative'>No Contracts</h5>
                   <p className='mb-0'>That&apos;s right! NO CONTRACTS! We want you to do business with us because of our excellent customer service and professional solutions, not by obligation!
                     &quot;Exchange hassle-free, travel worry-free.&quot;</p>
-                  <Link href='#' className='text-decoration-none mt-4'>Learn More</Link>
+                  <Link href='#' className='text-decoration-none mt-2'>Learn More</Link>
                 </div>
               </div>
               <div className='col-12 col-lg-6 d-flex p-2 position-relative'>
                 <div className={`shadow-lg p-4 d-flex flex-column justify-content-center bg-white ${styles.card4}`} style={{ borderRadius: "30px" }} >
                   <Image src={'/icons/Icon (1).png'} alt="" width={100} height={120} className={`img-fluid ${styles.cardicon}`} />
-                  <Image src={'/icons/Icon.png'} alt="" width={40} height={40} className="img-fluid mb-4" />
-                  <h5>We CARE about your business!</h5>
+                  <Image src={'/icons/Icon.png'} alt="" width={40} height={40} className="img-fluid mb-3" />
+                  <h5 className='position-relative'>We CARE about your business!</h5>
                   <p className='mb-0'>You&apos;re in good hands with Rates.lk. We care about your business&apos;s well-being. &quot;From euros to dollars, we&apos;ve got you covered.&quot;</p>
-                  <Link href='#' className='text-decoration-none mt-4'>Learn More</Link>
+                  <Link href='#' className='text-decoration-none mt-3'>Learn More</Link>
                 </div>
               </div>
             </div>
@@ -395,10 +395,10 @@ const Home = ({ rates }: Props) => {
               <div className='col-12 col-lg-6 d-flex p-2 position-relative'>
                 <div className={`shadow-lg p-4 d-flex flex-column justify-content-center bg-white ${styles.card5}`} style={{ borderRadius: "30px" }} >
                   <Image src={'/icons/Frame (1).png'} alt="" width={120} height={120} className={`img-fluid ${styles.cardicon}`} />
-                  <Image src={'/icons/Frame.png'} alt="" width={40} height={40} className="img-fluid mb-4" />
-                  <h5>Satisfaction</h5>
+                  <Image src={'/icons/Frame.png'} alt="" width={50} height={50} className="img-fluid pt-2 pb-3" />
+                  <h5 className='position-relative'>Satisfaction</h5>
                   <p className='mb-0'>100% Satisfaction is our goal, providing prompt service in a reliable and fair manner where our services and solutions need us again and again. &quot;Exchange like a pro, travel like a boss.&quot;</p>
-                  <Link href='#' className='text-decoration-none mt-4'>Learn More</Link>
+                  <Link href='#' className='text-decoration-none mt-2'>Learn More</Link>
                 </div>
               </div>
             </div>

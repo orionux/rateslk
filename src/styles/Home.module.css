@@ -178,7 +178,11 @@
 .card3,
 .card4,
 .card5 {
-  height: 290px !important;
+  height: 18rem !important;
+}
+
+.card2 {
+  min-width: 18rem;
 }
 
 .card2,
@@ -249,6 +253,7 @@
     margin: 0 !important;
     position: relative;
     height: max-content !important;
+    width: 100%;
   }
 
   .cardRow {
