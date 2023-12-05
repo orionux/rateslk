@@ -665,10 +665,14 @@
 }
 
 .cryptoCard {
-  box-shadow: -7px 0px 50px 0px rgba(0, 0, 0, 0.24), 0px 4px 8.5px 0px rgba(0, 0, 0, 0.11);
+  transition: box-shadow 0.5s ease;
   background-color: #FEFEFE;
   border-radius: 12px !important;
-  
+  border: 1px solid #DFDFDF;
+}
+
+.cryptoCard:hover {
+  box-shadow: -7px 0px 50px 0px rgba(0, 0, 0, 0.24), 0px 4px 8.5px 0px rgba(0, 0, 0, 0.11);
 }
 
 .buyCol {
