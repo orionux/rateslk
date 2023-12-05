@@ -276,34 +276,12 @@ const Home = ({ rates }: Props) => {
       <div className={`${styles.priceTable} d-flex flex-column text-center w-100 justify-content-center align-items-center`}>
         <h3 className='pt-5'>TODAY RATINGS</h3>
         <p className='pb-5 mb-5'>Check out our freshly updated exchange rates today and get the best deal for your money!</p>
-        {/* <table className={`table my-5 ${styles.tableStyles} max-width-extra-large`}>
-          <thead className={``}>
-            <tr className={`${styles.tableHeader} table-dark`}>
-              <th scope="col"></th>
-              <th scope="col" className={`${styles.tableHeaderCellPurple}`}>Buying</th>
-              <th scope="col" className={`${styles.tableHeaderCellGreen}`}>Selling</th>
-              <th scope="col"></th>
-            </tr>
-          </thead>
-          <tbody>
-            {tableData.map((data) => (
-              <tr key={data.id}>
-                <th scope="row" className={`${styles.tableDataLight} px-3 pt-3 pb-2`}>
-                  <Image src={data.img} width={100} height={60} alt="" className={`img-fluid ${styles.tableImage}`} />
-                </th>
-                <td className={`${styles.tableHeaderCellPurple} ${styles.purpleData} px-3 pt-3 pb-2`}>{data.buying}</td>
-                <td className={`${styles.tableHeaderCellGreen} ${styles.greenData} px-3 pt-3 pb-2`}>{data.selling}</td>
-                <td className={`${styles.tableDataLight} px-3 pt-3 pb-2`}><button className={`${styles.buysellbtn} px-3 py-2`}>{data.buttonTxt}</button></td>
-              </tr>
-            ))}
-          </tbody>
-        </table> */}
-        <div className="d-flex flex-column flex-lg-row w-100 p-0 m-0 max-width-extra-large">
+        <div className="d-flex row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 w-100 p-0 m-0 max-width-extra-large justify-content-center">
           {
             rates.map((rate, index) => {
               return (
                 <>
-                  <div className={`col-12 col-lg-3 p-2 `} key={index}>
+                  <div className={`col-12 col-sm-6 col-md-4 col-lg-3 p-2 `} key={index}>
                     <div className={`d-flex flex-column ${styles.cryptoCard} justify-content-center align-items-center w-100`}>
                       {/* <Image src={`${rate.mainImage}`} width={130} height={90} alt="" className={`img-fluid py-4 ${styles.logoImages}`} /> */}
                       {rate.imageUrl ? (
@@ -321,10 +299,10 @@ const Home = ({ rates }: Props) => {
                       </div>
                       <div className={`d-flex flex-column justify-content-center align-items-center w-100 px-3 py-4 ${styles.lastCol}`}>
                         <button className={`${styles.buysellbtn} px-3 py-3 w-100`}>Buy/Sell</button>
-                        <div className={`d-flex pt-3 justify-content-center align-items-center `}>
+                        {/* <div className={`d-flex pt-3 justify-content-center align-items-center `}>
                           <Image src={"/icons/tel.jpg"} width={30} height={30} alt="" className={`img-fluid me-2`} />
                           <Link href={"#"}>+94 715 665 586</Link>
-                        </div>
+                        </div> */}
                       </div>
                     </div>
                   </div>
