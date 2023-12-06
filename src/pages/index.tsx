@@ -421,7 +421,7 @@ const Home = ({ rates }: Props) => {
           </div>
           <div className="col-12 col-lg-6 d-flex flex-column justify-content-center align-items-start text-start px-2 px-lg-5 py-5">
             <h3>We are the <span>First Trusted</span> and <span>Experienced Team</span> in Sri Lanka</h3>
-            <p className='mb-5'>Leading the way as Sri Lanka's first and most trusted currency exchange team, our seasoned professionals bring unmatched expertise to ensure reliable and secure financial transactions. Choose confidence, choose experience – your premier destination for excellence in foreign currency services.</p>
+            <p className='mb-5'>Leading the way as Sri Lanka`s first and most trusted currency exchange team, our seasoned professionals bring unmatched expertise to ensure reliable and secure financial transactions. Choose confidence, choose experience – your premier destination for excellence in foreign currency services.</p>
             <div className="d-flex flex-column flex-lg-row w-100">
               <div className="col-12 col-lg-6 d-flex flex-row justify-content-center align-items-center p-3">
                 <svg xmlns="http://www.w3.org/2000/svg" width="58" height="57" viewBox="0 0 58 57" fill="none">
