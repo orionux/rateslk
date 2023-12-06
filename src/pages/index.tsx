@@ -139,7 +139,7 @@ const Home = ({ rates }: Props) => {
       {/* get help button*/}
       <GetHelpButton />
       {/* hero */}
-      <div className={`${styles.hero} d-flex flex-column text-center w-100 justify-content-center align-items-center py-5 px-2`}>
+      <div className={`${styles.hero} d-flex flex-column text-center w-100 justify-content-center align-items-center py-5 px-2`} id='HeroSection'>
         <span className={`px-3 py-1 mb-0 ${styles.UpdatedTxt}`}>Updated On March 31, 2022</span>
         <h2 className='mb-3'>Put Your <span>Trust</span>  In Us, <span>Exchange</span> <br /> With Confidence.</h2>
         <p className='d-none d-lg-flex'>Elevate Your Currency Exchange Experience With Us. Trust, Expertise, Excellence – Your <br></br> Premier Destination For Seamless Transactions And Unmatched Service..</p>
@@ -313,29 +313,37 @@ const Home = ({ rates }: Props) => {
         </div>
       </div>
       {/*Agent Services*/}
-      <div className={`${styles.agentServices} text-center w-100 d-flex flex-column justify-content-center align-items-center `}>
+      <div className={`${styles.agentServices} text-center w-100 d-flex flex-column justify-content-center align-items-center p-xm-5 p-4 p-sm-4`} id='AgentServicesSec'>
         <h3 className='pt-0 fw-bold fs-1'>Agent Services</h3>
-        <p className='pb-5 mb-5 fw-medium fs-5'>Feel free to contact us to get agent services of world lead companies</p>
-        <div className='d-flex row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 w-100 p-0 m-0 max-width-extra-large justify-content-center align-items-center'>
-          <div className={` ${styles.agentServicesBox} shadow p-3 mb-5  bg-white rounded d-flex justify-content-center align-items-center`}>
-            <Image src='/agentservices/1xbet.png' alt='' width={150} height={40} className=''/>
-          </div>
-          <div className={` ${styles.agentServicesBox}  shadow p-3 mb-5  bg-white rounded d-flex justify-content-center align-items-center`}>
-            <Image src='/agentservices/deriv.png' alt='' width={150} height={50} className=''/>
-          </div>
-          <div className={` ${styles.agentServicesBox}  shadow p-3 mb-5  bg-white rounded d-flex justify-content-center align-items-center`}>
-            <Image src='/agentservices/ttrust.png' alt='' width={180} height={50} className=''/>
-          </div>
-          <div className={` ${styles.agentServicesBox} shadow p-3 mb-5  bg-white rounded d-flex justify-content-center align-items-center`}>
-            <Image src='/agentservices/melbet.png' alt='' width={150} height={80} className=''/>
-          </div>
+        <p className='pb-4 mb-5 fw-medium fs-5'>Feel free to contact us to get agent services of world lead companies</p>
+        <div className='d-flex row row-cols-2 row-cols-md-3 row-cols-lg-4 w-100 p-0 m-0 max-width-extra-large justify-content-center align-items-center'>
+            <div className='col d-flex justify-content-end align-items-center justify-content-md-center align-items-md-center px-1'>
+              <div className={` ${styles.agentServicesBox} shadow p-2 mb-3 mb-lg-5  bg-white d-flex justify-content-center align-items-center`}>
+                <Image src='/agentservices/1xbet.png' alt='' width={150} height={40} className='img-fluid'/>
+              </div>
+            </div>
+            <div className='col d-flex justify-content-start align-items-center justify-content-md-center align-items-md-center px-1'>
+              <div className={` ${styles.agentServicesBox} shadow p-2 mb-3 mb-lg-5  bg-white d-flex justify-content-center align-items-center`}>
+                <Image src='/agentservices/deriv.png' alt='' width={150} height={50} className='img-fluid'/>
+              </div>
+            </div>
+            <div className='col d-flex justify-content-end align-items-center justify-content-md-center align-items-md-center px-1'>
+              <div className={` ${styles.agentServicesBox} shadow p-2 mb-3 mb-lg-5  bg-white d-flex justify-content-center align-items-center`}>
+                <Image src='/agentservices/ttrust.png' alt='' width={180} height={50} className='img-fluid'/>
+              </div>
+            </div>
+            <div className='col d-flex justify-content-start align-items-center justify-content-md-center align-items-md-center px-1'>
+              <div className={` ${styles.agentServicesBox} shadow p-2 mb-3 mb-lg-5  bg-white d-flex justify-content-center align-items-center`}>
+                <Image src='/agentservices/melbet.png' alt='' width={150} height={80} className='img-fluid'/>
+              </div>
+            </div>
         </div>
-        <div>
-          <button className={`${styles.agentServicesBtn} mt-5`}>CONTACT US</button>
-        </div>  
+            <div className='pb-5 px-4'>
+              <button className={`${styles.agentServicesBtn} mx-5 mt-5`}>CONTACT US</button>
+            </div>  
       </div>
       {/* services */}
-      <div className={`${styles.services} d-flex flex-column flex-lg-row w-100 justify-content-center align-items-center`}>
+      <div className={`${styles.services} d-flex flex-column flex-lg-row w-100 justify-content-center align-items-center`}  id='ServicesSec'>
         <div className="max-width-extra-large d-flex flex-column flex-lg-row w-100 justify-content-center align-items-center">
           <div className={`col-12 col-lg-4 pe-0 pe-lg-2 text-start ${styles.leftCol} py-5`}>
             <h3>Why <br /> you should <span>choose us</span></h3>
@@ -406,16 +414,14 @@ const Home = ({ rates }: Props) => {
         </div>
       </div>
       {/* experience */}
-      <div className={`${styles.experience} d-flex flex-column flex-lg-row w-100 justify-content-center align-items-center py-5`}>
+      <div className={`${styles.experience} d-flex flex-column flex-lg-row w-100 justify-content-center align-items-center py-5`} id='ExperienceSec'>
         <div className="max-width-extra-large d-flex flex-column flex-lg-row w-100 justify-content-center align-items-center">
           <div className={`${styles.leftImgWrapper} col-12 col-lg-6 d-flex justify-content-center align-items-center px-2 px-lg-5`}>
             <Image src="/layoutimg/dollar.png" alt='' width={700} height={700} className='img-fluid'></Image>
           </div>
           <div className="col-12 col-lg-6 d-flex flex-column justify-content-center align-items-start text-start px-2 px-lg-5 py-5">
             <h3>We are the <span>First Trusted</span> and <span>Experienced Team</span> in Sri Lanka</h3>
-            <p className='mb-5'>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do <br />
-              eiusmod tempor incididunt ut labore et dolore magna aliqua ut <br />
-              dolor sit</p>
+            <p className='mb-5'>Leading the way as Sri Lanka's first and most trusted currency exchange team, our seasoned professionals bring unmatched expertise to ensure reliable and secure financial transactions. Choose confidence, choose experience – your premier destination for excellence in foreign currency services.</p>
             <div className="d-flex flex-column flex-lg-row w-100">
               <div className="col-12 col-lg-6 d-flex flex-row justify-content-center align-items-center p-3">
                 <svg xmlns="http://www.w3.org/2000/svg" width="58" height="57" viewBox="0 0 58 57" fill="none">
@@ -455,7 +461,7 @@ const Home = ({ rates }: Props) => {
         </div>
       </div> */}
       {/* contact */}
-      <div className={`${styles.contactForm} d-flex flex-column w-100 justify-content-center align-items-center text-center`}>
+      <div className={`${styles.contactForm} d-flex flex-column w-100 justify-content-center align-items-center text-center`} id='contactSection'>
         <h3 className='mb-5'>Get In Touch</h3>
         <form action="" className={` ${styles.FormContactUs} max-width-extra-large`}>
           <div className="d-flex flex-column flex-lg-row">

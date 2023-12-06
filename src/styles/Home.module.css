@@ -326,14 +326,17 @@
 /*agent services*/
 
 .agentServicesBox{
-  height: 7rem;
-  width: 16rem;
-  margin-left: 1%;
+  height: 6rem;
+  width: 19rem;
+  min-width: rem;
+  min-height: 6rem;
+  margin: 0;
+  border-radius: 20px;
 }
 
 .agentServices {
   background-color: var(--color-white);
-  min-height: 40vh;
+  min-height: 70vh;
   padding: 100px;
 }
 
@@ -342,8 +345,8 @@
   border: none;
   font-size: var(--font-17);
   border-radius: 0px;
-  width: 15rem;
-  min-width: 150px;
+  width: 12rem;
+
   height: 3rem;
   font-weight: 600;
 }
@@ -735,7 +738,7 @@
   width: 0;
   height: 100%;
   position: fixed;
-  top: 5%;
+  top: 0;
   left: 0;
   background-color: white;
   overflow-x: hidden;

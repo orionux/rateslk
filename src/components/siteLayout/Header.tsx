@@ -48,17 +48,17 @@ const Header = () => {
         </div>
 
         <div className={`${styles.menu} ps-4 text-start`}>
-          <a href='#'className='text-decoration-none text-dark'>Daily Rates</a>
+          <a href='#HeroSection'className='text-decoration-none text-dark'>Daily Rates</a>
           <hr />
-          <a href='#'className='text-decoration-none text-dark'>E Wallet</a>
+          <a href='#TodayRatingsSec'className='text-decoration-none text-dark'>E Wallet</a>
           <hr />
-          <a href='#'className='text-decoration-none text-dark'>Agent Services</a>
+          <a href='#AgentServicesSec'className='text-decoration-none text-dark'>Agent Services</a>
           <hr />
-          <a href='#' className='text-decoration-none text-dark'>Contact Us</a>
+          <a href='#contactSection' className='text-decoration-none text-dark'>Contact Us</a>
           <hr />
-          <a href='#' className='text-decoration-none text-dark'>Get Help</a>
+          <a href='#ExperienceSec' className='text-decoration-none text-dark'>Get Help</a>
           <hr />
-          <a href='#' className='text-decoration-none text-dark'>What`s New</a>
+          <a href='#ServicesSec' className='text-decoration-none text-dark'>What`s New</a>
           <hr />
         </div>
       </div>
