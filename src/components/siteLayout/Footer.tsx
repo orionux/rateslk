@@ -113,7 +113,7 @@ const Footer = () => {
           </div>
           <div className="col-12 col-lg-3 px-3 d-flex flex-column justify-content-start align-items-start">
             <FooterTitle title='Contact Us' />
-            <p className='text-center text-lg-start'>Head Office Address 121 King Street,<br />Melbourne West,Australia</p>
+            <p className=' text-lg-start'>Head Office Address 121 King Street,<br />Melbourne West,Australia</p>
             <p>Phone: <Link href={"tel: 011 9876 54321"}>(011) 9876 54321</Link></p>
             <p>Email: <Link href={"mailto:info@example.com"}>info@example.com</Link></p>
           </div>

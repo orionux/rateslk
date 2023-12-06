@@ -147,7 +147,7 @@ const Home = ({ rates }: Props) => {
         <button className={`px-3 py-3`}>View vertual wallet rates</button>
 
         <div className={`max-width-extra-large col-11 p-2 p-lg-5 mt-5 mb-0 position-relative ${styles.flagBackColor} `}>
-          <p className='fw-bold'>100% of the data is published according to the exchange rates of the <span className='text-warning'>Central Bank of Sri Lanka</span></p>
+          <p className='fw-bold px-5 pt-3'>100% of the data is published according to the exchange rates of the <span className='text-warning'>Central Bank of Sri Lanka</span></p>
           {exchangeRates && (
             <div className='col-12 d-flex flex-wrap'>
               {exchangeRates.usd && (
@@ -360,7 +360,7 @@ const Home = ({ rates }: Props) => {
               <div className='col-12 col-lg-6 d-flex p-2 position-relative' >
                 <div className={`shadow-lg p-4 d-flex flex-column justify-content-center bg-white ${styles.card1}`} style={{ borderRadius: "30px" }}  >
                   <Image src={'/icons/Group (4).png'} alt="" width={120} height={120} className={`img-fluid ${styles.cardicon} p-2`} />
-                  <Image src={'/icons/Group.png'} alt="" width={40} height={40} className="img-fluid mb-3" />
+                  <Image src={'/icons/Group.png'} alt="" width={40} height={40} className="img-fluid pb-2 pt-1" />
                   <h5 className='position-relative'>Instant 24/7 Support</h5>
                   <p className='mb-0'>Get help round the clock from a professional, fast support team.
                     &quot;Your money, your confidence, our expertise.&quot;</p>
