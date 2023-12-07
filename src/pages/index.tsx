@@ -244,7 +244,7 @@ const Home = ({ rates }: Props) => {
 
               {exchangeRates.cnh && (
                 <div className={showMore ? 'd-flex col-12 col-md-6 col-lg-4 pb-3 px-2 justify-content-center' : 'd-none'}>
-                  <div className= 'd-flex bg-opacity-75 bg-light w-100  border rounded-3 border-3 justify-content-between'>
+                  <div className='d-flex bg-opacity-75 bg-light w-100  border rounded-3 border-3 justify-content-between'>
                     <div className={`d-flex flex-column ${styles.flagBox} col-4`}>
                       <Image src="/flags/cnh.png" alt="" width="130" height="75" className={`p-1 align-self-center ${styles.flegImage}`} />
                       <h3>WON</h3>
@@ -273,36 +273,32 @@ const Home = ({ rates }: Props) => {
         </div>
       </div>
       {/* table */}
-      <div className={`${styles.priceTable} d-flex flex-column text-center w-100 justify-content-center align-items-center`} id='TodayRatingsSec'>
+      <div className={`${styles.priceTable} d-flex flex-column text-center w-100 justify-content-center align-items-center px-1 px-md-2`} id='TodayRatingsSec'>
         <h3 className='pt-5'>TODAY RATINGS</h3>
-        <p className='pb-5 mb-5'>Check out our freshly updated exchange rates today and get the best deal for your money!</p>
+        <p className='pb-2 pb-lg-5 mb-2 mb-lg-5'>Check out our freshly updated exchange rates today and get the best deal for your money!</p>
         <div className="d-flex row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 w-100 p-0 m-0 max-width-extra-large justify-content-center">
           {
             rates.map((rate, index) => {
               return (
                 <>
-                  <div className={`col-6 col-sm-6 col-md-4 col-lg-3 p-2 `} key={index}>
-                    <div className={`d-flex flex-column ${styles.cryptoCard} justify-content-center align-items-center w-100 m-2 `}>
+                  <div className={`d-flex justify-content-center align-item-center col-6 col-sm-6 col-md-4 col-lg-3 p-0 p-lg-2 `} key={index}>
+                    <div className={`d-flex flex-column ${styles.cryptoCard} justify-content-center align-items-center w-100 m-1 m-md-2 p-1`}>
                       {/* <Image src={`${rate.mainImage}`} width={130} height={90} alt="" className={`img-fluid py-4 ${styles.logoImages}`} /> */}
                       {rate.imageUrl ? (
-                        <Image src={`${rate.imageUrl}`} width={130} height={90} alt="" className={`img-fluid py-4 px-4 my-3 ${styles.logoImages}`} />
+                        <Image src={`${rate.imageUrl}`} width={130} height={90} alt="" className={`img-fluid py-2 py-lg-4 px-4 my-1 my-lg-3 ${styles.logoImages}`} />
                       ) : (
                         <div>Image not available</div>
                       )}
-                      <div className={`d-flex flex-column justify-content-center align-items-center w-75 px-2 py-3 mb-1 ${styles.buyCol}`}>
-                        <p className='text-dark fw-medium fs-5 mb-0'>Buying</p>
-                        <h3 className='text-dark fw-bold mb-0 fs-4'>{rate.buyRate}</h3>
+                      <div className={`d-flex flex-column justify-content-center align-items-center px-1 px-lg-2 py-2 py-lg-3 mb-1 ${styles.buyCol}`}>
+                        <p className='text-dark mb-0'>Buying</p>
+                        <h3 className='text-dark mb-0'>{rate.buyRate}</h3>
                       </div>
-                      <div className={`d-flex flex-column justify-content-center align-items-center w-75 px-2 py-3 ${styles.sellCol}`}>
-                        <p className='text-dark fw-medium fs-5 mb-0'>Selling</p>
-                        <h3 className='text-dark fw-bold mb-0 fs-4'>{rate.sellRate}</h3>
+                      <div className={`d-flex flex-column justify-content-center align-items-center px-1 px-lg-2 py-2 py-lg-3 ${styles.sellCol}`}>
+                        <p className='text-dark mb-0'>Selling</p>
+                        <h3 className='text-dark mb-0'>{rate.sellRate}</h3>
                       </div>
-                      <div className={`d-flex flex-column justify-content-center align-items-center w-100 px-3 py-4 ${styles.lastCol}`}>
+                      <div className={`d-flex flex-column justify-content-center align-items-center w-100 px-3 py-3 py-lg-4 ${styles.lastCol}`}>
                         <button className={`${styles.buysellbtn} px-3 py-3 w-100`}>Buy/Sell</button>
-                        {/* <div className={`d-flex pt-3 justify-content-center align-items-center `}>
-                          <Image src={"/icons/tel.jpg"} width={30} height={30} alt="" className={`img-fluid me-2`} />
-                          <Link href={"#"}>+94 715 665 586</Link>
-                        </div> */}
                       </div>
                     </div>
                   </div>
@@ -313,37 +309,37 @@ const Home = ({ rates }: Props) => {
         </div>
       </div>
       {/*Agent Services*/}
-      <div className={`${styles.agentServices} text-center w-100 d-flex flex-column justify-content-center align-items-center p-xm-5 p-4 p-sm-4`} id='AgentServicesSec'>
+      <div className={`${styles.agentServices} text-center w-100 d-flex flex-column justify-content-center align-items-center p-2 p-md-4 mt-5`} id='AgentServicesSec'>
         <h3 className='pt-0 fw-bold fs-1'>Agent Services</h3>
-        <p className='pb-4 mb-5 fw-medium fs-5'>Feel free to contact us to get agent services of world lead companies</p>
+        <p className='pb-4 mb-2 mb-lg-5 fw-medium fs-5'>Feel free to contact us to get agent services of world lead companies</p>
         <div className='d-flex row row-cols-2 row-cols-md-3 row-cols-lg-4 w-100 p-0 m-0 max-width-extra-large justify-content-center align-items-center'>
-            <div className='col d-flex justify-content-end align-items-center justify-content-md-center align-items-md-center px-1'>
-              <div className={` ${styles.agentServicesBox} shadow p-2 mb-3 mb-lg-5  bg-white d-flex justify-content-center align-items-center`}>
-                <Image src='/agentservices/1xbet.png' alt='' width={150} height={40} className='img-fluid'/>
-              </div>
+          <div className='col d-flex justify-content-end align-items-center justify-content-md-center align-items-md-center px-1'>
+            <div className={` ${styles.agentServicesBox} shadow p-2 mb-3 mb-lg-5  bg-white d-flex justify-content-center align-items-center`}>
+              <Image src='/agentservices/1xbet.png' alt='' width={150} height={40} className='img-fluid' />
             </div>
-            <div className='col d-flex justify-content-start align-items-center justify-content-md-center align-items-md-center px-1'>
-              <div className={` ${styles.agentServicesBox} shadow p-2 mb-3 mb-lg-5  bg-white d-flex justify-content-center align-items-center`}>
-                <Image src='/agentservices/deriv.png' alt='' width={150} height={50} className='img-fluid'/>
-              </div>
+          </div>
+          <div className='col d-flex justify-content-start align-items-center justify-content-md-center align-items-md-center px-1'>
+            <div className={` ${styles.agentServicesBox} shadow p-2 mb-3 mb-lg-5  bg-white d-flex justify-content-center align-items-center`}>
+              <Image src='/agentservices/deriv.png' alt='' width={150} height={50} className='img-fluid' />
             </div>
-            <div className='col d-flex justify-content-end align-items-center justify-content-md-center align-items-md-center px-1'>
-              <div className={` ${styles.agentServicesBox} shadow p-2 mb-3 mb-lg-5  bg-white d-flex justify-content-center align-items-center`}>
-                <Image src='/agentservices/ttrust.png' alt='' width={180} height={50} className='img-fluid'/>
-              </div>
+          </div>
+          <div className='col d-flex justify-content-end align-items-center justify-content-md-center align-items-md-center px-1'>
+            <div className={` ${styles.agentServicesBox} shadow p-2 mb-3 mb-lg-5  bg-white d-flex justify-content-center align-items-center`}>
+              <Image src='/agentservices/ttrust.png' alt='' width={180} height={50} className='img-fluid' />
             </div>
-            <div className='col d-flex justify-content-start align-items-center justify-content-md-center align-items-md-center px-1'>
-              <div className={` ${styles.agentServicesBox} shadow p-2 mb-3 mb-lg-5  bg-white d-flex justify-content-center align-items-center`}>
-                <Image src='/agentservices/melbet.png' alt='' width={150} height={80} className='img-fluid'/>
-              </div>
+          </div>
+          <div className='col d-flex justify-content-start align-items-center justify-content-md-center align-items-md-center px-1'>
+            <div className={` ${styles.agentServicesBox} shadow p-2 mb-3 mb-lg-5  bg-white d-flex justify-content-center align-items-center`}>
+              <Image src='/agentservices/melbet.png' alt='' width={150} height={80} className='img-fluid' />
             </div>
+          </div>
         </div>
-            <div className='pb-5 px-4'>
-              <button className={`${styles.agentServicesBtn} mx-5 mt-5`}>CONTACT US</button>
-            </div>  
+        <div className={`py-5 px-2 d-flex ${styles.buttonWrapper}`}>
+          <button className={`px-5 py-3 ${styles.agentServicesBtn}`}>CONTACT US</button>
+        </div>
       </div>
       {/* services */}
-      <div className={`${styles.services} d-flex flex-column flex-lg-row w-100 justify-content-center align-items-center`}  id='ServicesSec'>
+      <div className={`${styles.services} d-flex flex-column flex-lg-row w-100 justify-content-center align-items-center`} id='ServicesSec'>
         <div className="max-width-extra-large d-flex flex-column flex-lg-row w-100 justify-content-center align-items-center">
           <div className={`col-12 col-lg-4 pe-0 pe-lg-2 text-start ${styles.leftCol} py-5`}>
             <h3>Why <br /> you should <span>choose us</span></h3>

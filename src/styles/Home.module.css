@@ -345,17 +345,30 @@
   padding: 100px;
 }
 
+
 .agentServicesBtn {
   background-color: var(--color-primary);
-  border: none;
-  font-size: var(--font-17);
-  border-radius: 0px;
-  width: 12rem;
-
-  height: 3rem;
+  color: var(--color-secondary);
+  text-transform: uppercase;
+  border: solid 1px var(--color-primary);
+  outline: none;
+  font-size: var(--font-18);
   font-weight: 600;
+  transition: color 0.5s ease-in, background-color 0.5s ease-in;
 }
 
+.agentServicesBtn:hover {
+  color: var(--color-primary);
+  background-color: transparent;
+}
+@media screen and (max-width: 992px){
+  .agentServicesBtn{
+    width: 100%;
+  }
+  .buttonWrapper{
+    width: 100%;
+  }
+}
 
 
 /* experience */
@@ -684,6 +697,13 @@
   border: 1px solid #DFDFDF;
 }
 
+.cryptoCard p{
+  font-size: var(--font-15) !important;
+}
+.cryptoCard h3{
+  font-size: var(--font-28) !important;
+}
+
 .cryptoCard:hover {
   box-shadow: -7px 0px 50px 0px rgba(0, 0, 0, 0.24), 0px 4px 8.5px 0px rgba(0, 0, 0, 0.11);
 }
@@ -709,6 +729,9 @@
   color: #fff !important;
 }
 
+.buyCol, .sellCol{
+  width: 100%;
+}
 
 .buyCol p {
   color: #363636;
@@ -798,3 +821,9 @@
   }
 }
 
+@media screen and (max-width: 992px) {
+  .logoImages{
+    width: auto !important;
+    height: 45px !important;
+  }
+}
