@@ -698,7 +698,7 @@
 }
 
 .cryptoCard p{
-  font-size: var(--font-15) !important;
+  font-size: var(--font-15-card) !important;
 }
 .cryptoCard h3{
   font-size: var(--font-28) !important;

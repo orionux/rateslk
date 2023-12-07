@@ -11,6 +11,7 @@
   --font-20-footer: 20px;
   --font-15: 15px;
   --font-28: 28px;
+  --font-15-card: 18px;
 
   --color-primary: #F5A414;
   --color-white: #fff;
@@ -37,6 +38,7 @@
     --font-20: 18px;
     --font-15: 12px;
     --font-28: 22px;
+    --font-15-card: 16px;
     --font-20-footer: 16px;
     --bs-table-bg: #333 !important;
   }
@@ -53,6 +55,7 @@
     --font-20: 18px;
     --font-15: 14px;
     --font-28: 22px;
+    --font-15-card: 14px;
     --font-20-footer: 16px;
     --bs-table-bg: #333 !important;
   }

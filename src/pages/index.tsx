@@ -273,17 +273,16 @@ const Home = ({ rates }: Props) => {
         </div>
       </div>
       {/* table */}
-      <div className={`${styles.priceTable} d-flex flex-column text-center w-100 justify-content-center align-items-center px-1 px-md-2`} id='TodayRatingsSec'>
+      <div className={`${styles.priceTable} d-flex flex-column text-center w-100 justify-content-center align-items-center px-1 px-md-2 px-lg-5`} id='TodayRatingsSec'>
         <h3 className='pt-5'>TODAY RATINGS</h3>
-        <p className='pb-2 pb-lg-5 mb-2 mb-lg-5'>Check out our freshly updated exchange rates today and get the best deal for your money!</p>
-        <div className="d-flex row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 w-100 p-0 m-0 max-width-extra-large justify-content-center">
+        <p className='pb-2 pb-lg-3 mb-2 mb-lg-5'>Check out our freshly updated exchange rates today and get the best deal for your money!</p>
+        <div className="d-flex row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 w-100 p-0 px-xl-5 m-0 max-width-extra-large justify-content-center">
           {
             rates.map((rate, index) => {
               return (
                 <>
                   <div className={`d-flex justify-content-center align-item-center col-6 col-sm-6 col-md-4 col-lg-3 p-0 p-lg-2 `} key={index}>
-                    <div className={`d-flex flex-column ${styles.cryptoCard} justify-content-center align-items-center w-100 m-1 m-md-2 p-1`}>
-                      {/* <Image src={`${rate.mainImage}`} width={130} height={90} alt="" className={`img-fluid py-4 ${styles.logoImages}`} /> */}
+                    <div className={`d-flex flex-column ${styles.cryptoCard} justify-content-center align-items-center w-100 m-1 m-md-2 p-1 p-lg-3`}>
                       {rate.imageUrl ? (
                         <Image src={`${rate.imageUrl}`} width={130} height={90} alt="" className={`img-fluid py-2 py-lg-4 px-4 my-1 my-lg-3 ${styles.logoImages}`} />
                       ) : (
@@ -309,10 +308,10 @@ const Home = ({ rates }: Props) => {
         </div>
       </div>
       {/*Agent Services*/}
-      <div className={`${styles.agentServices} text-center w-100 d-flex flex-column justify-content-center align-items-center p-2 p-md-4 mt-5`} id='AgentServicesSec'>
+      <div className={`${styles.agentServices} text-center w-100 d-flex flex-column justify-content-center align-items-center p-2 px-lg-5 p-md-4 mt-5`} id='AgentServicesSec'>
         <h3 className='pt-0 fw-bold fs-1'>Agent Services</h3>
         <p className='pb-4 mb-2 mb-lg-5 fw-medium fs-5'>Feel free to contact us to get agent services of world lead companies</p>
-        <div className='d-flex row row-cols-2 row-cols-md-3 row-cols-lg-4 w-100 p-0 m-0 max-width-extra-large justify-content-center align-items-center'>
+        <div className='d-flex row row-cols-2 row-cols-md-3 row-cols-lg-4 w-100 p-0 px-xl-5 m-0 max-width-extra-large justify-content-center align-items-center'>
           <div className='col d-flex justify-content-end align-items-center justify-content-md-center align-items-md-center px-1'>
             <div className={` ${styles.agentServicesBox} shadow p-2 mb-3 mb-lg-5  bg-white d-flex justify-content-center align-items-center`}>
               <Image src='/agentservices/1xbet.png' alt='' width={150} height={40} className='img-fluid' />
