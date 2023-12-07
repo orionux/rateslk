@@ -112,7 +112,7 @@
 /* services */
 .services {
   background-color: #F8F8F8;
-  min-height: 140vh;
+  min-height: 100vh;
   padding: 100px;
 }
 
@@ -331,14 +331,13 @@
 /*agent services*/
 
 .agentServicesBox{
-  height: 6rem;
-  width: 19rem;
-  min-width: rem;
-  min-height: 6rem;
   margin: 0;
   border-radius: 20px;
 }
-
+.agentServicesBox img{
+  height: 80px;
+  width: auto;
+}
 .agentServices {
   background-color: var(--color-white);
   min-height: 70vh;
@@ -347,6 +346,7 @@
 
 
 .agentServicesBtn {
+  width: 300px;
   background-color: var(--color-primary);
   color: var(--color-secondary);
   text-transform: uppercase;
@@ -363,10 +363,16 @@
 }
 @media screen and (max-width: 992px){
   .agentServicesBtn{
-    width: 100%;
+    width: 300px;
   }
   .buttonWrapper{
     width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .agentServicesBox img{
+    height: 60px;
+    width: auto;
   }
 }
 

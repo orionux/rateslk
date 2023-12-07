@@ -78,14 +78,14 @@ const Footer = () => {
             <div className='w-100 px-3'>
               <FooterTitle title='Quick Link' />
               <div className='d-flex flex-colomn'>
-                <div className=''>
+                <div className='col-6 col-lg-5'>
                   {firstColumn.map(link => (
                     <Link href={link.link} key={link.id}>
                       <p >{link.title}</p>
                     </Link>
                   ))}
                 </div>
-                <div className=' '>
+                <div className='col-6 col-lg-5'>
                   {secondColumn.map(link => (
                     <Link href={link.link} key={link.id}>
                       <p >{link.title}</p>

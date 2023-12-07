@@ -312,29 +312,31 @@ const Home = ({ rates }: Props) => {
         <h3 className='pt-0 fw-bold fs-1'>Agent Services</h3>
         <p className='pb-4 mb-2 mb-lg-5 fw-medium fs-5'>Feel free to contact us to get agent services of world lead companies</p>
         <div className='d-flex row row-cols-2 row-cols-md-3 row-cols-lg-4 w-100 p-0 px-xl-5 m-0 max-width-extra-large justify-content-center align-items-center'>
-          <div className='col d-flex justify-content-end align-items-center justify-content-md-center align-items-md-center px-1'>
-            <div className={` ${styles.agentServicesBox} shadow p-2 mb-3 mb-lg-5  bg-white d-flex justify-content-center align-items-center`}>
-              <Image src='/agentservices/1xbet.png' alt='' width={150} height={40} className='img-fluid' />
+          <div className='col-6 col-md-4 col-lg-3 d-flex justify-content-center align-items-center px-1'>
+            <div className={` ${styles.agentServicesBox} shadow p-2 py-lg-5 mb-3 mb-lg-5  bg-white d-flex justify-content-center align-items-center w-100`}>
+              <Image src='/agentservices/1xbet.png' alt='' width={150} height={40} className='img-fluid py-3' />
             </div>
           </div>
-          <div className='col d-flex justify-content-start align-items-center justify-content-md-center align-items-md-center px-1'>
-            <div className={` ${styles.agentServicesBox} shadow p-2 mb-3 mb-lg-5  bg-white d-flex justify-content-center align-items-center`}>
-              <Image src='/agentservices/deriv.png' alt='' width={150} height={50} className='img-fluid' />
+          <div className='col-6 col-md-4 col-lg-3 d-flex justify-content-center align-items-center px-1'>
+            <div className={` ${styles.agentServicesBox} shadow p-2 py-lg-5 mb-3 mb-lg-5  bg-white d-flex justify-content-center align-items-center w-100`}>
+              <Image src='/agentservices/deriv.png' alt='' width={150} height={50} className='img-fluid py-3' />
             </div>
           </div>
-          <div className='col d-flex justify-content-end align-items-center justify-content-md-center align-items-md-center px-1'>
-            <div className={` ${styles.agentServicesBox} shadow p-2 mb-3 mb-lg-5  bg-white d-flex justify-content-center align-items-center`}>
-              <Image src='/agentservices/ttrust.png' alt='' width={180} height={50} className='img-fluid' />
+          <div className='col-6 col-md-4 col-lg-3 d-flex justify-content-center align-items-center px-1'>
+            <div className={` ${styles.agentServicesBox} shadow p-2 py-lg-5 mb-3 mb-lg-5  bg-white d-flex justify-content-center align-items-center w-100`}>
+              <Image src='/agentservices/ttrust.png' alt='' width={180} height={50} className='img-fluid py-3' />
             </div>
           </div>
-          <div className='col d-flex justify-content-start align-items-center justify-content-md-center align-items-md-center px-1'>
-            <div className={` ${styles.agentServicesBox} shadow p-2 mb-3 mb-lg-5  bg-white d-flex justify-content-center align-items-center`}>
-              <Image src='/agentservices/melbet.png' alt='' width={150} height={80} className='img-fluid' />
+          <div className='col-6 col-md-4 col-lg-3 d-flex justify-content-center align-items-center px-1'>
+            <div className={` ${styles.agentServicesBox} shadow p-2 py-lg-5 mb-3 mb-lg-5  bg-white d-flex justify-content-center align-items-center w-100`}>
+              <Image src='/agentservices/melbet.png' alt='' width={150} height={80} className='img-fluid py-3' />
             </div>
           </div>
         </div>
         <div className={`py-5 px-2 d-flex ${styles.buttonWrapper}`}>
-          <button className={`px-5 py-3 ${styles.agentServicesBtn}`}>CONTACT US</button>
+          <Link style={{ textDecoration: "none" }} href="https://api.whatsapp.com/send?phone=0717697736">
+            <button className={`px-5 py-3 ${styles.agentServicesBtn}`}>CONTACT US</button>
+          </Link>
         </div>
       </div>
       {/* services */}
@@ -344,14 +346,14 @@ const Home = ({ rates }: Props) => {
             <h3>Why <br /> you should <span>choose us</span></h3>
             <p>Always strive to provide trust and updated virtual currency exchange rates to avoid uncernities in the market and be supportive. <br></br>
               For all your virtual currency exchange needs, our expertise sellers stand by your side.</p>
-            <div className="d-flex flex-column flex-lg-row justify-content-between">
-              <span className={`${styles.spanRed} px-5 py-3 mb-3 mb-lg-0`}>24/7 Support</span>
-              <span className={`${styles.spanGreen} px-5 py-3`}>99% Secured</span>
+            <div className="d-flex col-12 col-lg-10 flex-column flex-lg-row justify-content-between">
+              <span className={`${styles.spanRed} col-12 col-lg-6 me-lg-1 text-center px-5 py-3 mb-3 mb-lg-0`}>24/7 Support</span>
+              <span className={`${styles.spanGreen} col-12 col-lg-6 ms-lg-1 text-center px-5 py-3`}>99% Secured</span>
             </div>
-            <button className={`px-5 py-3 mt-3 ${styles.yellowButton}`}>Get Started</button>
+            <button className={`col-12 col-lg-10 px-5 py-3 mt-3 ${styles.yellowButton}`}>Get Started</button>
           </div>
-          <div className={`col-12 col-lg-8 ps-0 ps-lg-2 ${styles.rightCol}`}>
-            <div className={`d-flex flex-column flex-lg-row ${styles.cardRow}`}>
+          <div className={`col-12 col-lg-8 ps-0 ps-lg-2 px-xxl-5 ${styles.rightCol}`}>
+            <div className={`d-flex flex-column flex-lg-row px-xxl-5 ${styles.cardRow}`}>
               <div className='col-12 col-lg-6 d-flex p-2 position-relative' >
                 <div className={`shadow-lg p-4 d-flex flex-column justify-content-center bg-white ${styles.card1}`} style={{ borderRadius: "30px" }}  >
                   <Image src={'/icons/Group (4).png'} alt="" width={120} height={120} className={`img-fluid ${styles.cardicon} p-2`} />
@@ -373,7 +375,7 @@ const Home = ({ rates }: Props) => {
                 </div>
               </div>
             </div>
-            <div className={`d-flex flex-column flex-lg-row ${styles.cardRow}`}>
+            <div className={`d-flex flex-column flex-lg-row px-xxl-5 ${styles.cardRow}`}>
               <div className='col-12 col-lg-6 d-flex p-2 position-relative'>
                 <div className={`shadow-lg p-4 d-flex flex-column justify-content-center bg-white ${styles.card3}`} style={{ borderRadius: "30px" }} >
                   <Image src={'/icons/Group (5).png'} alt="" width={120} height={120} className={`img-fluid ${styles.cardicon}`} />
@@ -394,7 +396,7 @@ const Home = ({ rates }: Props) => {
                 </div>
               </div>
             </div>
-            <div className={`d-flex flex-column flex-lg-row ${styles.cardRow}`}>
+            <div className={`d-flex flex-column flex-lg-row px-xxl-5 ${styles.cardRow}`}>
               <div className='col-12 col-lg-6 d-flex p-2 position-relative'>
                 <div className={`shadow-lg p-4 d-flex flex-column justify-content-center bg-white ${styles.card5}`} style={{ borderRadius: "30px" }} >
                   <Image src={'/icons/Frame (1).png'} alt="" width={120} height={120} className={`img-fluid ${styles.cardicon}`} />
