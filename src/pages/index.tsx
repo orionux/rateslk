@@ -329,7 +329,7 @@ const Home = ({ rates }: Props) => {
           </div>
           <div className='col-6 col-md-4 col-lg-3 d-flex justify-content-center align-items-center px-1'>
             <div className={` ${styles.agentServicesBox} shadow p-2 py-lg-5 mb-3 mb-lg-5  bg-white d-flex justify-content-center align-items-center w-100`}>
-              <Image src='/agentservices/melbet.png' alt='' width={150} height={80} className='img-fluid py-3' />
+              <Image src='/agentservices/melbet-logo.png' alt='' width={150} height={80} className='img-fluid py-3' />
             </div>
           </div>
         </div>
