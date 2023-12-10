@@ -115,17 +115,19 @@ th{
   padding-bottom: 20px !important;
 }
 
-#popupAgentDetails .modal-dialog{
-  width: max-content !important;
-}
-#popupAgentDetails .modal-body{
-  width: max-content !important;
-}
-#popupAgentDetails .modal-content{
-  width: max-content !important;
-  border-radius: 20px;
-  border: none;
-}
-#popupAgentDetails{
-  width: max-content !important;
+@media screen and (min-width: 992px) {
+  #popupAgentDetails .modal-dialog{
+    width: max-content !important;
+  }
+  #popupAgentDetails .modal-body{
+    width: max-content !important;
+  }
+  #popupAgentDetails .modal-content{
+    width: max-content !important;
+    border-radius: 20px;
+    border: none;
+  }
+  #popupAgentDetails{
+    width: max-content !important;
+  }  
 }
