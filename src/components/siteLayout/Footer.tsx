@@ -35,38 +35,33 @@ const Footer = () => {
     { id: 1, title: "Home", link: "/" },
     { id: 2, title: "About", link: "#" },
     { id: 3, title: "Contact", link: "#" },
-    { id: 4, title: "Blog", link: "#" },
-    { id: 5, title: "Blog Post", link: "#" },
-    { id: 6, title: "Lawyers", link: "#" },
-    { id: 7, title: "Lawyer Single", link: "#" },
-    { id: 8, title: "Case Results", link: "#" },
-    { id: 9, title: "Practice Areas", link: "#" },
-    { id: 10, title: "Packages", link: "#" },
-    { id: 11, title: "Package Single", link: "#" }
+    { id: 4, title: "Forging Currency rates", link: "#" },
+    { id: 5, title: "E wallet Rates", link: "#" },
+    { id: 6, title: "Agent Services", link: "#" },
   ]
 
   const utilityPage = [
-    { id: 1, title: "Start Here", link: "#" },
-    { id: 2, title: "Style Guide", link: "#" },
-    { id: 3, title: "404 Not Found", link: "#" },
-    { id: 4, title: "Password Protected", link: "#" },
-    { id: 5, title: "Licenses", link: "#" },
-    { id: 6, title: "Changelog", link: "#" },
+    { id: 1, title: "Skrill", link: "#" },
+    { id: 2, title: "Deriv", link: "#" },
+    { id: 3, title: "Payoneer", link: "#" },
+    { id: 4, title: "Tether", link: "#" },
+    { id: 5, title: "Wise", link: "#" },
+    { id: 6, title: "Neteller", link: "#" },
+    { id: 7, title: "Perfect Money", link: "#" },
   ]
 
   const practiceArea = [
-    { id: 1, title: "Family Law", link: "#" },
-    { id: 2, title: "Criminal Law", link: "#" },
-    { id: 3, title: "Personal Injury", link: "#" },
-    { id: 4, title: "Real Estate Law", link: "#" },
-    { id: 5, title: "Business Law", link: "#" },
+    { id: 1, title: "Deriv", link: "#" },
+    { id: 2, title: "1X bet", link: "#" },
+    { id: 3, title: "Melbet", link: "#" },
+    { id: 4, title: "Traders trust", link: "#" },
   ]
 
 
 
-  const halfLength = Math.ceil(quickLinks.length / 2);
-  const firstColumn = quickLinks.slice(0, halfLength);
-  const secondColumn = quickLinks.slice(halfLength);
+  // const halfLength = Math.ceil(quickLinks.length / 2);
+  // const firstColumn = quickLinks.slice(0, halfLength);
+  // const secondColumn = quickLinks.slice(halfLength);
 
 
   return (
@@ -78,25 +73,25 @@ const Footer = () => {
             <div className='w-100 px-3'>
               <FooterTitle title='Quick Link' />
               <div className='d-flex flex-colomn'>
-                <div className='col-6 col-lg-5'>
-                  {firstColumn.map(link => (
+                <div className='col-12 col-lg-5'>
+                  {quickLinks.map(link => (
                     <Link href={link.link} key={link.id}>
                       <p >{link.title}</p>
                     </Link>
                   ))}
                 </div>
-                <div className='col-6 col-lg-5'>
+                {/* <div className='col-6 col-lg-5'>
                   {secondColumn.map(link => (
                     <Link href={link.link} key={link.id}>
                       <p >{link.title}</p>
                     </Link>
                   ))}
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
           <div className="col-12 col-lg-3 px-3 d-flex flex-column justify-content-start align-items-start">
-            <FooterTitle title='Utility Page' />
+            <FooterTitle title='E Wallet RATINGS' />
             {utilityPage.map(link => (
               <Link href={link.link} key={link.id}>
                 <p >{link.title}</p>
@@ -104,7 +99,7 @@ const Footer = () => {
             ))}
           </div>
           <div className="col-12 col-lg-3 px-3 d-flex flex-column justify-content-start align-items-start">
-            <FooterTitle title='Practice Area' />
+            <FooterTitle title='Agent Services' />
             {practiceArea.map(link => (
               <Link href={link.link} key={link.id}>
                 <p >{link.title}</p>
