@@ -142,8 +142,8 @@ const Home = ({ rates }: Props) => {
       <div className={`${styles.hero} d-flex flex-column text-center w-100 justify-content-center align-items-center py-5 px-2`} id='HeroSection'>
         <span className={`px-3 py-1 mb-0 ${styles.UpdatedTxt}`}>Updated On March 31, 2022</span>
         <h2 className='mb-3'>Put Your <span>Trust</span>  In Us, <span>Exchange</span> <br /> With Confidence.</h2>
-        <p className='d-none d-lg-flex'>Elevate Your Currency Exchange Experience With Us. Trust, Expertise, Excellence – Your <br></br> Premier Destination For Seamless Transactions And Unmatched Service..</p>
-        <p className='d-flex d-lg-none'>Elevate Your Currency Exchange Experience With Us. Trust, Expertise, Excellence – Your Premier Destination For Seamless Transactions And Unmatched Service..</p>
+        {/* <p className='d-none d-lg-flex'>Elevate Your Currency Exchange Experience With Us. Trust, Expertise, Excellence – Your <br></br> Premier Destination For Seamless Transactions And Unmatched Service..</p>
+        <p className='d-flex d-lg-none'>Elevate Your Currency Exchange Experience With Us. Trust, Expertise, Excellence – Your Premier Destination For Seamless Transactions And Unmatched Service..</p> */}
         <button className={`px-3 py-3`}>View vertual wallet rates</button>
 
         <div className={`max-width-extra-large col-11 p-2 p-lg-5 mt-5 mb-0 position-relative ${styles.flagBackColor} `}>
