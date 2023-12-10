@@ -24,8 +24,8 @@
 .navButton {
   background-color: var(--color-primary);
   border-radius: 3px;
-  margin-right: 20px; 
-  margin-left: 20px;  
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
 
@@ -267,7 +267,7 @@
   .card2 {
     min-width: auto;
   }
-  
+
 }
 
 
@@ -331,14 +331,16 @@
 
 /*agent services*/
 
-.agentServicesBox{
+.agentServicesBox {
   margin: 0;
   border-radius: 20px;
 }
-.agentServicesBox img{
+
+.agentServicesBox img {
   height: 80px;
   width: auto;
 }
+
 .agentServices {
   background-color: var(--color-white);
   min-height: 70vh;
@@ -362,16 +364,19 @@
   color: var(--color-primary);
   background-color: transparent;
 }
-@media screen and (max-width: 992px){
-  .agentServicesBtn{
+
+@media screen and (max-width: 992px) {
+  .agentServicesBtn {
     width: 300px;
   }
-  .buttonWrapper{
+
+  .buttonWrapper {
     width: 100%;
     display: flex;
     justify-content: center;
   }
-  .agentServicesBox img{
+
+  .agentServicesBox img {
     height: 60px;
     width: auto;
   }
@@ -704,10 +709,11 @@
   border: 1px solid #DFDFDF;
 }
 
-.cryptoCard p{
+.cryptoCard p {
   font-size: var(--font-15-card) !important;
 }
-.cryptoCard h3{
+
+.cryptoCard h3 {
   font-size: var(--font-28) !important;
   text-decoration: none !important;
 }
@@ -719,7 +725,7 @@
 .buyCol {
   background-color: rgba(144, 0, 249, 0.12);
   border-radius: 40px;
-  
+
 }
 
 .sellCol {
@@ -737,7 +743,8 @@
   color: #fff !important;
 }
 
-.buyCol, .sellCol{
+.buyCol,
+.sellCol {
   width: 100%;
 }
 
@@ -762,7 +769,8 @@
   font-weight: 700;
   text-decoration: none;
 }
-.logoImages{
+
+.logoImages {
   height: 90px !important;
   width: auto !important;
 }
@@ -783,9 +791,9 @@
   z-index: 1;
   background-image: url('/siderback.png');
   background-size: 260px 90px;
-  background-repeat: no-repeat; 
+  background-repeat: no-repeat;
   background-position: center center;
-  
+
 }
 
 .sidebar.open {
@@ -797,13 +805,13 @@
   cursor: pointer;
   position: fixed;
   top: 1px;
-  right: 1px; 
+  right: 1px;
   z-index: 2;
   color: grey;
   border-color: black;
   border-width: 10px;
   border-radius: 25%;
-  
+
 }
 
 
@@ -811,14 +819,15 @@
 @media screen and (max-width: 599px) {
   .sidebar {
     padding-top: 15px;
-    
+
   }
+
   .sidebar.open {
     width: 75%;
   }
 }
 
-@media screen and (min-width: 600px)  and (max-width: 991px) {
+@media screen and (min-width: 600px) and (max-width: 991px) {
   .sidebar {
     padding-top: 15px;
     background-position: center center;
@@ -830,8 +839,40 @@
 }
 
 @media screen and (max-width: 992px) {
-  .logoImages{
+  .logoImages {
     width: auto !important;
     height: 45px !important;
   }
+}
+
+.popupImage {
+  border-radius: 100% !important;
+}
+
+.cardWrapper {
+  border-bottom: solid 1px #DFDFDF;
+}
+
+.textPopup {
+  color: #626262;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  text-decoration: none !important;
+}
+
+.popupCloseButton{
+  font-size: 40px;
+  cursor: pointer;
+}
+.cardTitleWrapper{
+  border-radius: 50px !important;
+  width: max-content;
+}
+.cardTitleWrapper p{
+  color: #2E3947;
+font-family: var(--font-family-secondary);
+font-size: 16.8px;
+font-style: normal;
+font-weight: 700;
 }

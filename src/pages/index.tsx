@@ -9,6 +9,9 @@ import Link from 'next/link';
 import { Rates } from 'typings';
 import { fetchRates } from '../utils/fetchRates'
 import { GetStaticProps } from 'next';
+import Modal from 'react-bootstrap/Modal';
+import Button from 'react-bootstrap/Button';
+import { IoIosCloseCircle } from "react-icons/io";
 
 
 interface Testimonial {
@@ -30,7 +33,9 @@ type Props = {
   rates: Rates[];
 }
 const Home = ({ rates }: Props) => {
-
+  const [exchangeRates, setExchangeRates] = useState<any>(null);
+  const [showPopup, setShowPopup] = useState(false);
+  const [selectedRate, setSelectedRate] = useState<any>(null);
   // console.log("rates: ", rates)
 
   const tableData = [
@@ -118,7 +123,253 @@ const Home = ({ rates }: Props) => {
   };
 
 
-  const [exchangeRates, setExchangeRates] = useState<any>(null);
+
+  useEffect(() => {
+
+  }, [selectedRate])
+
+
+
+  const handleBuySellClick = (index: string) => {
+    console.log(index)
+    //   const selectedRateData = rates[index];
+    setSelectedRate(index);
+    console.log(selectedRate);
+    setShowPopup(true);
+  };
+
+  const handleClose = () => {
+    setShowPopup(false);
+  };
+
+
+  const agentDetails = [
+    {
+      id: 0,
+      title: "deriv",
+      agents: [
+        {
+          id: 1,
+          icon: "/icons/Pasindu Logo.png",
+          cardTitle: "Galle Exchange",
+          name: "Sanjaya Gunarathna",
+          tel: "070 45 45 132",
+          telLink: "tel: 0704545132",
+          email: "gunarathna.sm@gmail.com",
+          telegram: "@sanjaya100",
+          telegramLink: "#",
+          whatsapp: "070 45 45 132",
+          whatsappLink: "https://api.whatsapp.com/send?phone=94704545132"
+        },
+        {
+          id: 2,
+          icon: "/icons/Pasindu Logo.png",
+          cardTitle: "Galle Exchange",
+          name: "Pasindu Loshitha",
+          tel: "076 26 58 293",
+          telLink: "tel: 0762658293",
+          email: "pasindulositha26@gmail.com",
+          telegram: "@loshitha97",
+          telegramLink: "#",
+          whatsapp: "076 26 58 293",
+          whatsappLink: "https://api.whatsapp.com/send?phone=94762658293"
+        }
+      ]
+    },
+    {
+      id: 1,
+      title: "skrill",
+      agents: [
+        {
+          id: 2,
+          icon: "/icons/Pasindu Logo.png",
+          cardTitle: "Galle Exchange",
+          name: "Pasindu Loshitha",
+          tel: "076 26 58 293",
+          telLink: "tel: 0762658293",
+          email: "pasindulositha26@gmail.com",
+          telegram: "@loshitha97",
+          telegramLink: "#",
+          whatsapp: "076 26 58 293",
+          whatsappLink: "https://api.whatsapp.com/send?phone=94762658293"
+        },
+        {
+          id: 1,
+          icon: "/icons/Pasindu Logo.png",
+          cardTitle: "Galle Exchange",
+          name: "Sanjaya Gunarathna",
+          tel: "070 45 45 132",
+          telLink: "tel: 0704545132",
+          email: "gunarathna.sm@gmail.com",
+          telegram: "@sanjaya100",
+          telegramLink: "#",
+          whatsapp: "070 45 45 132",
+          whatsappLink: "https://api.whatsapp.com/send?phone=94704545132"
+        },
+      ]
+    },
+    {
+      id: 2,
+      title: "Perfect Money",
+      agents: [
+        {
+          id: 2,
+          icon: "/icons/Pasindu Logo.png",
+          cardTitle: "Galle Exchange",
+          name: "Pasindu Loshitha",
+          tel: "076 26 58 293",
+          telLink: "tel: 0762658293",
+          email: "pasindulositha26@gmail.com",
+          telegram: "@loshitha97",
+          telegramLink: "#",
+          whatsapp: "076 26 58 293",
+          whatsappLink: "https://api.whatsapp.com/send?phone=94762658293"
+        },
+        {
+          id: 1,
+          icon: "/icons/Pasindu Logo.png",
+          cardTitle: "Galle Exchange",
+          name: "Sanjaya Gunarathna",
+          tel: "070 45 45 132",
+          telLink: "tel: 0704545132",
+          email: "gunarathna.sm@gmail.com",
+          telegram: "@sanjaya100",
+          telegramLink: "#",
+          whatsapp: "070 45 45 132",
+          whatsappLink: "https://api.whatsapp.com/send?phone=94704545132"
+        },
+      ]
+    },
+    {
+      id: 3,
+      title: "Neteller",
+      agents: [
+        {
+          id: 2,
+          icon: "/icons/Pasindu Logo.png",
+          cardTitle: "Galle Exchange",
+          name: "Pasindu Loshitha",
+          tel: "076 26 58 293",
+          telLink: "tel: 0762658293",
+          email: "pasindulositha26@gmail.com",
+          telegram: "@loshitha97",
+          telegramLink: "#",
+          whatsapp: "076 26 58 293",
+          whatsappLink: "https://api.whatsapp.com/send?phone=94762658293"
+        },
+        {
+          id: 1,
+          icon: "/icons/Pasindu Logo.png",
+          cardTitle: "Galle Exchange",
+          name: "Sanjaya Gunarathna",
+          tel: "070 45 45 132",
+          telLink: "tel: 0704545132",
+          email: "gunarathna.sm@gmail.com",
+          telegram: "@sanjaya100",
+          telegramLink: "#",
+          whatsapp: "070 45 45 132",
+          whatsappLink: "https://api.whatsapp.com/send?phone=94704545132"
+        },
+      ]
+    },
+    {
+      id: 4,
+      title: "wise",
+      agents: [
+        {
+          id: 1,
+          icon: "/icons/Pasindu Logo.png",
+          cardTitle: "Galle Exchange",
+          name: "Sanjaya Gunarathna",
+          tel: "070 45 45 132",
+          telLink: "tel: 0704545132",
+          email: "gunarathna.sm@gmail.com",
+          telegram: "@sanjaya100",
+          telegramLink: "#",
+          whatsapp: "070 45 45 132",
+          whatsappLink: "https://api.whatsapp.com/send?phone=94704545132"
+        },
+        {
+          id: 2,
+          icon: "/icons/image 36.png",
+          cardTitle: "SLFast Exchange",
+          name: "Kavinda Premathilaka",
+          tel: "070 16 16 250",
+          telLink: "tel: 0701616250",
+          email: "slfast100@gmail.com",
+          telegram: "@Sfastexchnage100",
+          telegramLink: "#",
+          whatsapp: "070 16 16 250",
+          whatsappLink: "https://api.whatsapp.com/send?phone=94701616250"
+        },
+      ]
+    },
+    {
+      id: 5,
+      title: "payoneer",
+      agents: [
+        {
+          id: 1,
+          icon: "/icons/image 36.png",
+          cardTitle: "SLFast Exchange",
+          name: "Kavinda Premathilaka",
+          tel: "070 16 16 250",
+          telLink: "tel: 0701616250",
+          email: "slfast100@gmail.com",
+          telegram: "@Sfastexchnage100",
+          telegramLink: "#",
+          whatsapp: "070 16 16 250",
+          whatsappLink: "https://api.whatsapp.com/send?phone=94701616250"
+        },
+        {
+          id: 2,
+          icon: "/icons/image 36.png",
+          cardTitle: "SLFast Exchange",
+          name: "Kasun Premathilaka",
+          tel: "076 58 50 685",
+          telLink: "tel: 0765850685",
+          email: "kbtwins07@gmail.com",
+          telegram: "@Rakil_98",
+          telegramLink: "#",
+          whatsapp: "076 26 58 293",
+          whatsappLink: "https://api.whatsapp.com/send?phone=94762658293"
+        },
+      ]
+    },
+    {
+      id: 6,
+      title: "tether",
+      agents: [
+        {
+          id: 1,
+          icon: "/icons/image 36.png",
+          cardTitle: "SLFast Exchange",
+          name: "Kavinda Premathilaka",
+          tel: "070 16 16 250",
+          telLink: "tel: 0701616250",
+          email: "slfast100@gmail.com",
+          telegram: "@Sfastexchnage100",
+          telegramLink: "#",
+          whatsapp: "070 16 16 250",
+          whatsappLink: "https://api.whatsapp.com/send?phone=94701616250"
+        },
+        {
+          id: 2,
+          icon: "/icons/Pasindu Logo.png",
+          cardTitle: "Galle Exchange",
+          name: "Sanjaya Gunarathna",
+          tel: "070 45 45 132",
+          telLink: "tel: 0704545132",
+          email: "gunarathna.sm@gmail.com",
+          telegram: "@sanjaya100",
+          telegramLink: "#",
+          whatsapp: "070 45 45 132",
+          whatsappLink: "https://api.whatsapp.com/send?phone=94704545132"
+        },
+      ]
+    }
+  ]
+
 
   useEffect(() => {
     const fetchExchangeRates = async () => {
@@ -154,7 +405,7 @@ const Home = ({ rates }: Props) => {
                 <div className='d-flex col-12 col-md-6 col-lg-4 pb-3 px-2 justify-content-center'>
                   <div className='d-flex bg-opacity-75 bg-light w-100 border rounded-3 border-3 justify-content-between'>
                     <div className={`d-flex flex-column ${styles.flagBox} col-4`}>
-                      <Image src="/flags/usd.png" alt="" width="130" height="75" className={`p-1 align-self-center ${styles.flegImage}`} />
+                      <Image src="/flags/flag-usd.png" alt="" width="130" height="75" className={`p-1 align-self-center ${styles.flegImage}`} />
                       <h3>USD</h3>
                     </div>
                     <div className={`align-self-center ${styles.currencyColBorder} col-4`}>
@@ -172,7 +423,7 @@ const Home = ({ rates }: Props) => {
                 <div className='d-flex col-12 col-md-6 col-lg-4 pb-3 px-2 justify-content-center'>
                   <div className='d-flex bg-opacity-75 bg-light w-100 border rounded-3 border-3 justify-content-between'>
                     <div className={`d-flex flex-column ${styles.flagBox} col-4`}>
-                      <Image src="/flags/eur.png" alt="" width="130" height="75" className={`p-1 align-self-center ${styles.flegImage}`} />
+                      <Image src="/flags/flag-eur.png" alt="" width="130" height="75" className={`p-1 align-self-center ${styles.flegImage}`} />
                       <h3>EUR</h3>
                     </div>
                     <div className={`align-self-center ${styles.currencyColBorder} col-4`}>
@@ -190,7 +441,7 @@ const Home = ({ rates }: Props) => {
                 <div className='d-flex col-12 col-md-6 col-lg-4 pb-3 px-2 justify-content-center'>
                   <div className='d-flex bg-opacity-75 bg-light w-100 border rounded-3 border-3 justify-content-between'>
                     <div className={`d-flex flex-column ${styles.flagBox} col-4`}>
-                      <Image src="/flags/gbp.png" alt="" width="130" height="75" className={`p-1 align-self-center ${styles.flegImage}`} />
+                      <Image src="/flags/flag-gbp.png" alt="" width="130" height="75" className={`p-1 align-self-center ${styles.flegImage}`} />
                       <h3>GBP</h3>
                     </div>
                     <div className={`align-self-center ${styles.currencyColBorder} col-4`}>
@@ -209,7 +460,7 @@ const Home = ({ rates }: Props) => {
                 <div className={showMore ? 'd-flex col-12 col-md-6 col-lg-4 pb-3 px-2 justify-content-center' : 'd-none'}>
                   <div className='d-flex bg-opacity-75 bg-light w-100  border rounded-3 border-3 justify-content-between'>
                     <div className={`d-flex flex-column ${styles.flagBox} col-4`}>
-                      <Image src="/flags/jpy.png" alt="" width="130" height="75" className={`p-1 align-self-center ${styles.flegImage}`} />
+                      <Image src="/flags/flag-jpy.png" alt="" width="130" height="75" className={`p-1 align-self-center ${styles.flegImage}`} />
                       <h3>JPY</h3>
                     </div>
                     <div className={`align-self-center ${styles.currencyColBorder} col-4`}>
@@ -227,7 +478,7 @@ const Home = ({ rates }: Props) => {
                 <div className={showMore ? 'd-flex col-12 col-md-6 col-lg-4 pb-3 px-2 justify-content-center' : 'd-none'}>
                   <div className='d-flex bg-opacity-75 bg-light w-100 border rounded-3 border-3 justify-content-between'>
                     <div className={`d-flex flex-column ${styles.flagBox} col-4`}>
-                      <Image src="/flags/aud.png" alt="" width="130" height="75" className={`p-1 align-self-center ${styles.flegImage}`} />
+                      <Image src="/flags/flag-aud.png" alt="" width="130" height="75" className={`p-1 align-self-center ${styles.flegImage}`} />
                       <h3>AUD</h3>
                     </div>
                     <div className={`align-self-center ${styles.currencyColBorder} col-4`}>
@@ -246,7 +497,7 @@ const Home = ({ rates }: Props) => {
                 <div className={showMore ? 'd-flex col-12 col-md-6 col-lg-4 pb-3 px-2 justify-content-center' : 'd-none'}>
                   <div className='d-flex bg-opacity-75 bg-light w-100  border rounded-3 border-3 justify-content-between'>
                     <div className={`d-flex flex-column ${styles.flagBox} col-4`}>
-                      <Image src="/flags/cnh.png" alt="" width="130" height="75" className={`p-1 align-self-center ${styles.flegImage}`} />
+                      <Image src="/flags/flag-cny.png" alt="" width="130" height="75" className={`p-1 align-self-center ${styles.flegImage}`} />
                       <h3>WON</h3>
                     </div>
                     <div className={`align-self-center ${styles.currencyColBorder} col-4`}>
@@ -297,7 +548,7 @@ const Home = ({ rates }: Props) => {
                         <h3 className='text-dark mb-0'>{rate.sellRate}</h3>
                       </div>
                       <div className={`d-flex flex-column justify-content-center align-items-center w-100 px-3 py-3 py-lg-4 ${styles.lastCol}`}>
-                        <button className={`${styles.buysellbtn} px-3 py-3 w-100`}>Buy/Sell</button>
+                        <button className={`${styles.buysellbtn} px-3 py-3 w-100`} onClick={() => handleBuySellClick(rate.title)}>Buy/Sell</button>
                       </div>
                     </div>
                   </div>
@@ -307,6 +558,51 @@ const Home = ({ rates }: Props) => {
           }
         </div>
       </div>
+      <Modal show={showPopup} onHide={handleClose} id="popupAgentDetails">
+        <Modal.Body>
+          {selectedRate && (
+            <div>
+              {agentDetails.map((agentGroup) => {
+                if (selectedRate === agentGroup.title) {
+                  return agentGroup.agents.map((agent) => (
+                    <div key={agent.id} className='d-flex flex-column mb-3 px-3 pt-3'>
+                      <div className={`d-flex flex-row align-items-center py-2 ${styles.cardTitleWrapper} shadow px-2 mb-3`}>
+                        <Image src={agent.icon} width={40} height={40} className={`${styles.popupImage}`} alt=""></Image>
+                        <p className='px-3 mb-0'>{agent.cardTitle}</p>
+                      </div>
+                      <div className="d-flex flex-row mb-1">
+                      <Image alt='' src="/icons/user-octagon.png" width={20} height={20} className='img-fluid me-2' ></Image>
+                      <p className={`${styles.textPopup} mb-0`}> {agent.name}</p>
+                      </div>
+                      <Link className={`${styles.textPopup} mb-1`} href={agent.telLink}>
+                        <Image alt='' src="/icons/call-calling.png" width={20} height={20} className='img-fluid me-2' ></Image> 
+                        {agent.tel}
+                        </Link>
+                      <Link className={`${styles.textPopup}  mb-1`} href={`mailto:${agent.email}`}>
+                      <Image alt='' src="/icons/direct-notification.png" width={20} height={20} className='img-fluid me-2' ></Image>
+                       {agent.email}
+                       </Link>
+                      <Link className={`${styles.textPopup}  mb-1`} href={agent.telegramLink}>
+                        <Image alt='' src="/icons/Frame 1000003261.png" width={20} height={20} className='img-fluid me-2' ></Image>
+                       {agent.telegram}
+                       </Link>
+                      <Link className={`${styles.textPopup}  mb-1`} href={agent.whatsappLink}>
+                      <Image alt='' src="/icons/Frame 1000003262.png" width={20} height={20} className='img-fluid me-2' ></Image>
+                      {agent.whatsapp}
+                      </Link>
+                    </div>
+                  ));
+                }
+                return null;
+              })}
+            </div>
+          )}
+        </Modal.Body>
+        <Modal.Footer className='d-flex justify-content-center'>
+          <IoIosCloseCircle onClick={handleClose} className={`${styles.popupCloseButton}`} />
+        </Modal.Footer>
+      </Modal>;
+
       {/*Agent Services*/}
       <div className={`${styles.agentServices} text-center w-100 d-flex flex-column justify-content-center align-items-center p-2 px-lg-5 p-md-4 mt-5`} id='AgentServicesSec'>
         <h3 className='pt-0 fw-bold fs-1'>Agent Services</h3>
