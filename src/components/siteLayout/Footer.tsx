@@ -34,10 +34,10 @@ const Footer = () => {
   const quickLinks = [
     { id: 1, title: "Home", link: "/" },
     { id: 2, title: "About", link: "#" },
-    { id: 3, title: "Contact", link: "#" },
-    { id: 4, title: "Forging Currency rates", link: "#" },
-    { id: 5, title: "E wallet Rates", link: "#" },
-    { id: 6, title: "Agent Services", link: "#" },
+    { id: 3, title: "Contact", link: "#contactSection" },
+    { id: 4, title: "Forging Currency rates", link: "#HeroSection" },
+    { id: 5, title: "E wallet Rates", link: "#TodayRatingsSec" },
+    { id: 6, title: "Agent Services", link: "#AgentServicesSec" },
   ]
 
   const utilityPage = [
