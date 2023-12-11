@@ -110,7 +110,12 @@ const Footer = () => {
             <FooterTitle title='Contact Us' />
             <p className=' text-lg-start'>Head Office Address 121 King Street,<br />Melbourne West,Australia</p>
             <p>Phone: <Link href={"tel: 011 9876 54321"}>(011) 9876 54321</Link></p>
-            <p>Email: <Link href={"mailto:info@example.com"}>info@example.com</Link></p>
+            <div className='row'><p className='col-3'>Mobile:</p>
+            
+              <p className='col'> <Link href={"tel: 011 9876 54321"}>(+94) 70 45 45 132</Link><br/>
+            <Link href={"tel: 011 9876 54321"}>(+94) 77 16 59 857</Link></p>
+            </div>
+            <p>Email: <Link href={"mailto:info@example.com"}>info@Rates.lk.com</Link></p>
           </div>
         </div>
         <hr />
