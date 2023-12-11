@@ -558,7 +558,7 @@ const Home = ({ rates }: Props) => {
           }
         </div>
       </div>
-      <Modal show={showPopup} onHide={handleClose} id="popupAgentDetails">
+      <Modal show={showPopup} onHide={handleClose} id="popupAgentDetails" className='d-flex align-items-center justify-content-center'>
         <Modal.Body>
           {selectedRate && (
             <div>
