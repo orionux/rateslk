@@ -13,7 +13,7 @@ const Layout = ({ children }: LayoutProps) => {
     return (
         <>
             <Head>
-                <title>Rates.lk</title>
+                <title>Rates.lk | Currency Exchange Rates Sri Lanka | Banking, Forex, and Financial Services</title>
                 <meta name="description" content="Rates lk | Currency Exchange Rates Sri Lanka | Banking, Forex, and Financial Services" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <meta property="og:title" content="Rates lk | Currency Exchange Rates Sri Lanka | Banking, Forex, and Financial Services" />
