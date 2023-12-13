@@ -270,6 +270,46 @@
 
 }
 
+@media screen and (min-width: 1400px) {
+  .card1,
+  .card2,
+  .card3,
+  .card4,
+  .card5 {
+    position: relative;
+    min-width: 23rem;
+    max-width: 29rem;
+    min-height: 20rem;
+    
+    
+}
+  .card1 {
+    top:50px;
+    left:-100px;
+  }
+  .card2 {
+    top: 100px;
+    left: -10px;
+    margin-left: 0;
+    
+  }
+  .card3 {
+    top:30px;
+    left:-80px;
+
+  }
+  .card4 {
+    top: -10px;
+    left: -10px;
+    
+
+  }
+  .card5 {
+    top:-30px;
+    left: -60px;
+  }
+}
+
 
 /* table */
 .tableStyles {
