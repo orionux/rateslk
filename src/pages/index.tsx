@@ -644,7 +644,7 @@ const Home = ({ rates }: Props) => {
               For all your virtual currency exchange needs, our expertise sellers stand by your side.</p>
             <div className="d-flex col-12 col-lg-10 flex-column flex-lg-row justify-content-between">
               <span className={`${styles.spanRed} col-12 col-lg-6 me-lg-1 text-center px-5 py-3 mb-3 mb-lg-0`}>24/7 Support</span>
-              <span className={`${styles.spanGreen} col-12 col-lg-6 ms-lg-1 text-center px-5 py-3`}>99% Secured</span>
+              <span className={`${styles.spanGreen} col-12 col-lg-6 ms-lg-1 text-center px-5 py-3`}>100% Secured</span>
             </div>
             <button className={`col-12 col-lg-10 px-5 py-3 mt-3 ${styles.yellowButton}`}>Get Started</button>
           </div>
@@ -729,12 +729,12 @@ const Home = ({ rates }: Props) => {
                   <path d="M1 8.80762V48.1925C1 52.0585 4.13401 55.1925 8 55.1925H34.2603C38.1263 55.1925 41.2603 52.0585 41.2603 48.1925V16.5358C41.2603 14.5484 40.4154 12.6546 38.9365 11.3269L30.3278 3.59866C29.0432 2.44548 27.3778 1.80762 25.6516 1.80762H8C4.13401 1.80762 1 4.94162 1 8.80762Z" stroke="#F5A414" strokeWidth="2" />
                   <path d="M25.9808 2.02441V11.6961C25.9808 13.9053 27.7716 15.6961 29.9808 15.6961H40.2902" stroke="#F5A414" strokeWidth="2" strokeLinecap="round" />
                 </svg>
-                <p className={`${styles.yearTxtWhite} mb-0 ps-3`}>99.9% <br />
+                <p className={`${styles.yearTxtWhite} mb-0 ps-3`}>100% <br />
                   Case Success</p>
               </div>
               <div className="col-12 col-lg-6 d-flex flex-row justify-content-center align-items-center p-3" style={{ backgroundColor: "#F5A414" }}>
                 <div className="d-flex p-2 rounded-2" style={{ backgroundColor: "#333" }}>
-                  <h3 className={`${styles.yearNumbers} mb-0`}>15+</h3>
+                  <h3 className={`${styles.yearNumbers} mb-0`}>5+</h3>
                 </div>
                 <p className={`${styles.yearTxt} mb-0 ps-3`}>Years<br />
                   Experience</p>
