@@ -76,8 +76,8 @@ const Header = () => {
                 <li className="nav-item px-4">
                   <a className="nav-link" href="#TodayRatingsSec">Sell</a>
                 </li>
-                <li className={`nav-item px-4 ${styles.navButton}`}>
-                  <a className="nav-link" href="#">Register</a>
+                <li className={`nav-item px-4  ${styles.navButton}`}>
+                  <a className="nav-link text-nowrap" href="#">Contact Us</a>
                 </li>
               </ul>
             </div>

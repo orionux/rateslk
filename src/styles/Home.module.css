@@ -391,6 +391,9 @@
   min-height: 70vh;
   padding: 100px;
 }
+.agentServices h3 {
+  font-family:'Ubuntu', sans-serif;
+}
 
 
 .agentServicesBtn {

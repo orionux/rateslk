@@ -517,7 +517,7 @@ const Home = ({ rates }: Props) => {
                   <div className='d-flex bg-opacity-75 bg-light w-100  border rounded-3 border-3 justify-content-between'>
                     <div className={`d-flex flex-column ${styles.flagBox} col-4`}>
                       <Image src="/flags/flag-cny.png" alt="" width="130" height="75" className={`p-1 align-self-center ${styles.flegImage}`} />
-                      <h3>WON</h3>
+                      <h3>CNY</h3>
                     </div>
                     <div className={`align-self-center ${styles.currencyColBorder} col-4`}>
                       <p className='text-dark mb-0'>Buying</p>
@@ -625,7 +625,7 @@ const Home = ({ rates }: Props) => {
       {/*Agent Services*/}
       <div className={`${styles.agentServices} text-center w-100 d-flex flex-column justify-content-center align-items-center p-2 px-lg-5 p-md-4 mt-5`} id='AgentServicesSec'>
         <h3 className='pt-0 fw-bold fs-1'>Agent Services</h3>
-        <p className='pb-4 mb-2 mb-lg-5 fw-medium fs-5'>Feel free to contact us to get agent services of world lead companies</p>
+        <p className='pb-4 mb-2 mb-lg-5 fw-medium fs-5'>Make Your Deposited and withdrawals Secured and Fast</p>
         <div className='d-flex row row-cols-2 w-100 p-0 m-0 max-width-extra-large justify-content-center align-items-center'>
           <div className='col-6 d-flex justify-content-end align-items-center px-2'>
             <div onClick={handleModalOpen} className={` ${styles.agentServicesBox} border p-2 py-lg-5 mb-3 mb-lg-5  bg-white d-flex justify-content-center align-items-center w-75`}>
@@ -707,21 +707,21 @@ const Home = ({ rates }: Props) => {
               <div className='col-12 col-lg-6 d-flex p-2 position-relative' >
                 <div className={`shadow-lg p-4 d-flex flex-column justify-content-center bg-white ${styles.card1}`} style={{ borderRadius: "30px" }}  >
                   <Image src={'/icons/Group (4).png'} alt="" width={120} height={120} className={`img-fluid ${styles.cardicon} p-2`} />
-                  <Image src={'/icons/Group.png'} alt="" width={40} height={40} className="img-fluid pb-2 pt-1" />
+                  <Image src={'/icons/Group.png'} alt="" width={40} height={40} className="img-fluid pb-3" />
                   <h5 className='position-relative'>Instant 24/7 Support</h5>
                   <p className='mb-0'>Get help round the clock from a professional, fast support team.
                     &quot;Your money, your confidence, our expertise.&quot;</p>
-                  <Link href='#' className='text-decoration-none mt-3'>Learn More</Link>
+                  
                 </div>
               </div>
               <div className='col-12 col-lg-6 d-flex p-2 position-relative'>
                 <div className={`shadow-lg p-4 d-flex flex-column justify-content-center bg-white ${styles.card2}`} style={{ borderRadius: "30px" }} >
                   <Image src={'/icons/Group (3).png'} alt="" width={120} height={120} className={`img-fluid ${styles.cardicon}`} />
-                  <Image src={'/icons/Group (2).png'} alt="" width={30} height={30} className="img-fluid pb-2" />
+                  <Image src={'/icons/Group (2).png'} alt="" width={30} height={30} className="img-fluid pb-3" />
                   <h5 className='position-relative'>Verified Sellers</h5>
                   <p className='mb-0'>We partner with the best of the best buyers and sellers. Verified sellers expertise to provide smooth service in exchange e-currencies with trust.
                     &quot;Experience the best exchange rate; every day, all day.&quot;</p>
-                  <Link href='#' className='text-decoration-none mt-3'>Learn More</Link>
+                  
                 </div>
               </div>
             </div>
@@ -733,16 +733,16 @@ const Home = ({ rates }: Props) => {
                   <h5 className='position-relative'>No Contracts</h5>
                   <p className='mb-0'>That&apos;s right! NO CONTRACTS! We want you to do business with us because of our excellent customer service and professional solutions, not by obligation!
                     &quot;Exchange hassle-free, travel worry-free.&quot;</p>
-                  <Link href='#' className='text-decoration-none mt-2'>Learn More</Link>
+                  
                 </div>
               </div>
               <div className='col-12 col-lg-6 d-flex p-2 position-relative'>
                 <div className={`shadow-lg p-4 d-flex flex-column justify-content-center bg-white ${styles.card4}`} style={{ borderRadius: "30px" }} >
                   <Image src={'/icons/Icon (1).png'} alt="" width={100} height={120} className={`img-fluid ${styles.cardicon}`} />
-                  <Image src={'/icons/Icon.png'} alt="" width={40} height={40} className="img-fluid mb-3" />
+                  <Image src={'/icons/Icon.png'} alt="" width={40} height={40} className="img-fluid pb-4" />
                   <h5 className='position-relative'>We CARE about your business!</h5>
                   <p className='mb-0'>You&apos;re in good hands with Rates.lk. We care about your business&apos;s well-being. &quot;From euros to dollars, we&apos;ve got you covered.&quot;</p>
-                  <Link href='#' className='text-decoration-none mt-3'>Learn More</Link>
+                  
                 </div>
               </div>
             </div>
@@ -750,10 +750,10 @@ const Home = ({ rates }: Props) => {
               <div className='col-12 col-lg-6 d-flex p-2 position-relative'>
                 <div className={`shadow-lg p-4 d-flex flex-column justify-content-center bg-white ${styles.card5}`} style={{ borderRadius: "30px" }} >
                   <Image src={'/icons/Frame (1).png'} alt="" width={120} height={120} className={`img-fluid ${styles.cardicon}`} />
-                  <Image src={'/icons/Frame.png'} alt="" width={50} height={50} className="img-fluid pt-2 pb-3" />
+                  <Image src={'/icons/Frame.png'} alt="" width={50} height={50} className="img-fluid pb-4" />
                   <h5 className='position-relative'>Satisfaction</h5>
                   <p className='mb-0'>100% Satisfaction is our goal, providing prompt service in a reliable and fair manner where our services and solutions need us again and again. &quot;Exchange like a pro, travel like a boss.&quot;</p>
-                  <Link href='#' className='text-decoration-none mt-2'>Learn More</Link>
+                  
                 </div>
               </div>
             </div>
