@@ -404,13 +404,31 @@ const Home = ({ rates }: Props) => {
 
     fetchExchangeRates();
   }, []);
+
+  const [currentDate, setCurrentDate] = useState<string>('');
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      const now = new Date();
+      const options: Intl.DateTimeFormatOptions = { year: 'numeric', month: 'long', day: 'numeric' };
+      const formattedDate = `Updated On ${now.toLocaleDateString(undefined, options)}`;
+      setCurrentDate(formattedDate);
+
+      console.log(currentDate); 
+    }, 1000 * 1); 
+
+    return () => clearInterval(intervalId);
+  }, []); 
+
+  
+  
   return (
     <>
       {/* get help button*/}
       <GetHelpButton />
       {/* hero */}
       <div className={`${styles.hero} d-flex flex-column text-center w-100 justify-content-center align-items-center py-5 px-2`} id='HeroSection'>
-        <span className={`px-3 py-1 mb-0 ${styles.UpdatedTxt}`}>Updated On March 31, 2022</span>
+        <span className={`px-3 py-1 mb-0 ${styles.UpdatedTxt}`}>{currentDate}</span>
         <h2 className='mb-3'>Put Your <span>Trust</span>  In Us, <span>Exchange</span> <br /> With Confidence.</h2>
         {/* <p className='d-none d-lg-flex'>Elevate Your Currency Exchange Experience With Us. Trust, Expertise, Excellence – Your <br></br> Premier Destination For Seamless Transactions And Unmatched Service..</p>
         <p className='d-flex d-lg-none'>Elevate Your Currency Exchange Experience With Us. Trust, Expertise, Excellence – Your Premier Destination For Seamless Transactions And Unmatched Service..</p> */}
