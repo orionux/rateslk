@@ -40,6 +40,7 @@ const Home = ({ rates }: Props) => {
 
   const [showModal, setshowModal] = useState(false);
   const [showModalTwo, setshowModalTwo] = useState(false);
+  const [showSuccess, setshowSuccess] = useState(false);
 
   const handleModalOpen = () => {
     setshowModal(true);
@@ -54,6 +55,13 @@ const Home = ({ rates }: Props) => {
   }
   const handleModalTwoClose = () => {
     setshowModalTwo(false);
+  }
+
+  const handleSuccessOpen = () => {
+    setshowSuccess(true);
+  }
+  const handleSuccessClose = () => {
+    setshowSuccess(false);
   }
 
 
@@ -829,7 +837,7 @@ const Home = ({ rates }: Props) => {
       {/* contact */}
       <div className={`${styles.contactForm} d-flex flex-column w-100 justify-content-center align-items-center text-center`} id='contactSection'>
         <h3 className='mb-5'>Get In Touch</h3>
-        <form action="" className={` ${styles.FormContactUs} max-width-extra-large`}>
+        <form action="#contactSection" className={` ${styles.FormContactUs} max-width-extra-large`}>
           <div className="d-flex flex-column flex-lg-row">
             <div className="col-12 col-lg-6 d-flex flex-column align-items-start px-2">
               <label htmlFor="fullName">Full Name</label>
@@ -854,11 +862,24 @@ const Home = ({ rates }: Props) => {
             <label htmlFor="message">Leave us a message</label>
             <textarea name="message" id="message" rows={10} placeholder='Please type your comments... '></textarea>
             <div className="d-flex w-100 justify-content-center py-2">
-              <button>Get An Appoinment</button>
+              <button onClick={handleSuccessOpen}>Get An Appoinment</button>
             </div>
           </div>
         </form>
       </div>
+      <Modal show={showSuccess} onHide={handleSuccessClose} id="Agent" className='d-flex align-items-center justify-content-center'>
+        <Modal.Body>
+        <div className='d-flex flex-column mb-3 px-3 pt-3 justify-content-center align-items-center'>
+        
+          <Image alt='' src="/icons/success.png" width={100} height={100} className='img-fluid' ></Image>
+          <p className='fs-6 fw-bold'>Your Message Has Been <span className='text-warning'>Successfully Sent !</span></p>
+        
+        </div>  
+        </Modal.Body>
+        <Modal.Footer className='d-flex justify-content-center'>
+        <IoIosCloseCircle onClick={handleSuccessClose} className={`${styles.popupCloseButton}`} />
+        </Modal.Footer>
+      </Modal>
     </>
   )
 }
