@@ -408,6 +408,7 @@ const Home = ({ rates }: Props) => {
   const [currentDate, setCurrentDate] = useState<string>('');
 
   useEffect(() => {
+
     const intervalId = setInterval(() => {
       const now = new Date();
       const options: Intl.DateTimeFormatOptions = { year: 'numeric', month: 'long', day: 'numeric' };
@@ -644,25 +645,25 @@ const Home = ({ rates }: Props) => {
       <div className={`${styles.agentServices} text-center w-100 d-flex flex-column justify-content-center align-items-center p-2 px-lg-5 p-md-4 mt-5`} id='AgentServicesSec'>
         <h3 className='pt-0 fw-bold fs-1'>Agent Services</h3>
         <p className='pb-4 mb-2 mb-lg-5 fw-medium fs-5'>Make Your Deposited and withdrawals Secured and Fast</p>
-        <div className='d-flex row row-cols-2 w-100 p-0 m-0 max-width-extra-large justify-content-center align-items-center'>
-          <div className='col-6 d-flex justify-content-end align-items-center px-2'>
-            <div onClick={handleModalOpen} className={` ${styles.agentServicesBox} border p-2 py-lg-5 mb-3 mb-lg-5  bg-white d-flex justify-content-center align-items-center w-75`}>
-              <Image src='/agentservices/ttrust.png' alt='' width={150} height={40} className='img-fluid py-3' />
+        <div className='d-flex row row-cols-2 row-cols-md-3 row-cols-lg-4 w-100 p-0 m-0 max-width-extra-large justify-content-center align-items-center'>
+          <div className='col-6 col-md-4 col-lg-3 d-flex justify-content-end align-items-center px-2'>
+            <div onClick={handleModalOpen} className={` ${styles.agentServicesBox} border p-2 py-lg-5 mb-3 mb-lg-5  bg-white d-flex justify-content-center align-items-center w-100`}>
+              <Image src='/agentservices/deriv.png' alt='' width={150} height={40} className='img-fluid py-3' />
             </div>
           </div>
-          <div className='col-6 d-flex justify-content-start align-items-center px-2'>
-            <div onClick={handleModalTwoOpen} className={` ${styles.agentServicesBox} border p-2 py-lg-5 mb-3 mb-lg-5  bg-white d-flex justify-content-center align-items-center w-75`}>
+          <div className='col-6 col-md-4 col-lg-3 d-flex justify-content-start align-items-center px-2'>
+            <div onClick={handleModalTwoOpen} className={` ${styles.agentServicesBox} border p-2 py-lg-5 mb-3 mb-lg-5  bg-white d-flex justify-content-center align-items-center w-100`}>
               <Image src='/agentservices/1xbet.png' alt='' width={150} height={50} className='img-fluid py-3' />
             </div>
           </div>
-          <div className='col-6 d-flex justify-content-end align-items-center px-2'>
-            <div onClick={handleModalOpen} className={` ${styles.agentServicesBox} border p-2 py-lg-5 mb-3 mb-lg-5  bg-white d-flex justify-content-center align-items-center w-75`}>
-              <Image src='/agentservices/deriv.png' alt='' width={180} height={50} className='img-fluid py-3' />
+          <div className='col-6 col-md-4 col-lg-3 d-flex justify-content-end align-items-center px-2'>
+            <div onClick={handleModalOpen} className={` ${styles.agentServicesBox} border p-2 py-lg-5 mb-3 mb-lg-5  bg-white d-flex justify-content-center align-items-center w-100`}>
+              <Image src='/agentservices/melbet-logo.png' alt='' width={180} height={50} className='img-fluid py-3' />
             </div>
           </div>
-          <div className='col-6 d-flex justify-content-start align-items-center px-2'>
-            <div onClick={handleModalTwoOpen} className={` ${styles.agentServicesBox} border p-2 py-lg-5 mb-3 mb-lg-5  bg-white d-flex justify-content-center align-items-center w-75`}>
-              <Image src='/agentservices/melbet-logo.png' alt='' width={150} height={80} className='img-fluid py-3' />
+          <div className='col-6 col-md-4 col-lg-3 d-flex justify-content-start align-items-center px-2'>
+            <div onClick={handleModalTwoOpen} className={` ${styles.agentServicesBox} border p-2 py-lg-5 mb-3 mb-lg-5  bg-white d-flex justify-content-center align-items-center w-100`}>
+              <Image src='/agentservices/ttrust.png' alt='' width={150} height={80} className='img-fluid py-3' />
             </div>
           </div>
         </div>
