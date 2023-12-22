@@ -841,7 +841,7 @@
   background-image: url('/siderback.png');
   background-size: 260px 90px;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: 50% 80%;
 
 }
 
@@ -879,7 +879,7 @@
 @media screen and (min-width: 600px) and (max-width: 991px) {
   .sidebar {
     padding-top: 15px;
-    background-position: center center;
+    background-position: 50% 70%;
   }
 
   .sidebar.open {

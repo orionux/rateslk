@@ -139,7 +139,39 @@ const Home = ({ rates }: Props) => {
   const agentDetails = [
     {
       id: 0,
-      title: "deriv",
+      title: "Skrill",
+      agents: [
+        {
+          id: 2,
+          icon: "/icons/Pasindu Logo.png",
+          cardTitle: "Galle Exchange",
+          name: "Pasindu Loshitha",
+          tel: "076 26 58 293",
+          telLink: "tel: 0762658293",
+          email: "pasindulositha26@gmail.com",
+          telegram: "@loshitha97",
+          telegramLink: "#",
+          whatsapp: "076 26 58 293",
+          whatsappLink: "https://api.whatsapp.com/send?phone=94762658293"
+        },
+        {
+          id: 1,
+          icon: "/icons/Pasindu Logo.png",
+          cardTitle: "Galle Exchange",
+          name: "Sanjaya Gunarathna",
+          tel: "070 45 45 132",
+          telLink: "tel: 0704545132",
+          email: "gunarathna.sm@gmail.com",
+          telegram: "@sanjaya100",
+          telegramLink: "#",
+          whatsapp: "070 45 45 132",
+          whatsappLink: "https://api.whatsapp.com/send?phone=94704545132"
+        },
+      ]
+    },
+    {
+      id: 1,
+      title: "Deriv",
       agents: [
         {
           id: 1,
@@ -170,7 +202,199 @@ const Home = ({ rates }: Props) => {
       ]
     },
     {
+      id: 2,
+      title: "Payoneer",
+      agents: [
+        {
+          id: 1,
+          icon: "/icons/image 36.png",
+          cardTitle: "SLFast Exchange",
+          name: "Kavinda Premathilaka",
+          tel: "070 16 16 250",
+          telLink: "tel: 0701616250",
+          email: "slfast100@gmail.com",
+          telegram: "@Sfastexchnage100",
+          telegramLink: "#",
+          whatsapp: "070 16 16 250",
+          whatsappLink: "https://api.whatsapp.com/send?phone=94701616250"
+        },
+        {
+          id: 2,
+          icon: "/icons/image 36.png",
+          cardTitle: "SLFast Exchange",
+          name: "Kasun Premathilaka",
+          tel: "076 58 50 685",
+          telLink: "tel: 0765850685",
+          email: "kbtwins07@gmail.com",
+          telegram: "@Rakil_98",
+          telegramLink: "#",
+          whatsapp: "076 26 58 293",
+          whatsappLink: "https://api.whatsapp.com/send?phone=94762658293"
+        },
+      ]
+    },
+    {
+      id: 3,
+      title: "Tether",
+      agents: [
+        {
+          id: 1,
+          icon: "/icons/image 36.png",
+          cardTitle: "SLFast Exchange",
+          name: "Kavinda Premathilaka",
+          tel: "070 16 16 250",
+          telLink: "tel: 0701616250",
+          email: "slfast100@gmail.com",
+          telegram: "@Sfastexchnage100",
+          telegramLink: "#",
+          whatsapp: "070 16 16 250",
+          whatsappLink: "https://api.whatsapp.com/send?phone=94701616250"
+        },
+        {
+          id: 2,
+          icon: "/icons/Pasindu Logo.png",
+          cardTitle: "Galle Exchange",
+          name: "Sanjaya Gunarathna",
+          tel: "070 45 45 132",
+          telLink: "tel: 0704545132",
+          email: "gunarathna.sm@gmail.com",
+          telegram: "@sanjaya100",
+          telegramLink: "#",
+          whatsapp: "070 45 45 132",
+          whatsappLink: "https://api.whatsapp.com/send?phone=94704545132"
+        },
+      ]
+    },
+    {
+      id: 4,
+      title: "Wise",
+      agents: [
+        {
+          id: 1,
+          icon: "/icons/Pasindu Logo.png",
+          cardTitle: "Galle Exchange",
+          name: "Sanjaya Gunarathna",
+          tel: "070 45 45 132",
+          telLink: "tel: 0704545132",
+          email: "gunarathna.sm@gmail.com",
+          telegram: "@sanjaya100",
+          telegramLink: "#",
+          whatsapp: "070 45 45 132",
+          whatsappLink: "https://api.whatsapp.com/send?phone=94704545132"
+        },
+        {
+          id: 2,
+          icon: "/icons/image 36.png",
+          cardTitle: "SLFast Exchange",
+          name: "Kavinda Premathilaka",
+          tel: "070 16 16 250",
+          telLink: "tel: 0701616250",
+          email: "slfast100@gmail.com",
+          telegram: "@Sfastexchnage100",
+          telegramLink: "#",
+          whatsapp: "070 16 16 250",
+          whatsappLink: "https://api.whatsapp.com/send?phone=94701616250"
+        },
+      ]
+    },
+    {
+      id: 5,
+      title: "Neteller",
+      agents: [
+        {
+          id: 2,
+          icon: "/icons/Pasindu Logo.png",
+          cardTitle: "Galle Exchange",
+          name: "Pasindu Loshitha",
+          tel: "076 26 58 293",
+          telLink: "tel: 0762658293",
+          email: "pasindulositha26@gmail.com",
+          telegram: "@loshitha97",
+          telegramLink: "#",
+          whatsapp: "076 26 58 293",
+          whatsappLink: "https://api.whatsapp.com/send?phone=94762658293"
+        },
+        {
+          id: 1,
+          icon: "/icons/Pasindu Logo.png",
+          cardTitle: "Galle Exchange",
+          name: "Sanjaya Gunarathna",
+          tel: "070 45 45 132",
+          telLink: "tel: 0704545132",
+          email: "gunarathna.sm@gmail.com",
+          telegram: "@sanjaya100",
+          telegramLink: "#",
+          whatsapp: "070 45 45 132",
+          whatsappLink: "https://api.whatsapp.com/send?phone=94704545132"
+        },
+      ]
+    },
+    {
+      id: 6,
+      title: "Perfect Money",
+      agents: [
+        {
+          id: 2,
+          icon: "/icons/Pasindu Logo.png",
+          cardTitle: "Galle Exchange",
+          name: "Pasindu Loshitha",
+          tel: "076 26 58 293",
+          telLink: "tel: 0762658293",
+          email: "pasindulositha26@gmail.com",
+          telegram: "@loshitha97",
+          telegramLink: "#",
+          whatsapp: "076 26 58 293",
+          whatsappLink: "https://api.whatsapp.com/send?phone=94762658293"
+        },
+        {
+          id: 1,
+          icon: "/icons/Pasindu Logo.png",
+          cardTitle: "Galle Exchange",
+          name: "Sanjaya Gunarathna",
+          tel: "070 45 45 132",
+          telLink: "tel: 0704545132",
+          email: "gunarathna.sm@gmail.com",
+          telegram: "@sanjaya100",
+          telegramLink: "#",
+          whatsapp: "070 45 45 132",
+          whatsappLink: "https://api.whatsapp.com/send?phone=94704545132"
+        },
+      ]
+    } 
+    /* {
       id: 1,
+      title: "deriv",
+      agents: [
+      {
+          id: 1,
+          icon: "/icons/Pasindu Logo.png",
+          cardTitle: "Galle Exchange",
+          name: "Sanjaya Gunarathna",
+          tel: "070 45 45 132",
+          telLink: "tel: 0704545132",
+          email: "gunarathna.sm@gmail.com",
+          telegram: "@sanjaya100",
+          telegramLink: "#",
+          whatsapp: "070 45 45 132",
+          whatsappLink: "https://api.whatsapp.com/send?phone=94704545132"
+        },
+        {
+          id: 2,
+          icon: "/icons/Pasindu Logo.png",
+          cardTitle: "Galle Exchange",
+          name: "Pasindu Loshitha",
+          tel: "076 26 58 293",
+          telLink: "tel: 0762658293",
+          email: "pasindulositha26@gmail.com",
+          telegram: "@loshitha97",
+          telegramLink: "#",
+          whatsapp: "076 26 58 293",
+          whatsappLink: "https://api.whatsapp.com/send?phone=94762658293"
+        }
+      ]
+    },
+    {
+      id: 0,
       title: "skrill",
       agents: [
         {
@@ -202,7 +426,7 @@ const Home = ({ rates }: Props) => {
       ]
     },
     {
-      id: 2,
+      id: 6,
       title: "Perfect Money",
       agents: [
         {
@@ -234,7 +458,7 @@ const Home = ({ rates }: Props) => {
       ]
     },
     {
-      id: 3,
+      id: 5,
       title: "Neteller",
       agents: [
         {
@@ -298,7 +522,7 @@ const Home = ({ rates }: Props) => {
       ]
     },
     {
-      id: 5,
+      id: 2,
       title: "payoneer",
       agents: [
         {
@@ -330,7 +554,7 @@ const Home = ({ rates }: Props) => {
       ]
     },
     {
-      id: 6,
+      id: 3,
       title: "tether",
       agents: [
         {
@@ -360,7 +584,7 @@ const Home = ({ rates }: Props) => {
           whatsappLink: "https://api.whatsapp.com/send?phone=94704545132"
         },
       ]
-    }
+    } */
   ]
 
 
@@ -757,7 +981,7 @@ const Home = ({ rates }: Props) => {
       <div className={`${styles.experience} d-flex flex-column flex-lg-row w-100 justify-content-center align-items-center py-5`} id='ExperienceSec'>
         <div className="max-width-extra-large d-flex flex-column flex-lg-row w-100 justify-content-center align-items-center">
           <div className={`${styles.leftImgWrapper} col-12 col-lg-6 d-flex justify-content-center align-items-center px-2 px-lg-5`}>
-            <Image src="/layoutimg/dollar.png" alt='' width={700} height={700} className='img-fluid'></Image>
+            <Image src="/layoutimg/dollarcoin.png" alt='' width={700} height={700} className='img-fluid'></Image>
           </div>
           <div className="col-12 col-lg-6 d-flex flex-column justify-content-center align-items-start text-start px-2 px-lg-5 py-5">
             <h3>We are the <span>First Trusted</span> and <span>Experienced Team</span> in Sri Lanka</h3>
