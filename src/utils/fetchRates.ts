@@ -3,7 +3,7 @@ import { Rates } from "typings";
 
 const query = `
 *[_type == "rates"]{
-    title, sellRate, buyRate, "imageUrl": mainImage.asset->url 
+    title, id , sellRate, buyRate, "imageUrl": mainImage.asset->url 
 }
 `
 export const fetchRates = async () => {

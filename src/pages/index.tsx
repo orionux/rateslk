@@ -64,40 +64,6 @@ const Home = ({ rates }: Props) => {
     setshowSuccess(false);
   }
 
-
-  const tableData = [
-    {
-      id: 1,
-      img: "/priceLogos/deriv.png",
-      buying: "258.3525",
-      selling: "258.3525",
-      buttonTxt: "Buy/Sell"
-    },
-    {
-      id: 2,
-      img: "/priceLogos/skrill.png",
-      buying: "258.3525",
-      selling: "258.3525",
-      buttonTxt: "Buy/Sell"
-    }
-    ,
-    {
-      id: 3,
-      img: "/priceLogos/payoneer.png",
-      buying: "258.3525",
-      selling: "258.3525",
-      buttonTxt: "Buy/Sell"
-    }
-    ,
-    {
-      id: 4,
-      img: "/priceLogos/Amazon.png",
-      buying: "258.3525",
-      selling: "258.3525",
-      buttonTxt: "Buy/Sell"
-    }
-  ]
-
   const [showMore, setShowMore] = useState(false);
 
   const toggleRows = () => {
@@ -575,10 +541,10 @@ const Home = ({ rates }: Props) => {
         <p className='pb-2 pb-lg-3 mb-2 mb-lg-5'>Check out our freshly updated exchange rates today and get the best deal for your money!</p>
         <div className="d-flex row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 w-100 p-0 px-xl-5 m-0 max-width-extra-large justify-content-center">
           {
-            rates.map((rate, index) => {
+            rates.map((rate) => {
               return (
                 <>
-                  <div className={`d-flex justify-content-center align-item-center col-6 col-sm-6 col-md-4 col-lg-3 p-0 p-lg-2 `} key={index}>
+                  <div className={`d-flex justify-content-center align-item-center col-6 col-sm-6 col-md-4 col-lg-3 p-0 p-lg-2 `} key={rate.id}>
                     <div className={`d-flex flex-column ${styles.cryptoCard} justify-content-center align-items-center w-100 m-1 m-md-2 p-1 p-lg-3`}>
                       {rate.imageUrl ? (
                         <Image src={`${rate.imageUrl}`} width={130} height={90} alt="" className={`img-fluid py-2 py-lg-4 px-4 my-1 my-lg-3 ${styles.logoImages}`} />
