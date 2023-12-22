@@ -15,7 +15,7 @@ export interface Rates {
     [x: string]: any;
     [x: string]: any;
     title: string;
-    id: string;
+    id: number;
     sellRate: number;
     buyRate: number;
     mainImage: Image;
