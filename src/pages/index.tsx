@@ -838,7 +838,7 @@ const Home = ({ rates }: Props) => {
         <div className='d-flex flex-column mb-3 px-3 pt-3 justify-content-center align-items-center'>
         
           <Image alt='' src="/icons/success.png" width={100} height={100} className='img-fluid' ></Image>
-          <p className='fs-6 fw-bold'>Your Message Has Been <span className='text-warning'>Successfully Sent !</span></p>
+          <p className='fs-6 fw-bold text-center'>Your Message Has Been <span className='text-warning'>Successfully Sent !</span></p>
         
         </div>  
         </Modal.Body>
