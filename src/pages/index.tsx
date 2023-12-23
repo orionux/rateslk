@@ -143,7 +143,7 @@ const Home = ({ rates }: Props) => {
       agents: [
         {
           id: 2,
-          icon: "/icons/Pasindu Logo.png",
+          icon: "/icons/Frame 1000003285.svg",
           cardTitle: "Galle Exchange",
           name: "Pasindu Loshitha",
           tel: "076 26 58 293",
@@ -156,7 +156,7 @@ const Home = ({ rates }: Props) => {
         },
         {
           id: 1,
-          icon: "/icons/Pasindu Logo.png",
+          icon: "/icons/Frame 1000003285.svg",
           cardTitle: "Galle Exchange",
           name: "Sanjaya Gunarathna",
           tel: "070 45 45 132",
@@ -175,7 +175,7 @@ const Home = ({ rates }: Props) => {
       agents: [
         {
           id: 1,
-          icon: "/icons/Pasindu Logo.png",
+          icon: "/icons/Frame 1000003285.svg",
           cardTitle: "Galle Exchange",
           name: "Sanjaya Gunarathna",
           tel: "070 45 45 132",
@@ -188,7 +188,7 @@ const Home = ({ rates }: Props) => {
         },
         {
           id: 2,
-          icon: "/icons/Pasindu Logo.png",
+          icon: "/icons/Frame 1000003285.svg",
           cardTitle: "Galle Exchange",
           name: "Pasindu Loshitha",
           tel: "076 26 58 293",
@@ -207,7 +207,7 @@ const Home = ({ rates }: Props) => {
       agents: [
         {
           id: 1,
-          icon: "/icons/image 36.png",
+          icon: "/icons/Frame 1000003286.svg",
           cardTitle: "SLFast Exchange",
           name: "Kavinda Premathilaka",
           tel: "070 16 16 250",
@@ -220,7 +220,7 @@ const Home = ({ rates }: Props) => {
         },
         {
           id: 2,
-          icon: "/icons/image 36.png",
+          icon: "/icons/Frame 1000003286.svg",
           cardTitle: "SLFast Exchange",
           name: "Kasun Premathilaka",
           tel: "076 58 50 685",
@@ -239,7 +239,7 @@ const Home = ({ rates }: Props) => {
       agents: [
         {
           id: 1,
-          icon: "/icons/image 36.png",
+          icon: "/icons/Frame 1000003286.svg",
           cardTitle: "SLFast Exchange",
           name: "Kavinda Premathilaka",
           tel: "070 16 16 250",
@@ -252,7 +252,7 @@ const Home = ({ rates }: Props) => {
         },
         {
           id: 2,
-          icon: "/icons/Pasindu Logo.png",
+          icon: "/icons/Frame 1000003285.svg",
           cardTitle: "Galle Exchange",
           name: "Sanjaya Gunarathna",
           tel: "070 45 45 132",
@@ -271,7 +271,7 @@ const Home = ({ rates }: Props) => {
       agents: [
         {
           id: 1,
-          icon: "/icons/Pasindu Logo.png",
+          icon: "/icons/Frame 1000003285.svg",
           cardTitle: "Galle Exchange",
           name: "Sanjaya Gunarathna",
           tel: "070 45 45 132",
@@ -284,7 +284,7 @@ const Home = ({ rates }: Props) => {
         },
         {
           id: 2,
-          icon: "/icons/image 36.png",
+          icon: "/icons/Frame 1000003286.svg",
           cardTitle: "SLFast Exchange",
           name: "Kavinda Premathilaka",
           tel: "070 16 16 250",
@@ -303,7 +303,7 @@ const Home = ({ rates }: Props) => {
       agents: [
         {
           id: 2,
-          icon: "/icons/Pasindu Logo.png",
+          icon: "/icons/Frame 1000003285.svg",
           cardTitle: "Galle Exchange",
           name: "Pasindu Loshitha",
           tel: "076 26 58 293",
@@ -316,7 +316,7 @@ const Home = ({ rates }: Props) => {
         },
         {
           id: 1,
-          icon: "/icons/Pasindu Logo.png",
+          icon: "/icons/Frame 1000003285.svg",
           cardTitle: "Galle Exchange",
           name: "Sanjaya Gunarathna",
           tel: "070 45 45 132",
@@ -335,7 +335,7 @@ const Home = ({ rates }: Props) => {
       agents: [
         {
           id: 2,
-          icon: "/icons/Pasindu Logo.png",
+          icon: "/icons/Frame 1000003285.svg",
           cardTitle: "Galle Exchange",
           name: "Pasindu Loshitha",
           tel: "076 26 58 293",
@@ -348,7 +348,7 @@ const Home = ({ rates }: Props) => {
         },
         {
           id: 1,
-          icon: "/icons/Pasindu Logo.png",
+          icon: "/icons/Frame 1000003285.svg",
           cardTitle: "Galle Exchange",
           name: "Sanjaya Gunarathna",
           tel: "070 45 45 132",
