@@ -112,9 +112,9 @@ const Footer = () => {
             {/* <p>Phone: <Link href={"tel: 011 9876 54321"}>(011) 9876 54321</Link></p> */}
             <div className='row'><p className='col-3'>Mobile:</p>
             <p className='col'> 
-              <Link href={"tel: 011 9876 54321"}>(+94) 70 45 45 132</Link><br/>
-              <Link href={"tel: 011 9876 54321"}>(+94) 76 26 58 293</Link><br/>
-            <Link href={"tel: 011 9876 54321"}>(+94) 77 16 59 857</Link></p>
+              <Link href={"tel: 070 454 5132"}>(+94) 70 45 45 132</Link><br/>
+              <Link href={"tel: 076 265 8293"}>(+94) 76 26 58 293</Link><br/>
+            <Link href={"tel: 077 165 9857"}>(+94) 77 16 59 857</Link></p>
             </div>
             <p>Email: <Link href={"mailto:info@Rates.lk.com"}>info@Rates.lk.com</Link></p>
           </div>
