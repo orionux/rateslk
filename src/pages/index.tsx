@@ -637,7 +637,7 @@ const Home = ({ rates }: Props) => {
         <h2 className='mb-3'>Put Your <span>Trust</span>  In Us, <span>Exchange</span> <br /> With Confidence.</h2>
         {/* <p className='d-none d-lg-flex'>Elevate Your Currency Exchange Experience With Us. Trust, Expertise, Excellence – Your <br></br> Premier Destination For Seamless Transactions And Unmatched Service..</p>
         <p className='d-flex d-lg-none'>Elevate Your Currency Exchange Experience With Us. Trust, Expertise, Excellence – Your Premier Destination For Seamless Transactions And Unmatched Service..</p> */}
-        <button className={`px-3 py-3`}>View vertual wallet rates</button>
+        <button className={`px-3 py-3`}>View vertual E-wallet rates</button>
 
         <div className={`max-width-extra-large col-11 p-2 p-lg-5 mt-5 mb-0 position-relative ${styles.flagBackColor} `}>
           <p className='fw-bold px-5 pt-3'>100% of the data is published according to the exchange rates of the <span className='text-warning'>Central Bank of Sri Lanka</span></p>
