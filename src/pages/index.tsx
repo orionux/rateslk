@@ -42,6 +42,7 @@ const Home = ({ rates }: Props) => {
   const [showModalTwo, setshowModalTwo] = useState(false);
   const [showSuccess, setshowSuccess] = useState(false);
 
+  // ---------------------
   const handleModalOpen = () => {
     setshowModal(true);
   };
@@ -50,6 +51,8 @@ const Home = ({ rates }: Props) => {
     setshowModal(false);
   };
 
+
+// ---------------------
   const handleModalTwoOpen = () => {
     setshowModalTwo(true);
   }
@@ -57,6 +60,9 @@ const Home = ({ rates }: Props) => {
     setshowModalTwo(false);
   }
 
+
+
+  // ---------------------
   const handleSuccessOpen = () => {
     setshowSuccess(true);
   }
@@ -855,12 +861,12 @@ const Home = ({ rates }: Props) => {
             </div>
           </div>
           <div className='col-6 col-md-4 col-lg-3 d-flex justify-content-end align-items-center px-2'>
-            <div onClick={handleModalOpen} className={` ${styles.agentServicesBox} border p-2 py-lg-5 mb-3 mb-lg-5  bg-white d-flex justify-content-center align-items-center w-100`}>
+            <div onClick={handleModalTwoOpen} className={` ${styles.agentServicesBox} border p-2 py-lg-5 mb-3 mb-lg-5  bg-white d-flex justify-content-center align-items-center w-100`}>
               <Image src='/agentservices/melbet-logo.png' alt='' width={180} height={50} className='img-fluid py-3' />
             </div>
           </div>
           <div className='col-6 col-md-4 col-lg-3 d-flex justify-content-start align-items-center px-2'>
-            <div onClick={handleModalTwoOpen} className={` ${styles.agentServicesBox} border p-2 py-lg-5 mb-3 mb-lg-5  bg-white d-flex justify-content-center align-items-center w-100`}>
+            <div onClick={handleModalOpen} className={` ${styles.agentServicesBox} border p-2 py-lg-5 mb-3 mb-lg-5  bg-white d-flex justify-content-center align-items-center w-100`}>
               <Image src='/agentservices/ttrust.png' alt='' width={150} height={80} className='img-fluid py-3' />
             </div>
           </div>
@@ -876,11 +882,11 @@ const Home = ({ rates }: Props) => {
         <div className='d-flex flex-column mb-3 px-3 pt-3'> 
         <Link className={`${styles.textPopup} mb-1`} href="tel: 0704444544">
           <Image alt='' src="/icons/call-calling.png" width={20} height={20} className='img-fluid me-2' ></Image> 
-          070 4444 544
+          070 45 45 132
         </Link>
         <Link className={`${styles.textPopup} mb-1`} href="tel: 0704444544">
           <Image alt='' src="/icons/call-calling.png" width={20} height={20} className='img-fluid me-2' ></Image> 
-          070 4444 544
+          076 26 58 293 
         </Link>
         </div>
         </Modal.Body>
@@ -894,11 +900,11 @@ const Home = ({ rates }: Props) => {
         <div className='d-flex flex-column mb-3 px-3 pt-3'>
         <Link className={`${styles.textPopup} mb-1`} href="tel: 0704545132">
           <Image alt='' src="/icons/call-calling.png" width={20} height={20} className='img-fluid me-2' ></Image> 
-          070 45 45 132
+          070 4444 544
         </Link>
         <Link className={`${styles.textPopup} mb-1`} href="tel: 0704545132">
           <Image alt='' src="/icons/call-calling.png" width={20} height={20} className='img-fluid me-2' ></Image> 
-          070 45 45 132
+          070 4444 644
         </Link>
         </div>  
         </Modal.Body>
