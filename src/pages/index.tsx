@@ -880,11 +880,11 @@ const Home = ({ rates }: Props) => {
       <Modal show={showModal} onHide={handleModalClose} id="Agent" className='d-flex align-items-center justify-content-center'>
         <Modal.Body>
         <div className='d-flex flex-column mb-3 px-3 pt-3'> 
-        <Link className={`${styles.textPopup} mb-1`} href="tel: 0704444544">
+        <Link className={`${styles.textPopup} mb-1`} href="tel: 0704545132">
           <Image alt='' src="/icons/call-calling.png" width={20} height={20} className='img-fluid me-2' ></Image> 
           070 45 45 132
         </Link>
-        <Link className={`${styles.textPopup} mb-1`} href="tel: 0704444544">
+        <Link className={`${styles.textPopup} mb-1`} href="tel: 0762658293">
           <Image alt='' src="/icons/call-calling.png" width={20} height={20} className='img-fluid me-2' ></Image> 
           076 26 58 293 
         </Link>
@@ -898,15 +898,15 @@ const Home = ({ rates }: Props) => {
       <Modal show={showModalTwo} onHide={handleModalTwoClose} id="Agent" className='d-flex align-items-center justify-content-center'>
         <Modal.Body>
         <div className='d-flex flex-column mb-3 px-3 pt-3'>
-        <Link className={`${styles.textPopup} mb-1`} href="tel: 0704545132">
+        <Link className={`${styles.textPopup} mb-1`} href="tel: 0704444544">
           <Image alt='' src="/icons/call-calling.png" width={20} height={20} className='img-fluid me-2' ></Image> 
           070 4444 544
         </Link>
-        <Link className={`${styles.textPopup} mb-1`} href="tel: 0704545132">
+        <Link className={`${styles.textPopup} mb-1`} href="tel: 0704444644">
           <Image alt='' src="/icons/call-calling.png" width={20} height={20} className='img-fluid me-2' ></Image> 
           070 4444 644
         </Link>
-        <Link className={`${styles.textPopup} mb-1`} href="tel: 0704545132">
+        <Link className={`${styles.textPopup} mb-1`} href="tel: 0743462980">
           <Image alt='' src="/icons/call-calling.png" width={20} height={20} className='img-fluid me-2' ></Image> 
           074 3462 980 
         </Link>
