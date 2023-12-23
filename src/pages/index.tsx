@@ -866,7 +866,7 @@ const Home = ({ rates }: Props) => {
           </div>
         </div>
         <div className={`py-5 px-2 d-flex ${styles.buttonWrapper}`}>
-          <Link style={{ textDecoration: "none" }} href="https://api.whatsapp.com/send?phone=94717697736">
+          <Link style={{ textDecoration: "none" }} href="https://api.whatsapp.com/send?phone=94774856781">
             <button className={`px-5 py-3 ${styles.agentServicesBtn}`}>CONTACT US</button>
           </Link>
         </div>

@@ -54,7 +54,7 @@ const Header = () => {
           <hr />
           <a href='#AgentServicesSec'className='text-decoration-none text-dark'>Agent Services</a>
           <hr />
-          <a href='https://api.whatsapp.com/send?phone=94717697736' className='text-decoration-none text-dark'>Contact Us</a>
+          <a href='https://api.whatsapp.com/send?phone=94774856781' className='text-decoration-none text-dark'>Contact Us</a>
           <hr />
           <a href='#ExperienceSec' className='text-decoration-none text-dark'>Get Help</a>
           <hr />
