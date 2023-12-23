@@ -36,7 +36,7 @@ const Home = ({ rates }: Props) => {
   const [exchangeRates, setExchangeRates] = useState<any>(null);
   const [showPopup, setShowPopup] = useState(false);
   const [selectedRate, setSelectedRate] = useState<any>(null);
-  // console.log("rates: ", rates)
+  console.log("rates: ", rates)
 
   const [showModal, setshowModal] = useState(false);
   const [showModalTwo, setshowModalTwo] = useState(false);
@@ -765,7 +765,7 @@ const Home = ({ rates }: Props) => {
         <p className='pb-2 pb-lg-3 mb-2 mb-lg-5'>Check out our freshly updated exchange rates today and get the best deal for your money!</p>
         <div className="d-flex row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 w-100 p-0 px-xl-5 m-0 max-width-extra-large justify-content-center">
           {
-            rates.map((rate) => {
+            rates.sort((a, b) => a.id - b.id).map((rate) => {
               return (
                 <>
                   <div className={`d-flex justify-content-center align-item-center col-6 col-sm-6 col-md-4 col-lg-3 p-0 p-lg-2 `} key={rate.id}>
