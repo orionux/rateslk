@@ -807,23 +807,23 @@ const Home = ({ rates }: Props) => {
                         <p className='px-3 mb-0'>{agent.cardTitle}</p>
                       </div>
                       <div className="d-flex flex-row mb-1">
-                      <Image alt='' src="/icons/user-octagon.png" width={20} height={20} className='img-fluid me-2' ></Image>
+                      <Image alt='' src="/icons/user-octagon.svg" width={20} height={20} className='img-fluid me-2' ></Image>
                       <p className={`${styles.textPopup} mb-0`}> {agent.name}</p>
                       </div>
                       <Link className={`${styles.textPopup} mb-1`} href={agent.telLink}>
-                        <Image alt='' src="/icons/call-calling.png" width={20} height={20} className='img-fluid me-2' ></Image> 
+                        <Image alt='' src="/icons/call-calling.svg" width={20} height={20} className='img-fluid me-2' ></Image> 
                         {agent.tel}
                         </Link>
                       <Link className={`${styles.textPopup}  mb-1`} href={`mailto:${agent.email}`}>
-                      <Image alt='' src="/icons/direct-notification.png" width={20} height={20} className='img-fluid me-2' ></Image>
+                      <Image alt='' src="/icons/direct-notification.svg" width={20} height={20} className='img-fluid me-2' ></Image>
                        {agent.email}
                        </Link>
                       <Link className={`${styles.textPopup}  mb-1`} href={agent.telegramLink}>
-                        <Image alt='' src="/icons/Frame 1000003261.png" width={20} height={20} className='img-fluid me-2' ></Image>
+                        <Image alt='' src="/icons/Frame 1000003261.svg" width={20} height={20} className='img-fluid me-2' ></Image>
                        {agent.telegram}
                        </Link>
                       <Link className={`${styles.textPopup}  mb-1`} href={agent.whatsappLink}>
-                      <Image alt='' src="/icons/Frame 1000003262.png" width={20} height={20} className='img-fluid me-2' ></Image>
+                      <Image alt='' src="/icons/Frame 1000003262.svg" width={20} height={20} className='img-fluid me-2' ></Image>
                       {agent.whatsapp}
                       </Link>
                     </div>
