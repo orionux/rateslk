@@ -122,8 +122,8 @@ const Footer = () => {
         <hr />
         <div className="d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-center gap-1">
           <div className="col-12 col-lg-8 text-center text-lg-start px-0 px-lg-5">
-            <p className='mb-0'>Copyright © 
-            <Link href={"https://rateslk.vercel.app/"} style={{textDecoration: "none !important"}}><span className='gold-text'>Rates.lk</span></Link>
+            <p className='mb-0 px-0 px-lg-3'>Copyright © 
+            <Link href={"https://rateslk.vercel.app/"} style={{textDecoration: "none !important"}}><span className='gold-text'>Rates.lk </span></Link>
              | Designed by  <Link href={"https://orionux.net/"} style={{textDecoration: "none !important"}}><span className='gold-text'>orionux(pvt)Ltd</span></Link></p>
           </div>
           <div className="col-12 col-lg-4 d-flex justify-content-center ">
