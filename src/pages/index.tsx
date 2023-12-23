@@ -906,6 +906,10 @@ const Home = ({ rates }: Props) => {
           <Image alt='' src="/icons/call-calling.png" width={20} height={20} className='img-fluid me-2' ></Image> 
           070 4444 644
         </Link>
+        <Link className={`${styles.textPopup} mb-1`} href="tel: 0704545132">
+          <Image alt='' src="/icons/call-calling.png" width={20} height={20} className='img-fluid me-2' ></Image> 
+          074 3462 980 
+        </Link>
         </div>  
         </Modal.Body>
         <Modal.Footer className='d-flex justify-content-center'>
