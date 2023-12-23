@@ -116,7 +116,8 @@ const Footer = () => {
               <Link href={"tel: 076 265 8293"}>(+94) 76 26 58 293</Link><br/>
             <Link href={"tel: 077 165 9857"}>(+94) 77 16 59 857</Link></p>
             </div>
-            <p>Email: <Link href={"mailto:info@Rates.lk.com"}>info@Rates.lk.com</Link></p>
+            {/* mailto:info@Rates.lk.com */}
+            <p>Email: <Link href={"#"}>info@Rates.lk.com</Link></p>
           </div>
         </div>
         <hr />
